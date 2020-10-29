@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="component-wrapper">
+      <!-- Knows which component to render based on url automatically
+      under the hood (router/index.js)-->
+      <router-view/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: black;
 }
+@font-face {
+    font-family: "Bw Modelica Bold";
+    src: local("Bw Modelica Bold"),
+    url(./fonts/BwModelica/BwModelica-Bold.otf) format("truetype");
+}
+@font-face {
+  font-family: "Bw Modelica Regular";
+  src: local("Bw Modelica Regular"),
+  url(./fonts/BwModelica/BwModelica-Regular.otf) format("truetype");
+}
+
 </style>
