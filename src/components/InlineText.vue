@@ -4,8 +4,7 @@
         <input
             class="text-edit"
             v-model="name.nameInput"
-            v-on:input="onChangeText"
-            @blur="name.edit=false; $emit('update')"
+            @blur="name.edit=false; onChangeText(name.nameInput); $emit('update')"
             @keyup.enter="name.edit=false; $emit('update')"
             v-focus
         >
@@ -29,10 +28,12 @@ export default {
       this.name.nameInput = '';
       this.name.edit = true;
     },
-    onChangeText: function() {
-      if (this.name.nameInput === '') {
+    onChangeText: function(input) {
+      if (input === '') {
         this.name.nameInput = 'Name?';
-        this.name.edit = true;
+        this.name.edit = false;
+      } else {
+        this.name.nameInput = input + '.';
       }
     }
   },
