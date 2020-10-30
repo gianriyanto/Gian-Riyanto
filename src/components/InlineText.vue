@@ -2,14 +2,14 @@
   <div id="app">
       <label v-if="name.edit">
         <input
-            class="text-edit"
+            class="input-editing"
             v-model="name.nameInput"
             @blur="name.edit=false; onChangeText(name.nameInput); $emit('update')"
             @keyup.enter="name.edit=false; $emit('update')"
             v-focus
         >
       </label>
-      <div class="text-label" v-else>
+      <div :class="applyInputStyle(name.nameInput)" v-else>
           <label @click="onEditText"> {{name.nameInput}} </label>
       </div>
   </div>
@@ -35,6 +35,9 @@ export default {
       } else {
         this.name.nameInput = input + '.';
       }
+    },
+    applyInputStyle: function(input) {
+      return [(input.length>0 && input !== 'Name?') ? 'input-has-value-style' : 'input-no-value-style']
     }
   },
   directives: {
@@ -49,17 +52,23 @@ export default {
 
 <style scoped>
 
-.text-label{
+.input-has-value-style{
   font-family: "Bw Modelica Bold", serif;
-  font-size: 50px;
+  font-size: 55px;
   background: linear-gradient(to bottom left, #9226f1, #578cea);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.text-edit{
+.input-no-value-style{
   font-family: "Bw Modelica Bold", serif;
   color: darkgrey;
-  font-size: 50px;
+  font-size: 55px;
+  width: 400px;
+}
+.input-editing{
+  font-family: "Bw Modelica Bold", serif;
+  color: darkgrey;
+  font-size: 55px;
   width: 400px;
 }
 

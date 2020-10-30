@@ -34,7 +34,7 @@ export default {
 
   .title{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 50px;
+    font-size: 55px;
   }
 
   .name{
@@ -46,7 +46,7 @@ export default {
 
   .subtitle{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 50px;
+    font-size: 55px;
   }
 
 
