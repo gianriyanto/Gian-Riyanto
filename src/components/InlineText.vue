@@ -1,16 +1,21 @@
 <template>
   <div id="app">
       <label v-if="name.edit">
-        <input
-            class="input-editing"
-            v-model="name.nameInput"
-            @blur="name.edit=false; onChangeText(name.nameInput); $emit('update')"
-            @keyup.enter="name.edit=false; $emit('update')"
-            v-focus
-        >
+          <input
+              class="input-editing"
+              v-model="name.nameInput"
+              @blur="name.edit=false; onChangeText(name.nameInput); $emit('update')"
+              @keyup.enter="name.edit=false; $emit('update')"
+              v-focus
+          >
       </label>
-      <div :class="applyInputStyle(name.nameInput)" v-else>
-          <label @click="onEditText"> {{name.nameInput}} </label>
+      <div v-else class="input-container">
+        <div :class="applyInputStyle(name.nameInput)">
+            <label @click="onEditText"> {{name.nameInput}} </label>
+        </div>
+        <button v-if="name.isValid" class="button" v-scroll-to="'#Introduction'">
+            Check Me Out
+        </button>
       </div>
   </div>
 </template>
@@ -18,9 +23,10 @@
 <script>
 export default {
   name: "InlineText",
+  props: ['nameData'],
   data() {
     return {
-      name: { nameInput: 'Name?', edit: false },
+      name: this.nameData,
     }
   },
   methods: {
@@ -32,8 +38,10 @@ export default {
       if (input === '') {
         this.name.nameInput = 'Name?';
         this.name.edit = false;
+        this.name.isValid = false;
       } else {
         this.name.nameInput = input + '.';
+        this.name.isValid = true;
       }
     },
     applyInputStyle: function(input) {
@@ -52,9 +60,24 @@ export default {
 
 <style scoped>
 
+.input-container{
+  display: flex;
+  flex-direction: row;
+}
+.button{
+  margin: auto 0 auto 20px;
+  font-family: "Bw Modelica Bold", serif;
+  background-color: transparent;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 9px 20px 9px 20px;
+  border: solid black;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+}
 .input-has-value-style{
   font-family: "Bw Modelica Bold", serif;
-  font-size: 55px;
   background: linear-gradient(to bottom left, #9226f1, #578cea);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -62,14 +85,12 @@ export default {
 .input-no-value-style{
   font-family: "Bw Modelica Bold", serif;
   color: darkgrey;
-  font-size: 55px;
-  width: 400px;
+  width: 390px;
 }
 .input-editing{
   font-family: "Bw Modelica Bold", serif;
   color: darkgrey;
-  font-size: 55px;
-  width: 400px;
+  font-size: 43px;
+  width: 390px;
 }
-
 </style>

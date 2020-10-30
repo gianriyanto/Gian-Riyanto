@@ -1,10 +1,8 @@
 <template>
   <div id="app">
-    <div class="component-wrapper">
       <!-- Knows which component to render based on url automatically
       under the hood (router/index.js)-->
       <router-view/>
-    </div>
   </div>
 </template>
 
@@ -25,6 +23,10 @@ export default {
 
 #app {
   color: black;
+}
+html, body {
+  margin: 0px !important;
+  padding: 0px !important;
 }
 @font-face {
     font-family: "Bw Modelica Bold";
