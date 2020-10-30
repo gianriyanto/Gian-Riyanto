@@ -1,12 +1,10 @@
 <template>
   <div id="Introduction">
-    <div class="content-wrapper">
+    <div class="container">
       <span> Hey {{ inputtedName }}, </span>
-      <span> As you can see, there's not </span>
-      <span> much in this web portfolio. </span>
-      <span> Just another reason for me </span>
-      <span> to fiddle with Vue... </span>
-      <span class="subtext"> (and yes, its pretty damn cool) </span>
+      <span> I love to learn, </span>
+      <span> solve problems,</span>
+      <span> and build things. </span>
     </div>
   </div>
 </template>
@@ -35,23 +33,21 @@ export default {
   display: flex;
   flex-direction: column;
   position: sticky;
+  margin-top: 100vh;
   height: 100vh;
   width: 100%;
+  z-index: 2;
   background-image: linear-gradient(to bottom left, #a00fee, #5488e5);;
 }
-.content-wrapper{
+.container{
   display: flex;
   flex-direction: column;
   margin: auto;
   line-height: 1.5;
-  font-size: 30px;
+  font-size: 35px;
   width: fit-content;
   font-family: "Bw Modelica Bold", serif;
   color: white;
-}
-.subtext{
-  font-family: "Bw Modelica Regular", serif;
-  font-size: 20px;
 }
 
 </style>

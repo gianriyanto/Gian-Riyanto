@@ -13,7 +13,11 @@
         <div :class="applyInputStyle(name.nameInput)">
             <label @click="onEditText"> {{name.nameInput}} </label>
         </div>
-        <button v-if="name.isValid" class="button" v-scroll-to="'#Introduction'">
+        <button v-if="name.isValid" class="button" v-scroll-to="{
+                el: '#Introduction',
+                easing: [.2, .80, .30, 1],
+                duration: 1100
+            }">
             Check Me Out
         </button>
       </div>

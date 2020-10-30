@@ -1,7 +1,7 @@
 <template>
   <div class="content-wrapper">
     <div id="welcome">
-      <div class="welcome-container">
+      <div class="container">
         <span class="title"> Hello, I'm <span class="name">Gian.</span> </span>
         <span class="subtitle"> Nice to meet you, </span>
         <inline-text v-bind:nameData="name"/>
@@ -40,11 +40,11 @@ export default {
   #welcome{
     display: flex;
     flex-direction: column;
-    position: sticky;
+    position: fixed;
     height: 100vh;
     width: 100%;
   }
-  .welcome-container{
+  .container{
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -53,7 +53,7 @@ export default {
     width: fit-content;
   }
   .title{
-    font-family: "Bw Modelica Regular", serif;
+    font-family: "Bw Modelica Bold", serif;
   }
   .name{
     font-family: "Bw Modelica Bold", serif;
@@ -62,7 +62,7 @@ export default {
     -webkit-text-fill-color: transparent;
   }
   .subtitle{
-    font-family: "Bw Modelica Regular", serif;
+    font-family: "Bw Modelica Bold", serif;
   }
 
 </style>
