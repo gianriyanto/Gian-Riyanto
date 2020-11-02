@@ -19,7 +19,7 @@ export default {
   name: "Welcome",
   components: {
     MainPage,
-    InlineText,
+    InlineText
   },
   data() {
     return {
