@@ -2,8 +2,8 @@
   <div class="content-wrapper">
     <div id="welcome">
       <div class="container">
-        <span class="title"> Hello, I'm <span class="name">Gian.</span> </span>
-        <span class="subtitle"> Nice to meet you, </span>
+        <span class="message"> Hello, I'm <span class="name">Gian.</span> </span>
+        <span class="message"> Nice to meet you, </span>
         <inline-text v-bind:nameData="name"/>
       </div>
     </div>
@@ -13,7 +13,7 @@
 
 <script>
 import InlineText from "@/components/InlineText";
-import IntroPage from "@/views/Introduction";
+import IntroPage from "@/views/MainPage";
 
 
 export default {
@@ -30,39 +30,39 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .content-wrapper {
   display: flex;
   flex-direction: column;
 }
 
-  #welcome{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-  }
-  .container{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    line-height: 1.3;
-    font-size: 47px;
-    width: fit-content;
-  }
-  .title{
+#welcome{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: #efefeb;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  line-height: 1.3;
+  font-size: 47px;
+  width: fit-content;
+
+  .message {
     font-family: "Bw Modelica Bold", serif;
   }
+
   .name{
     font-family: "Bw Modelica Bold", serif;
     background: linear-gradient(to bottom left, #9226f1, #578cea);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .subtitle{
-    font-family: "Bw Modelica Bold", serif;
-  }
+}
 
 </style>

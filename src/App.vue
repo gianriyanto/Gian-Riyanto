@@ -17,9 +17,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
 #app {
   color: black;
@@ -29,9 +27,9 @@ html, body {
   padding: 0px !important;
 }
 @font-face {
-    font-family: "Bw Modelica Bold";
-    src: local("Bw Modelica Bold"),
-    url(./fonts/BwModelica/BwModelica-Bold.otf) format("truetype");
+  font-family: "Bw Modelica Bold";
+  src: local("Bw Modelica Bold"),
+  url(./fonts/BwModelica/BwModelica-Bold.otf) format("truetype");
 }
 @font-face {
   font-family: "Bw Modelica Regular";
