@@ -4,8 +4,8 @@
           <input
               class="input-editing"
               v-model="name.nameInput"
-              @blur="name.edit=false; onChangeText(name.nameInput); $emit('update')"
-              @keyup.enter="name.edit=false; onChangeText(name.nameInput); $emit('update')"
+              v-on:blur="name.edit=false; onChangeText(name.nameInput); $emit('update')"
+              v-on:keyup.enter="$event.target.blur()"
               v-focus
           >
       </label>
@@ -70,6 +70,8 @@ export default {
     color: darkgrey;
     font-size: 43px;
     width: 390px;
+    outline-color: #5b16d0;
+    background-color: #efefeb;
   }
   .input-container{
     display: flex;
