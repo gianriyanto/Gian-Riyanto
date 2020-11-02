@@ -11,7 +11,6 @@
 export default {
   name: 'App',
   components: {
-
   }
 }
 </script>
@@ -21,6 +20,7 @@ export default {
 
 #app {
   color: black;
+  min-width: 970px;
 }
 html, body {
   margin: 0px !important;

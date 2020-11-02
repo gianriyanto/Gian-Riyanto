@@ -26,8 +26,9 @@ export default {
   position: absolute;
   display: flex;
   flex-direction: row;
-  top: 25px;
+  top: 30px;
   right: 35px;
+
   .nav-container {
     display: flex;
     flex-direction: row;
@@ -38,15 +39,20 @@ export default {
       font-family: "Bw Modelica Regular", serif;
       font-size: 14px;
       color: white;
+      cursor: pointer;
+      &:hover{
+        opacity: 0.7;
+      }
     }
   }
   .email {
-    border: thin solid #b7b7b7;
+    border: thin solid #c8c7c7;
     border-radius: 6px;
     background-color: transparent;
     outline: none;
     padding: 16px 20px 16px 20px;
     cursor: pointer;
+    position: relative;
 
     .email-label {
       position: relative;
@@ -63,7 +69,7 @@ export default {
       left: 0;
       width: 0;
       height: 100%;
-      background: linear-gradient(to bottom left, #8a4fe2, #656aca);
+      background: linear-gradient(to bottom left, #8744ec, #7965ea);
       border-radius: 6px;
       transition: all 0.35s;
     }
