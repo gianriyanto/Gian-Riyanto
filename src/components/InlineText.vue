@@ -95,27 +95,6 @@ export default {
   cursor: pointer;
   outline: none;
 }
-.button span {
-  z-index: 1;
-}
-.button:after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: linear-gradient(to bottom left, #a035ee, #588ce9);
-  border-radius: 30px;
-  transition: all 0.35s;
-}
-.button:hover {
-  color: #fff;
-  opacity: 1;
-}
-.button:hover:after {
-  width: 100%;
-}
 .input-has-value-style{
   font-family: "Bw Modelica Bold", serif;
   background: linear-gradient(to bottom left, #860fee, #5488e5);
