@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="InLineText">
       <label v-if="name.edit">
           <input
               class="input-editing"
@@ -62,54 +62,43 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
-.input-container{
-  display: flex;
-  flex-direction: row;
-}
-.button{
-  font-family: "Bw Modelica Bold", serif;
-  background-color: transparent;
-  font-size: 14px;
-  text-decoration: none;
-  padding: 9px 20px 9px 20px;
-  border: solid black;
-  border-radius: 30px;
-  outline: none;
-  cursor: pointer;
-  transition: all 0.35s;
-  z-index: 2;
-}
-.button {
-  position: relative;
-  transition: all 0.35s;
-  margin: auto 0 auto 20px;
-  padding: 9px 20px 9px 20px;
-  background-color: transparent;
-  color: black;
-  font-weight: bold;
-  font-size: 13px;
-  border: solid black;
-  border-radius: 30px;
-  cursor: pointer;
-  outline: none;
-}
-.input-has-value-style{
-  font-family: "Bw Modelica Bold", serif;
-  background: linear-gradient(to bottom left, #860fee, #5488e5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.input-no-value-style{
-  font-family: "Bw Modelica Bold", serif;
-  color: darkgrey;
-  width: 390px;
-}
-.input-editing{
-  font-family: "Bw Modelica Bold", serif;
-  color: darkgrey;
-  font-size: 43px;
-  width: 390px;
+#InLineText{
+  .input-editing{
+    font-family: "Bw Modelica Bold", serif;
+    color: darkgrey;
+    font-size: 43px;
+    width: 390px;
+  }
+  .input-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .button{
+    font-family: "Bw Modelica Bold", serif;
+    background-color: transparent;
+    font-size: 14px;
+    text-decoration: none;
+    margin: auto 0 auto 20px;
+    padding: 9px 20px 9px 20px;
+    border: solid black;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.35s;
+    z-index: 2;
+  }
+  .input-has-value-style{
+    font-family: "Bw Modelica Bold", serif;
+    background: linear-gradient(to bottom left, #860fee, #5488e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .input-no-value-style{
+    font-family: "Bw Modelica Bold", serif;
+    color: darkgrey;
+    width: 390px;
+  }
 }
 </style>
