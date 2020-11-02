@@ -7,20 +7,19 @@
         <inline-text v-bind:nameData="name"/>
       </div>
     </div>
-    <IntroPage v-bind:name="name.nameInput.slice(0, -1)"/>
+    <MainPage v-bind:name="name.nameInput.slice(0, -1)"/>
   </div>
 </template>
 
 <script>
 import InlineText from "@/components/InlineText";
-import IntroPage from "@/views/MainPage";
-
+import MainPage from "@/views/MainPage";
 
 export default {
   name: "Welcome",
   components: {
+    MainPage,
     InlineText,
-    IntroPage,
   },
   data() {
     return {
