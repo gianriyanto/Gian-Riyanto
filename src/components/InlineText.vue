@@ -5,7 +5,7 @@
               class="input-editing"
               v-model="name.nameInput"
               @blur="name.edit=false; onChangeText(name.nameInput); $emit('update')"
-              @keyup.enter="name.edit=false; $emit('update')"
+              @keyup.enter="name.edit=false; onChangeText(name.nameInput); $emit('update')"
               v-focus
           >
       </label>
