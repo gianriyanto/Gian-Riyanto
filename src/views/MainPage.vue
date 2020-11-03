@@ -3,9 +3,9 @@
     <div class="logo"
          @click="selectedTab = 'Introduction';"
          data-aos="fade-up"
-         data-aos-duration="1000"
-         data-aos-easing="ease-in-sine">
-      <img class="my-portrait" src="@/assets/myPortrait.png" alt=""/>
+         data-aos-duration="1200"
+         data-aos-easing="ease-in-out">
+      <span class="circle-border"> <img class="my-portrait" src="@/assets/myPortrait.png" alt=""/></span>
       <span class="my-name"> Gian <strong> Riyanto </strong></span>
     </div>
     <div id="navigation">
@@ -88,9 +88,17 @@ export default {
   opacity: 1;
   transition: 0.3s;
 
-  .my-portrait{
+  .circle-border{
+    border: 1.9px solid white;
+    border-radius: 50%;
     width: 70px;
-    height: auto
+    height: 70px;
+
+    .my-portrait{
+      margin: auto;
+      width: 70px;
+      height: 70px;
+    }
   }
   .my-name{
     padding-left: 16px;

@@ -1,6 +1,6 @@
 <template>
   <div id="Projects">
-    These are my projects
+    Projects section not found: This section is a work in progress
   </div>
 </template>
 

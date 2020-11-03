@@ -1,6 +1,6 @@
 <template>
   <div id="Experience">
-    These are my experiences
+    Experience section not found: This section is a work in progress
   </div>
 </template>
 
