@@ -1,20 +1,37 @@
 <template>
   <div id="MainPage">
-    <div class="logo" @click="selectedTab = 'Introduction';">
+    <div class="logo"
+         @click="selectedTab = 'Introduction';"
+         data-aos="fade-up"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-sine">
       <img class="my-portrait" src="@/assets/myPortrait.png" alt=""/>
       <span class="my-name"> Gian <strong> Riyanto </strong></span>
     </div>
     <div id="navigation">
       <div class="nav-container">
-       <span v-for="tab in tabs" class="nav-links" :key="tab" @click="selectedTab = tab;"> {{ tab }} </span>
+       <span v-for="tab in tabs"
+             class="nav-tabs"
+             :key=tab.title
+             @click="selectedTab = tab;"
+             data-aos="fade-down"
+             data-aos-duration=1500
+             data-aos-easing="ease-in-out"> {{ tab }}
+       </span>
       </div>
-      <button class="email">
-        <span class="email-label"> Get in Touch </span>
+      <button class="contact"
+              data-aos="fade-down"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out">
+        <span class="contact-label"> Get in Touch </span>
       </button>
     </div>
-    <personal-links/>
+    <personal-links />
     <component :is="selectedTab" v-bind:name="name"> </component>
-    <div class="footer">
+    <div class="footer"
+         data-aos="fade"
+         data-aos-duration="2200"
+         data-aos-easing="ease-in-out">
       <span>Designed and developed by Gian Riyanto</span>
       <span>Built with Vue.js and hosted with Netlify</span>
     </div>
@@ -71,19 +88,20 @@ export default {
   opacity: 1;
   transition: 0.3s;
 
-  &:hover{
-    opacity: 0.6;
-  }
   .my-portrait{
     width: 70px;
     height: auto
   }
   .my-name{
     padding-left: 16px;
-    font-family: "Bw Modelica Regular", serif;
+    font-family: "Bw Modelica Medium", serif;
     color: white;
     font-size: 27px;
     line-height: 1.2;
+    &:hover{
+      opacity: 0.4;
+      transition: opacity 0.5s;
+    }
   }
 }
 
@@ -125,17 +143,20 @@ export default {
     align-items: center;
     justify-content: space-evenly;
     width: 450px;
-    .nav-links {
+
+    .nav-tabs {
       font-family: "Bw Modelica Regular", serif;
       font-size: 14px;
       color: white;
       cursor: pointer;
+
       &:hover{
-        opacity: 0.7;
+        opacity: 0.4;
+        transition: opacity 0.5s;
       }
     }
   }
-  .email {
+  .contact {
     border: thin solid #c8c7c7;
     border-radius: 6px;
     background-color: transparent;
@@ -144,7 +165,7 @@ export default {
     cursor: pointer;
     position: relative;
 
-    .email-label {
+    .contact-label {
       position: relative;
       font-family: "Bw Modelica Regular", serif;
       font-size: 14px;

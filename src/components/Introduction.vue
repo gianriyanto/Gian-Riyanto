@@ -1,10 +1,18 @@
 <template>
   <div class="introduction">
-    <span class="greeting"> Hey {{ inputtedName }}, </span>
-    <span class="message">
-        I am a software engineering student on the lookout for new experiences to learn and make meaningful contributions.
-        I love delightful products, thoughtful user-experiences, and creative solutions.
-      </span>
+    <span class="greeting"
+          data-aos="fade-down"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out">
+            Hey {{ inputtedName }},
+    </span>
+    <span class="message"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
+            I am a software engineering student on the lookout for new experiences to learn and make meaningful contributions.
+            I love delightful products, thoughtful user-experiences, and creative solutions.
+    </span>
   </div>
 </template>
 

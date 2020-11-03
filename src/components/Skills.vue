@@ -1,6 +1,6 @@
 <template>
   <div id="Skills">
-    This is my skills
+    This are my skills
   </div>
 </template>
 

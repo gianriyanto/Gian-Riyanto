@@ -1,19 +1,25 @@
 <template>
   <div id="About">
-    <span class="header"> About Me </span>
-    <span class="content">
+    <span class="header"
+          data-aos="fade-down"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out">
+      About Me.
+    </span>
+    <span class="content"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
       Hi! I'm a software engineering undergraduate in the <span class="bold">University of Technology Sydney</span>, on track for graduation by <span class="bold">October 2021</span>. <br/> <br/>
       Driven by my intellectual curiosity, I seek to continue my lifelong learning journey with a collaborative team that shares my passion for value-creating products and delightful user-experience. <br/> <br/>
       I find that nothing is more splendid than learning as a means to make meaningful contributions, especially when I get to meet new people and develop relationships along the way. <br/> <br/>
       Here are some technologies that I've been fiddling with recently:
-      <ul class="skills">
-        <li class="bold"> Javascript </li>
-        <li class="bold"> React </li>
-        <li class="bold"> Vue </li>
-        <li class="bold"> Node.js </li>
-        <li class="bold"> HTML & (S)CSS </li>
-        <li class="bold"> Python </li>
-      </ul>
+    </span>
+    <span class="skills-wrapper"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-sine">
+      <span v-for="skill in skills" class="skill" :key="skill"> {{ skill }} </span>
     </span>
   </div>
 </template>
@@ -21,6 +27,11 @@
 <script>
 export default {
   name: "About",
+  data() {
+    return {
+      skills: ["Javascript", "React", "Vue", "HTML & (S)CSS", "Node.js", "Python"]
+    }
+  }
 }
 </script>
 
@@ -29,27 +40,36 @@ export default {
 #About{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding-top: 60px;
   margin: auto;
   color: white;
-  width: 560px;
+  width: 580px;
   font-family: "Bw Modelica Regular", serif;
-
-  .content{
-    font-size: 15px;
-    line-height: 1.8;
-  }
 
   .header{
     font-family: "Bw Modelica Bold", serif;
-    font-size: 25px;
+    font-size: 40px;
     padding-bottom: 20px;
   }
-  ul {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+  .content{
+    font-size: 15px;
+    line-height: 1.8;
+    padding-bottom: 20px;
+  }
+}
+
+.skills-wrapper{
+  flex-direction: row;
+  display: inline-block;
+
+  .skill {
+    border: 1.6px solid white;
+    opacity: 1;
+    border-radius: 15px;
+    font-size: 12px;
+    width: fit-content;
+    padding: 6px 15px 6px 15px;
+    margin-right: 12px;
   }
 }
 .bold {

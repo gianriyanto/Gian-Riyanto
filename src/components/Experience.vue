@@ -1,6 +1,6 @@
 <template>
   <div id="Experience">
-    This is my experiences
+    These are my experiences
   </div>
 </template>
 

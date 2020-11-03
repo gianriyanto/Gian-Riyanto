@@ -1,5 +1,8 @@
 <template>
-  <div id="links">
+  <div id="links"
+       data-aos="fade"
+       data-aos-duration="2200"
+       data-aos-easing="ease-in-out">
     <a class="resume" :href="`${publicPath}gianriyanto.pdf`"> <font-awesome-icon class="download-resume" :icon="['fas', 'file-download']"/> </a>
     <font-awesome-icon class="linkedin" :icon="['fab', 'linkedin']" v-on:click="goToSite('https://www.linkedin.com/in/riyantogian/')"/>
     <font-awesome-icon class="github" :icon="['fab', 'github']" v-on:click="goToSite('https://www.linkedin.com/in/riyantogian/')"/>

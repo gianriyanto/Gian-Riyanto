@@ -2,9 +2,16 @@
   <div class="content-wrapper">
     <div id="welcome">
       <div class="container">
-        <span class="message"> Hello, I'm <span class="name">Gian.</span> </span>
-        <span class="message"> Nice to meet you, </span>
-        <inline-text v-bind:nameData="name"/>
+        <span class="message" data-aos="fade-down" data-aos-duration="2000" data-aos-easing="ease-in-sine">
+          Hello, I'm
+          <span class="name" data-aos="fade-down" data-aos-duration="2500" data-aos-easing="ease-in-sine">
+            Gian.
+          </span>
+        </span>
+        <span class="message" data-aos="fade" data-aos-duration="2500" data-aos-easing="ease-in-sine">
+          Nice to meet you,
+        </span>
+        <inline-text v-bind:nameData="name" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-sine"/>
       </div>
     </div>
     <MainPage v-bind:name="name.nameInput.slice(0, -1)"/>
@@ -48,7 +55,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  line-height: 1.3;
+  line-height: 1.4;
   font-size: 47px;
   width: fit-content;
 

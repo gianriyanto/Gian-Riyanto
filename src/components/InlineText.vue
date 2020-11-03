@@ -17,7 +17,9 @@
                 el: '#MainPage',
                 easing: [.2, .80, .30, 1],
                 duration: 1100
-            }">
+            }"
+            data-aos="fade-left"
+            data-aos-easing="ease-in-sine">
             Check Me Out
         </button>
       </div>
@@ -44,7 +46,7 @@ export default {
         this.name.edit = false;
         this.name.isValid = false;
       } else {
-        this.name.nameInput = input + '.';
+        this.name.nameInput = input.charAt(0).toUpperCase() + input.slice(1) + '.';
         this.name.isValid = true;
       }
     },
