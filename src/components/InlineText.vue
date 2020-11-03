@@ -72,7 +72,8 @@ export default {
     color: darkgrey;
     font-size: 43px;
     width: 390px;
-    outline-color: #5b16d0;
+    border: transparent;
+    outline: transparent;
     background-color: var(--bone);
   }
   .input-container{

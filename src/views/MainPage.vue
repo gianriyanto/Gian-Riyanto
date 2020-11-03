@@ -102,7 +102,7 @@ export default {
   }
   .my-name{
     padding-left: 16px;
-    font-family: "Bw Modelica Medium", serif;
+    font-family: "Bw Modelica Regular", serif;
     color: white;
     font-size: 27px;
     line-height: 1.2;
