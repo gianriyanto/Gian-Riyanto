@@ -42,7 +42,7 @@ export default {
   position: fixed;
   height: 100vh;
   width: 100%;
-  background-color: #efefeb;
+  background-color: var(--bone);
 }
 .container {
   display: flex;

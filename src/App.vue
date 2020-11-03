@@ -25,6 +25,10 @@ html, body {
   margin: 0px !important;
   padding: 0px !important;
 }
+:root {
+  --bone: #f5f5f2;
+  --gradient: linear-gradient(to bottom left, #8637f8, #4d7fe0);
+}
 @font-face {
   font-family: "Bw Modelica Bold";
   src: local("Bw Modelica Bold"),
@@ -34,6 +38,16 @@ html, body {
   font-family: "Bw Modelica Regular";
   src: local("Bw Modelica Regular"),
   url(./fonts/BwModelica/BwModelica-Regular.otf) format("truetype");
+}
+@font-face {
+  font-family: "Bw Modelica Light";
+  src: local("Bw Modelica Light"),
+  url(./fonts/BwModelica/BwModelica-Light.otf) format("truetype");
+}
+@font-face {
+  font-family: "Bw Modelica Hairline";
+  src: local("Bw Modelica Hairline"),
+  url(./fonts/BwModelica/BwModelica-Hairline.otf) format("truetype");
 }
 
 </style>

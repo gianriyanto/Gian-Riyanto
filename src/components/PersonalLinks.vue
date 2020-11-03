@@ -33,21 +33,25 @@ export default {
   position: absolute;
   bottom: 15px;
   left: 50px;
-  color: #efefeb;
+  color: var(--bone);
   font-size: 2em;
+
   .resume, .linkedin, .github {
     cursor: pointer;
-  &:hover{
-     opacity: 0.7;
-   }
+    opacity: 0.8;
+    transition: 0.3s;
+
+    &:hover{
+       opacity: 1;
+    }
   }
 }
 
 a {
-  color: #efefeb;
+  color: var(--bone);
   a:visited {
     text-decoration: none;
-    color: #efefeb;
+    color: var(--bone);
   }
 }
 

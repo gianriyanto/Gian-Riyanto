@@ -71,7 +71,7 @@ export default {
     font-size: 43px;
     width: 390px;
     outline-color: #5b16d0;
-    background-color: #efefeb;
+    background-color: var(--bone);
   }
   .input-container{
     display: flex;
