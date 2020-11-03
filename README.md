@@ -1,4 +1,6 @@
 # Gian Riyanto's Personal Website
-personal-website-with-vue
 
-My personal website. Just a little project to experiment with VueJS and VueX.
+domain name: gianriyanto.com
+
+Designed and built by Gian Riyanto
+Built with VueJS, Vuex, and hosted with Netlify
