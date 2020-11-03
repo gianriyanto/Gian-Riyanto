@@ -25,7 +25,7 @@
 
 import PersonalLinks from "../components/PersonalLinks";
 import Introduction from "../components/Introduction";
-import Education from "../components/Education";
+import About from "../components/About";
 import Projects from "../components/Projects";
 import Experience from "../components/Experience";
 import Skills from "../components/Skills";
@@ -35,7 +35,7 @@ export default {
   components: {
     PersonalLinks,
     Introduction,
-    Education,
+    About,
     Projects,
     Experience,
     Skills,
@@ -43,7 +43,7 @@ export default {
   props: ['name'],
   data(){
     return {
-      tabs: ["Education", "Projects", "Experience", "Skills"],
+      tabs: ["About", "Projects", "Experience", "Skills"],
       selectedTab: "Introduction",
       inputtedName: this.name,
     }

@@ -38,11 +38,11 @@ export default {
 
   .resume, .linkedin, .github {
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 1;
     transition: 0.3s;
 
     &:hover{
-       opacity: 1;
+       opacity: 0.8;
     }
   }
 }
