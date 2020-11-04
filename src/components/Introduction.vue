@@ -4,7 +4,12 @@
           data-aos="fade-down"
           data-aos-duration="1200"
           data-aos-easing="ease-in-out">
-            Hey {{ inputtedName }},
+      Hey <span class="user"
+                data-aos="fade"
+                data-aos-duration="1800"
+                data-aos-easing="ease-in-out">
+            {{ inputtedName }}
+          </span>,
     </span>
     <span class="message"
           data-aos="fade-left"
@@ -46,6 +51,7 @@ export default {
   color: white;
   .greeting{
     line-height: 2;
+    font-size: 45px;
   }
   .message {
     line-height: 1.7;

@@ -7,8 +7,8 @@
     Say hello.
   </div>
   <div class="content"
-       data-aos="fade-left"
-       data-aos-duration="1000"
+       data-aos="fade"
+       data-aos-duration="2500"
        data-aos-easing="ease-in-out">
     <a href="mailto:li.griyanto@gmail.com">li.griyanto@gmail.com</a>
   </div>
@@ -60,8 +60,7 @@ export default {
   .sub-header{
     font-family: "Bw Modelica Light", serif;
     font-size: 17px;
-    color: white;
-    opacity: 0.7;
+    color: var(--bone);
     width: 500px;
     line-height: 1.5;
   }
