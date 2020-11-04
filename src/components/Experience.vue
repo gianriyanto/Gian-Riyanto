@@ -62,7 +62,7 @@ export default {
   width: 750px;
 
   .header {
-    font-family: "Bw Modelica Medium", serif;
+    font-family: "Bw Modelica Regular", serif;
     font-size: 20px;
     margin-bottom: 25px;
     color: var(--bone);
