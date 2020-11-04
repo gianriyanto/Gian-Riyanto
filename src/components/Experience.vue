@@ -59,7 +59,7 @@ export default {
   flex-direction: column;
   margin: auto;
   padding-top: 50px;
-  width: 750px;
+  width: 725px;
 
   .header {
     font-family: "Bw Modelica Regular", serif;

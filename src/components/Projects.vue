@@ -43,7 +43,6 @@
 
 export default {
   name: "Projects",
-  components: {},
   data() {
     return {
       selectedProject: '',
@@ -67,7 +66,7 @@ export default {
           name: "Analytics Dashboard",
           description: "Developed a responsive analytics dashboard for users to manage, monitor, and analyse data at a glance. Worked on the front-end development designing \n" +
               "the dashboard interface and implementing various widgets including charts, bars, cards, and tables",
-          tech: ["Vue", "Vuex", "Node.js", "Charts."]
+          tech: ["Vue", "Vuex", "Node.js", "Chart.js"]
         },
         {
           id: 3,
@@ -134,7 +133,7 @@ export default {
 
       .selected-project{
         font-family: "Bw Modelica Bold", serif;
-        color: #eed76c;
+        color: #fcdd56;
         font-size: 42px;
         margin-bottom: 10px;
         cursor: pointer;
@@ -170,10 +169,10 @@ export default {
           color: white;
           border: 1.6px solid white;
           opacity: 1;
-          border-radius: 15px;
-          font-size: 11px;
+          border-radius: 20px;
+          font-size: 12px;
           width: fit-content;
-          padding: 7px 14px 7px 14px;
+          padding: 7px 16px 7px 16px;
           margin-right: 12px;
         }
       }

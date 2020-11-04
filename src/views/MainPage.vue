@@ -156,11 +156,11 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: 450px;
+    width: 480px;
 
     .nav-tabs {
       font-family: "Bw Modelica Regular", serif;
-      font-size: 14px;
+      font-size: 15px;
       color: white;
       cursor: pointer;
 
