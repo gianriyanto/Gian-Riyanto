@@ -64,9 +64,9 @@ export default {
   .header {
     font-family: "Bw Modelica Regular", serif;
     font-size: 20px;
-    margin-bottom: 25px;
     color: var(--bone);
     opacity: 0.7;
+    margin-bottom: 30px;
   }
 
   .experience-items {

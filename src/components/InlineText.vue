@@ -70,7 +70,7 @@ export default {
   .input-editing{
     font-family: "Bw Modelica Bold", serif;
     color: darkgrey;
-    font-size: 43px;
+    font-size: 55px;
     width: 390px;
     border: transparent;
     outline: transparent;

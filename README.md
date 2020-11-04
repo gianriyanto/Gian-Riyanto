@@ -1,4 +1,4 @@
-# gian-riyanto-portfolio
+# Gian Riyanto's personal Website
 
 ## Project setup
 ```
