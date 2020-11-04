@@ -50,9 +50,10 @@ export default {
     font-family: "Bw Modelica Bold", serif;
     font-size: 30px;
     padding-bottom: 20px;
+    opacity: 0.7;
   }
   .content{
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.8;
     padding-bottom: 20px;
   }

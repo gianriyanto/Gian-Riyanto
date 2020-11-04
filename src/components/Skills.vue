@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#Skills {
+#Skills{
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -69,30 +69,32 @@ export default {
   .header{
     font-size: 30px;
     margin-bottom: 20px;
+    padding-left: 5px;
   }
 
-  .skills-wrapper {
+  .skills-wrapper{
     display: flex;
     flex-direction: column;
 
     .sub-header{
-      font-family: "Bw Modelica Hairline", serif;
-      font-size: 13px;
-      margin-bottom: 7px;
+      font-family: "Bw Modelica Light", serif;
+      font-size: 14px;
+      padding-left: 6px;
+      margin-bottom: 10px;
     }
 
     .skill-items{
       display: flex;
       flex-direction: row;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
 
       .item{
         border: 1.6px solid white;
         opacity: 1;
-        border-radius: 15px;
-        font-size: 10px;
+        border-radius: 17px;
+        font-size: 13px;
         width: fit-content;
-        padding: 7px 15px 7px 15px;
+        padding: 7px 17px 7px 17px;
         margin-right: 12px;
 
         &:hover{
@@ -101,11 +103,8 @@ export default {
           box-shadow: 0 0 10px 2px #5b52ae;
         }
       }
-
     }
-
   }
-
 }
 
 </style>
