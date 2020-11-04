@@ -43,7 +43,7 @@ export default {
   padding-top: 50px;
   margin: auto;
   color: white;
-  width: 550px;
+  width: 600px;
   font-family: "Bw Modelica Regular", serif;
 
   .header{
@@ -52,7 +52,7 @@ export default {
     padding-bottom: 20px;
   }
   .content{
-    font-size: 15px;
+    font-size: 17px;
     line-height: 2;
     padding-bottom: 20px;
   }

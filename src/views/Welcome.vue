@@ -2,16 +2,28 @@
   <div class="content-wrapper">
     <div id="welcome">
       <div class="container">
-        <span class="message" data-aos="fade-down" data-aos-duration="2000" data-aos-easing="ease-in-sine">
+        <span class="message"
+              data-aos="fade-down"
+              data-aos-duration="1800"
+              data-aos-easing="ease-in-out">
           Hello, I'm
-          <span class="name" data-aos="fade-down" data-aos-duration="2500" data-aos-easing="ease-in-sine">
+          <span class="name"
+                data-aos="fade-down"
+                data-aos-duration="2500"
+                data-aos-easing="ease-in-out">
             Gian.
           </span>
         </span>
-        <span class="message" data-aos="fade" data-aos-duration="2500" data-aos-easing="ease-in-sine">
+        <span class="message"
+              data-aos="fade"
+              data-aos-duration="2700"
+              data-aos-easing="ease-in-out">
           Nice to meet you,
         </span>
-        <inline-text v-bind:nameData="name" data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-in-sine"/>
+        <inline-text v-bind:nameData="name"
+                     data-aos="fade-up"
+                     data-aos-duration="1800"
+                     data-aos-easing="ease-in-out"/>
       </div>
     </div>
     <MainPage v-bind:name="name.nameInput.slice(0, -1)"/>

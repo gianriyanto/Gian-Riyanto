@@ -10,13 +10,14 @@
        data-aos="fade-left"
        data-aos-duration="1000"
        data-aos-easing="ease-in-out">
-    <a class="mailtoui" href="mailto:li.griyanto@gmail.com">li.griyanto@gmail.com</a>
+    <a href="mailto:li.griyanto@gmail.com">li.griyanto@gmail.com</a>
   </div>
   <div class="sub-header"
        data-aos="fade"
        data-aos-duration="3000"
        data-aos-easing="ease-in-out">
-    I'm one inbox away, whether you have a question or just wanna say hi, I'm always up for a chat!
+    Let's keep in touch {{ inputtedName }}! <br/>
+    I'm one inbox away, whether you have a question or just wanna say hi, I'm always up for a chat.
   </div>
 </div>
 </template>
@@ -25,11 +26,18 @@
 
 export default {
   name: "Contact",
+  props: ['name'],
   data() {
     return {
-      email: 'li.griyanto@gmail.com'
+      email: 'li.griyanto@gmail.com',
+      inputtedName: this.name,
     }
-  }
+  },
+  watch: {
+    name: function () {
+      this.inputtedName= this.name
+    }
+  },
 }
 </script>
 
@@ -51,10 +59,10 @@ export default {
 
   .sub-header{
     font-family: "Bw Modelica Light", serif;
-    font-size: 15px;
+    font-size: 17px;
     color: white;
     opacity: 0.7;
-    width: 450px;
+    width: 500px;
     line-height: 1.5;
   }
 
