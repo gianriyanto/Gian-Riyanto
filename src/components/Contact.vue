@@ -10,7 +10,7 @@
        data-aos="fade-left"
        data-aos-duration="1000"
        data-aos-easing="ease-in-out">
-    li.griyanto@gmail.com
+    <a class="mailtoui" href="mailto:li.griyanto@gmail.com">li.griyanto@gmail.com</a>
   </div>
   <div class="sub-header"
        data-aos="fade"
@@ -22,8 +22,14 @@
 </template>
 
 <script>
+
 export default {
-  name: "Contact"
+  name: "Contact",
+  data() {
+    return {
+      email: 'li.griyanto@gmail.com'
+    }
+  }
 }
 </script>
 
@@ -39,8 +45,8 @@ export default {
 
   .header{
     color: white;
-    font-size: 75px;
-    margin-bottom: 20px;
+    font-size: 85px;
+    margin-bottom: 15px;
   }
 
   .sub-header{
@@ -54,8 +60,22 @@ export default {
 
   .content{
     color: #f5de75;
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 20px;
+
+    &:hover {
+      opacity: 0.7;
+      transition: 0.3s;
+    }
+  }
+
+  a {
+    color: #f5de75;
+    text-decoration: none;
+    a:visited {
+      text-decoration: none;
+      color: #f5de75;
+    }
   }
 
 }
