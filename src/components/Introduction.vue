@@ -39,8 +39,8 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 660px;
-  font-size: 30px;
+  width: 600px;
+  font-size: 27px;
   font-family: "Bw Modelica Bold", serif;
   color: white;
   .greeting{

@@ -43,16 +43,16 @@ export default {
   padding-top: 50px;
   margin: auto;
   color: white;
-  width: 595px;
+  width: 540px;
   font-family: "Bw Modelica Regular", serif;
 
   .header{
     font-family: "Bw Modelica Bold", serif;
-    font-size: 40px;
+    font-size: 30px;
     padding-bottom: 20px;
   }
   .content{
-    font-size: 15px;
+    font-size: 13px;
     line-height: 1.8;
     padding-bottom: 20px;
   }
@@ -63,12 +63,13 @@ export default {
   display: inline-block;
 
   .skill {
+    font-family: "Bw Modelica Bold", serif;
     border: 1.6px solid white;
     opacity: 1;
     border-radius: 15px;
-    font-size: 12px;
+    font-size: 11px;
     width: fit-content;
-    padding: 6px 15px 6px 15px;
+    padding: 6px 13px 6px 13px;
     margin-right: 12px;
   }
 }

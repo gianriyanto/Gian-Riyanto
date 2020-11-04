@@ -41,11 +41,11 @@ export default {
         },
         {
           skillType: "Data",
-          skillItems: ['MongoDB', 'SQL', 'NoSQL', 'Airflow']
+          skillItems: ['MongoDB', 'SQL', 'NoSQL', 'Airflow', 'Pandas', 'NumPy', 'Scikit-learn']
         },
         {
           skillType: "Tools",
-          skillItems: ['Git', 'Confluence', 'Trello', 'JIRA', 'Netlify']
+          skillItems: ['Git', 'Netlify', 'Confluence', 'Trello', 'JIRA', 'Jupyter Notebook']
         },
         {
           skillType: "Knowledge",
@@ -62,12 +62,13 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
+  padding-top: 30px;
   font-family: "Bw Modelica Bold", serif;
   color: white;
 
   .header{
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .skills-wrapper {
@@ -75,9 +76,9 @@ export default {
     flex-direction: column;
 
     .sub-header{
-      font-family: "Bw Modelica Bold", serif;
+      font-family: "Bw Modelica Hairline", serif;
       font-size: 13px;
-      margin-bottom: 10px;
+      margin-bottom: 7px;
     }
 
     .skill-items{
@@ -89,7 +90,7 @@ export default {
         border: 1.6px solid white;
         opacity: 1;
         border-radius: 15px;
-        font-size: 12px;
+        font-size: 10px;
         width: fit-content;
         padding: 7px 15px 7px 15px;
         margin-right: 12px;
