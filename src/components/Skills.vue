@@ -1,22 +1,110 @@
 <template>
   <div id="Skills">
-    Skills section not found: This section is a work in progress
+    <span class="header"
+          data-aos="fade-down"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out">
+      Skills.
+    </span>
+    <span v-for="skill in skills" :key="skill" class="skills-wrapper">
+      <span class="sub-header"
+            data-aos="fade"
+            data-aos-duration="2000"
+            data-aos-easing="ease-in-out">
+        {{ skill.skillType }}
+      </span>
+      <span class="skill-items"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out">
+        <span v-for="item in skill.skillItems" class="item" :key="item">
+          {{ item }}
+        </span>
+      </span>
+    </span>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Skills"
+  name: "Skills",
+  data() {
+    return {
+      skills: [
+        {
+          skillType: "Web",
+          skillItems: ['React', 'Vue', 'Vuex', 'Node', 'HTML', '(S)CSS', 'Node.js', 'Express']
+        },
+        {
+          skillType: "Languages",
+          skillItems: ['JavaScript', 'Python', 'Java']
+        },
+        {
+          skillType: "Data",
+          skillItems: ['MongoDB', 'SQL', 'NoSQL', 'Airflow']
+        },
+        {
+          skillType: "Tools",
+          skillItems: ['Git', 'Confluence', 'Trello', 'JIRA', 'Netlify']
+        },
+        {
+          skillType: "Knowledge",
+          skillItems: ['UI/UX Design', 'Agile/Scrum', 'Technology Consulting', 'Data Analytics', 'Machine Learning']
+        }
+      ]
+    }
+  }
 }
 </script>
 
-<style scoped>
-#Skills{
+<style lang="scss" scoped>
+#Skills {
   display: flex;
   flex-direction: column;
   margin: auto;
-  font-family: "Bw Modelica Bold";
+  font-family: "Bw Modelica Bold", serif;
   color: white;
-  font-size: 25px;
+
+  .header{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .skills-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .sub-header{
+      font-family: "Bw Modelica Bold", serif;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .skill-items{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+
+      .item{
+        border: 1.6px solid white;
+        opacity: 1;
+        border-radius: 15px;
+        font-size: 12px;
+        width: fit-content;
+        padding: 7px 15px 7px 15px;
+        margin-right: 12px;
+
+        &:hover{
+          opacity: 0.7;
+          transition: opacity 0.2s;
+          box-shadow: 0 0 10px 2px #5b52ae;
+        }
+      }
+
+    }
+
+  }
+
 }
+
 </style>

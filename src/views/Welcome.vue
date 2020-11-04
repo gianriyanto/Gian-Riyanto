@@ -47,8 +47,10 @@ export default {
   display: flex;
   flex-direction: column;
   position: fixed;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   width: 100%;
+  min-width: 100vw;
   background-color: var(--bone);
 }
 .container {

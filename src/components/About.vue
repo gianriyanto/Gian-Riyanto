@@ -40,10 +40,10 @@ export default {
 #About{
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
+  padding-top: 50px;
   margin: auto;
   color: white;
-  width: 580px;
+  width: 595px;
   font-family: "Bw Modelica Regular", serif;
 
   .header{

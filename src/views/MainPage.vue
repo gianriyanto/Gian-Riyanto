@@ -118,8 +118,10 @@ export default {
   flex-direction: column;
   position: sticky;
   margin-top: 100vh;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   width: 100%;
+  min-width: 100vw;
   z-index: 2;
   background-image: var(--gradient);
   box-shadow: 10px 0 20px 2px #9b9b9b;
