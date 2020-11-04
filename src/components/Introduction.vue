@@ -10,8 +10,8 @@
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out">
-            I am a software engineering student on the lookout for new experiences to learn and make meaningful contributions.
-            I love delightful products, thoughtful user-experiences, and creative solutions.
+            I am a software engineering student on the lookout for new learning experiences as a chance to make meaningful contributions.
+            I love value-adding products, thoughtful user-experiences, and creative solutions that empower and delight people.
     </span>
   </div>
 </template>
@@ -39,7 +39,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 620px;
+  width: 660px;
   font-size: 30px;
   font-family: "Bw Modelica Bold", serif;
   color: white;
