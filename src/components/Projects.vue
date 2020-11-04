@@ -89,7 +89,7 @@ export default {
       font-family: "Bw Modelica Bold", serif;
       color: white;
       font-size: 45px;
-      margin-bottom: 27px;
+      margin-bottom: 25px;
       cursor: pointer;
 
       &:hover {

@@ -67,7 +67,7 @@ export default {
   color: white;
 
   .header{
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 20px;
     padding-left: 5px;
   }

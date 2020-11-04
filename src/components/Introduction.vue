@@ -39,15 +39,16 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 600px;
-  font-size: 27px;
+  padding-top: 40px;
+  width: 700px;
+  font-size: 35px;
   font-family: "Bw Modelica Bold", serif;
   color: white;
   .greeting{
     line-height: 2;
   }
   .message {
-    line-height: 1.5;
+    line-height: 1.7;
   }
 }
 </style>

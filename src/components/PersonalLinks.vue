@@ -3,7 +3,9 @@
        data-aos="fade"
        data-aos-duration="2200"
        data-aos-easing="ease-in-out">
-    <a class="resume" :href="`${publicPath}gianriyanto.pdf`"> <font-awesome-icon class="download-resume" :icon="['fas', 'file-download']"/> </a>
+    <a class="resume" :href="`${publicPath}gianriyanto.pdf`">
+      <font-awesome-icon class="download-resume" :icon="['fas', 'file-download']"></font-awesome-icon>
+    </a>
     <font-awesome-icon class="linkedin" :icon="['fab', 'linkedin']" v-on:click="goToSite('https://www.linkedin.com/in/riyantogian/')"/>
     <font-awesome-icon class="github" :icon="['fab', 'github']" v-on:click="goToSite('https://www.linkedin.com/in/riyantogian/')"/>
   </div>
@@ -32,20 +34,22 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 210px;
+  height: 260px;
   position: absolute;
   bottom: 15px;
   left: 50px;
   color: var(--bone);
-  font-size: 2em;
+  font-size: 2.3em;
 
   .resume, .linkedin, .github {
     cursor: pointer;
     opacity: 1;
     transition: 0.3s;
+    position: relative;
 
     &:hover{
        opacity: 0.8;
+      color: #ffe539;
     }
   }
 }

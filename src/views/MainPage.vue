@@ -22,7 +22,8 @@
       <button class="contact"
               data-aos="fade-down"
               data-aos-duration="1200"
-              data-aos-easing="ease-in-out">
+              data-aos-easing="ease-in-out"
+              @click="selectedTab = 'Contact';">
         <span class="contact-label"> Get in Touch </span>
       </button>
     </div>
@@ -46,6 +47,7 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Experience from "../components/Experience";
 import Skills from "../components/Skills";
+import Contact from "../components/Contact";
 
 export default {
   name: "MainPage",
@@ -56,6 +58,7 @@ export default {
     Projects,
     Experience,
     Skills,
+    Contact
   },
   props: ['name'],
   data(){
@@ -107,8 +110,9 @@ export default {
     font-size: 27px;
     line-height: 1.2;
     &:hover{
-      opacity: 0.4;
+      opacity: 0.8;
       transition: opacity 0.5s;
+      color: #fffa58;
     }
   }
 }
