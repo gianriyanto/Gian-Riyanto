@@ -79,7 +79,7 @@ export default {
           name: "Supervised Learning Project",
           description: "Implemented a machine learning classification algorithm to predict target values in a dataset. Iteratively evaluated and optimised the data pipeline to improve \n" +
               "efficiency, accuracy and performance. I employed a range of data mining, exploration, and machine learning practices to optimally solve the data analytics problem",
-          tech: ["Python", "Scikit-learn", "Jupyter", "PyCharm", "Pandas", "NumPy", "Seaborn"]
+          tech: ["Python", "Scikit-learn", "PyCharm", "Pandas", "NumPy", "Seaborn"]
         },
         {
           id: 5,
