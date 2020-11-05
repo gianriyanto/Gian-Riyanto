@@ -70,7 +70,7 @@ export default {
   flex-direction: column;
   margin: auto;
   line-height: 1.4;
-  font-size: 55px;
+  font-size: 56px;
   width: fit-content;
 
   .message {

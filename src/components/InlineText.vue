@@ -70,7 +70,7 @@ export default {
   .input-editing{
     font-family: "Bw Modelica Bold", serif;
     color: darkgrey;
-    font-size: 55px;
+    font-size: 56px;
     width: 390px;
     border: transparent;
     outline: transparent;
@@ -83,7 +83,7 @@ export default {
   .button{
     font-family: "Bw Modelica Bold", serif;
     background-color: transparent;
-    font-size: 14px;
+    font-size: 15px;
     text-decoration: none;
     margin: auto 0 auto 20px;
     padding: 9px 20px 9px 20px;
@@ -91,8 +91,13 @@ export default {
     border-radius: 30px;
     outline: none;
     cursor: pointer;
-    transition: all 0.35s;
     z-index: 2;
+    transition: all .35s ease-in-out;
+
+    &:hover {
+      opacity: 0.5;
+      transition: all 0.5s;
+    }
   }
   .input-has-value-style{
     font-family: "Bw Modelica Bold", serif;

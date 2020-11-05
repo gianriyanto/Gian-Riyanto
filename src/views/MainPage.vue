@@ -100,7 +100,7 @@ export default {
 
     &:hover{
       opacity: 0.8;
-      transition: color 0.5s;
+      transition: all 0.5s;
       border: 2px solid #e2c84b;
       transform: scale(1.1);
     }
