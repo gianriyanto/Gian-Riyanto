@@ -14,26 +14,30 @@
            :key="experience"
            class="experience"
            @click="selectExperience(experience)">
-        <span :class="labelStyle(experience)"
-              @click="selectExperience()">
+        <span :class="labelStyle(experience)">
           {{ experience.position }}
         </span>
-        <span v-if="selectedExperience.position === experience.position"
-              class="experience-detail"
-              data-aos="fade"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out">
-          <span class="experience-company">{{ experience.company }} </span> <span class="experience-period"> {{ experience.period }} </span>
-        </span>
-        <span v-if="selectedExperience.position === experience.position"
-              class="description-wrapper"
-              data-aos="fade-left"
-              data-aos-duration="1300"
-              data-aos-easing="ease-in-out">
-            <ul v-for="description in experience.description" class="description" :key="description">
-              <li> {{ description }} </li>
-            </ul>
+        <span v-if="selectExperience">
+          <span v-if="selectedExperience.position === experience.position"
+                class="experience-detail"
+                data-aos="fade"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out">
+            <span class="experience-company">{{ experience.company }} </span> <span class="experience-period"> {{ experience.period }} </span>
           </span>
+          <span v-if="selectedExperience.position === experience.position"
+                class="description-wrapper"
+                data-aos="fade-left"
+                data-aos-duration="1300"
+                data-aos-easing="ease-in-out">
+              <ul v-for="description in experience.description" class="description" :key="description">
+                <li> {{ description }} </li>
+              </ul>
+          </span>
+        </span>
+        <span v-else-if="!selectExperience">
+          <!-- shows nothing when no project is selected -->
+        </span>
       </div>
     </div>
   </div>
@@ -114,7 +118,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 100px 0 0 40px;
+  padding: 120px 0 0 50px;
   width: 728px;
 
   .header {
@@ -124,7 +128,6 @@ export default {
     opacity: 0.7;
     margin-bottom: 30px;
   }
-
   .experience-items {
     display: flex;
     flex-direction: column;
@@ -140,15 +143,15 @@ export default {
       .selected-experience {
         color: #fcdd56;
         cursor: pointer;
-        margin-bottom: 10px;
       }
 
-      .not-selected-experience {
+        .not-selected-experience {
         color: white;
         cursor: pointer;
+        transition: all .2s ease-in-out;
 
         &:hover {
-          color: #efeb6d;
+          color: #eacd50;
           transform: translateX(30px);
           transition: ease-out 0.4s;
         }
@@ -170,7 +173,7 @@ export default {
       .description-wrapper{
         display: flex;
         flex-direction: column;
-        line-height: 1.9;
+        line-height: 2;
 
         .description {
           font-family: "Bw Modelica Regular", serif;

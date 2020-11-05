@@ -32,7 +32,7 @@ export default {
   },
   watch: {
     name: function () {
-      this.inputtedName= this.name
+      this.inputtedName = this.name
     }
   },
 }
@@ -45,16 +45,14 @@ export default {
   flex-direction: column;
   margin: auto;
   padding: 40px 0 0 15px;
-  width: 760px;
-  font-size: 35px;
+  width: 675px;
+  font-size: 33px;
   font-family: "Bw Modelica Bold", serif;
   color: white;
+  line-height: 1.7;
+
   .greeting{
-    line-height: 2;
-    font-size: 37px;
-  }
-  .message {
-    line-height: 1.7;
+    margin-bottom: 10px;
   }
 }
 </style>

@@ -43,10 +43,10 @@ export default {
   justify-content: space-evenly;
   height: 300px;
   position: absolute;
-  bottom: 15px;
+  bottom: 0;
   left: 50px;
   color: var(--bone);
-  font-size: 2.4em;
+  font-size: 2.3em;
 
   .resume-container {
     display: flex;

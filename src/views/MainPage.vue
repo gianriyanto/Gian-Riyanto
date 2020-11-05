@@ -63,6 +63,7 @@ export default {
   props: ['name'],
   data(){
     return {
+      header: "myName",
       tabs: ["About", "Projects", "Experience", "Skills"],
       selectedTab: "Introduction",
       inputtedName: this.name,
@@ -83,7 +84,7 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   top: 27px;
   left: 35px;
   width: 280px;
@@ -116,18 +117,17 @@ export default {
     font-family: "Bw Modelica Light", serif;
     color: white;
     font-size: 30px;
-    line-height: 1.2;
     transition: all .3s ease-in-out;
+    padding-left: 20px;
 
     .last-name {
       font-family: "Bw Modelica Regular", serif;
     }
 
     &:hover{
-      opacity: 0.4;
+      opacity: 0.7;
       transition: opacity 0.5s;
       color: #faf441;
-      transform: scale(1.1);
     }
   }
 }

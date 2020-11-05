@@ -62,12 +62,12 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 55px 0 0 40px;
+  padding: 70px 0 0 40px;
   font-family: "Bw Modelica Bold", serif;
   color: white;
 
   .header{
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 20px;
     padding-left: 5px;
   }
@@ -77,10 +77,11 @@ export default {
     flex-direction: column;
 
     .sub-header{
-      font-family: "Bw Modelica Light", serif;
+      font-family: "Bw Modelica Thin", serif;
       font-size: 14px;
       padding-left: 6px;
       margin-bottom: 10px;
+      opacity: 0.7;
     }
 
     .skill-items{

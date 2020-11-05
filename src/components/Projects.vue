@@ -15,27 +15,31 @@
               class="project"
               @click="selectProject(project)">
           <span :class="labelStyle(project)"
-                @click="selectProject()"
                 data-aos="fade"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out">
             {{ project.name }}
           </span>
-          <span v-if="selectedProject.name === project.name"
-                class="project-details"
-                data-aos="fade-left"
-                data-aos-duration="1300"
-                data-aos-easing="ease-in-out">
-            {{ project.description }}
-          </span>
-          <span v-if="selectedProject.name === project.name"
-                class="tech-wrapper"
-                data-aos="fade"
-                data-aos-duration="1500"
-                data-aos-easing="ease-in-out">
-            <span v-for="tech in project.tech" class="tech" :key="tech">
-              {{ tech }}
+          <span v-if="selectedProject" class="project-content">
+            <span v-if="selectedProject.name === project.name"
+                  class="project-details"
+                  data-aos="fade-left"
+                  data-aos-duration="1300"
+                  data-aos-easing="ease-in-out">
+              {{ project.description }}
             </span>
+            <span v-if="selectedProject.name === project.name"
+                  class="tech-wrapper"
+                  data-aos="fade"
+                  data-aos-duration="1500"
+                  data-aos-easing="ease-in-out">
+              <span v-for="tech in project.tech" class="tech" :key="tech">
+                {{ tech }}
+              </span>
+            </span>
+          </span>
+          <span v-else-if="!selectedProject">
+            <!-- shows nothing when no project is selected -->
           </span>
         </div>
     </div>
@@ -53,15 +57,15 @@ export default {
         {
           id: 0,
           name: "This Personal Website",
-          description: "As you can see there isn't too much to fill in this portfolio. In all honesty, this project is just another reason for me to play around with VueJS and try out different UI/UX designs.",
+          description: "As you can see there isn't too much to fill in this portfolio. In all honesty, building this personal website is just another reason for me to play around with Vue.js and explore different UI/UX designs.",
           tech: ["Vue", "Vuex", "Node.js", "Netlify"]
         },
         {
           id: 1,
           name: "I OWE YOU",
-          description: "Built and deployed a favours and debt tracking web application using MERN technology stack. " +
-              "Worked primarily as a front-end developer - designed, developed and implemented the client-side application for which I received an honourable mention from the professor for its exceptional UI/UX design.\n" +
-              "Here I aim to practice writing clean, maintainable, and well-designed code as well as project management practices to ensure efficient delivery of the product.",
+          description: "Built and deployed a favours-tracking web application with a MERN stack. " +
+              "Worked primarily as a front-end developer - designed, developed and implemented the client-side application for which the product received an honourable mention for its UI/UX design.\n" +
+              "Here I learnt developing clean, maintainable, and well-designed code, as well as practiced effective product management skills to ensure optimal delivery of the web app.",
           tech: ["React", "Node.js", "MongoDB", "Express"]
         },
         {
@@ -106,16 +110,17 @@ export default {
     labelStyle(project) {
       return [(this.selectedProject === project) ? 'selected-project' : 'not-selected-project']
     }
-  },
+  }
 }
 </script>
 
 <style lang="scss" scoped>
+
 #Projects{
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 90px 0 0 30px;
+  padding: 110px 0 0 30px;
   width: 610px;
 
   .header {
@@ -152,28 +157,34 @@ export default {
           transition: ease-out 0.4s;
         }
       }
-      .project-details{
-        font-family: "Bw Modelica Thin", serif;
-        color: white;
-        font-size: 17px;
-        line-height: 1.7;
-        height: fit-content;
-      }
-      .tech-wrapper {
-        flex-direction: row;
-        display: inline-block;
-        margin-bottom: 20px;
+      .project-content {
+        display: flex;
+        flex-direction: column;
 
-        .tech {
-          font-family: "Bw Modelica Bold", serif;
+        .project-details {
+          font-family: "Bw Modelica Thin", serif;
           color: white;
-          border: 1.6px solid white;
-          opacity: 1;
-          border-radius: 20px;
-          font-size: 12px;
-          width: fit-content;
-          padding: 7px 16px 7px 16px;
-          margin-right: 12px;
+          font-size: 16px;
+          line-height: 1.7;
+          height: fit-content;
+        }
+
+        .tech-wrapper {
+          flex-direction: row;
+          display: inline-block;
+          margin-bottom: 20px;
+
+          .tech {
+            font-family: "Bw Modelica Regular", serif;
+            color: white;
+            border: 2px solid white;
+            opacity: 1;
+            border-radius: 20px;
+            font-size: 12px;
+            width: fit-content;
+            padding: 7px 16px 7px 16px;
+            margin-right: 12px;
+          }
         }
       }
     }
