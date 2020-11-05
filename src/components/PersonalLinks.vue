@@ -4,7 +4,7 @@
        data-aos-duration="2200"
        data-aos-easing="ease-in-out">
     <span class="resume-container">
-      <a class="resume" :href="`${publicPath}gianriyanto.pdf`"> <font-awesome-icon class="download-resume" :icon="['fas', 'file-download']"></font-awesome-icon></a>
+      <a class="resume" :href="`${publicPath}gianriyanto.pdf`" target="_blank"> <font-awesome-icon class="download-resume" :icon="['fas', 'file-download']"></font-awesome-icon></a>
       <span class="show-label"> Resume </span>
     </span>
     <span class="linkedin-container">
