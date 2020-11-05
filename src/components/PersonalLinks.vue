@@ -5,15 +5,15 @@
        data-aos-easing="ease-in-out">
     <span class="link-container">
       <a class="resume" :href="`${publicPath}gianriyanto.pdf`"> <font-awesome-icon class="download-resume" :icon="['fas', 'file-download']"></font-awesome-icon></a>
-      <span class="show-label"> Resume </span>
+      <!-- <span class="show-label"> Resume </span> -->
     </span>
     <span class="link-container">
       <font-awesome-icon class="linkedin" :icon="['fab', 'linkedin']" v-on:click="goToSite('https://www.linkedin.com/in/riyantogian/')"></font-awesome-icon>
-      <span class="show-label"> LinkedIn </span>
+      <!-- <span class="show-label"> LinkedIn </span> -->
     </span>
     <span class="link-container">
       <font-awesome-icon class="github" :icon="['fab', 'github']" v-on:click="goToSite('https://www.linkedin.com/in/riyantogian/')"/>
-      <span class="show-label"> GitHub </span>
+      <!-- <span class="show-label"> GitHub </span> -->
     </span>
   </div>
 </template>
