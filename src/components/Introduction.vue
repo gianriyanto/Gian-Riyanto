@@ -46,7 +46,7 @@ export default {
   margin: auto;
   padding: 40px 0 0 15px;
   width: 760px;
-  font-size: 37px;
+  font-size: 35px;
   font-family: "Bw Modelica Bold", serif;
   color: white;
   .greeting{

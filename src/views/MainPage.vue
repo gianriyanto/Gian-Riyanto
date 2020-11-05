@@ -96,17 +96,20 @@ export default {
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    transition: all .3s ease-in-out;
 
     &:hover{
       opacity: 0.8;
       transition: color 0.5s;
-      border: 2px solid #faf441;
+      border: 2px solid #e2c84b;
+      transform: scale(1.1);
     }
 
     .my-portrait{
       margin: auto;
       width: 70px;
       height: 70px;
+      transition: all .3s ease-in-out;
     }
   }
   .my-name{
@@ -114,6 +117,7 @@ export default {
     color: white;
     font-size: 30px;
     line-height: 1.2;
+    transition: all .3s ease-in-out;
 
     .last-name {
       font-family: "Bw Modelica Regular", serif;
@@ -123,6 +127,7 @@ export default {
       opacity: 0.4;
       transition: opacity 0.5s;
       color: #faf441;
+      transform: scale(1.1);
     }
   }
 }
@@ -151,7 +156,7 @@ export default {
   font-family: "Bw Modelica Light", serif;
   font-size: 13px;
   line-height: 1.8;
-  color: #c8c7c7;
+  color: #f1d85b;
 }
 
 #navigation {

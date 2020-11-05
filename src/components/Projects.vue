@@ -23,15 +23,15 @@
           </span>
           <span v-if="selectedProject.name === project.name"
                 class="project-details"
-                data-aos="fade-down"
-                data-aos-duration="1100"
+                data-aos="fade-left"
+                data-aos-duration="1300"
                 data-aos-easing="ease-in-out">
             {{ project.description }}
           </span>
           <span v-if="selectedProject.name === project.name"
                 class="tech-wrapper"
-                data-aos="fade-up"
-                data-aos-duration="1100"
+                data-aos="fade"
+                data-aos-duration="1500"
                 data-aos-easing="ease-in-out">
             <span v-for="tech in project.tech" class="tech" :key="tech">
               {{ tech }}
@@ -81,7 +81,7 @@ export default {
           id: 4,
           name: "Supervised Learning Project",
           description: "Implemented a machine learning classification algorithm to predict target values in a dataset. Iteratively evaluated and optimised the data pipeline to improve \n" +
-              "efficiency, accuracy and performance. I employed a range of data mining, exploration, and machine learning practices to optimally solve the data analytics problem",
+              "efficiency, accuracy and performance. I employed a range of data mining, exploration, and machine learning practices to optimally solve the data analytics problem.",
           tech: ["Python", "Scikit-learn", "PyCharm", "Pandas", "NumPy", "Seaborn"]
         },
         {
@@ -115,8 +115,8 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 50px 0 0 30px;
-  width: 600px;
+  padding: 90px 0 0 30px;
+  width: 610px;
 
   .header {
     font-family: "Bw Modelica Regular", serif;
