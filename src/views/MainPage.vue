@@ -113,7 +113,7 @@ export default {
     }
   }
   .my-name{
-    font-family: "Bw Modelica Thin", serif;
+    font-family: "Bw Modelica Light", serif;
     color: white;
     font-size: 30px;
     line-height: 1.2;
