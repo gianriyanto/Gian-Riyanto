@@ -41,10 +41,10 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 300px;
+  height: 240px;
   position: absolute;
-  bottom: 0;
-  left: 50px;
+  bottom: 8px;
+  left: 40px;
   color: var(--bone);
   font-size: 2.3em;
 
@@ -73,7 +73,7 @@ export default {
     font-size: 15px;
     font-family: "Bw Modelica Regular", serif;
     visibility: hidden;
-    padding-left: 30px;
+    padding-left: 20px;
     opacity: 0;
     transition: all 0s, opacity 0.5s ease-in-out;
   }
