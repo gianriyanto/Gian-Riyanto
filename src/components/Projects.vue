@@ -158,7 +158,6 @@ export default {
         font-size: 17px;
         line-height: 1.7;
         height: fit-content;
-        margin-bottom: 20px;
       }
       .tech-wrapper {
         flex-direction: row;

@@ -6,7 +6,7 @@
          data-aos-duration="1200"
          data-aos-easing="ease-in-out">
       <span class="circle-border"> <img class="my-portrait" src="@/assets/myPortrait.png" alt=""/></span>
-      <span class="my-name"> Gian <strong> Riyanto </strong></span>
+      <span class="my-name"> Gian <span class="last-name"> Riyanto </span></span>
     </div>
     <div id="navigation">
       <div class="nav-container">
@@ -86,7 +86,7 @@ export default {
   justify-content: space-between;
   top: 27px;
   left: 35px;
-  width: 210px;
+  width: 280px;
   cursor: pointer;
   opacity: 1;
   transition: 0.3s;
@@ -97,6 +97,12 @@ export default {
     width: 70px;
     height: 70px;
 
+    &:hover{
+      opacity: 0.8;
+      transition: color 0.5s;
+      border: 2px solid #faf441;
+    }
+
     .my-portrait{
       margin: auto;
       width: 70px;
@@ -104,15 +110,19 @@ export default {
     }
   }
   .my-name{
-    padding-left: 16px;
-    font-family: "Bw Modelica Regular", serif;
+    font-family: "Bw Modelica Thin", serif;
     color: white;
-    font-size: 27px;
+    font-size: 30px;
     line-height: 1.2;
+
+    .last-name {
+      font-family: "Bw Modelica Regular", serif;
+    }
+
     &:hover{
-      opacity: 0.8;
+      opacity: 0.4;
       transition: opacity 0.5s;
-      color: #fffa58;
+      color: #faf441;
     }
   }
 }
@@ -148,7 +158,7 @@ export default {
   position: absolute;
   display: flex;
   flex-direction: row;
-  top: 30px;
+  top: 42px;
   right: 35px;
 
   .nav-container {

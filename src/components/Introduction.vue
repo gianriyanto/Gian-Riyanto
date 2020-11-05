@@ -44,14 +44,14 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding-top: 40px;
-  width: 715px;
-  font-size: 35px;
+  padding: 40px 0 0 15px;
+  width: 760px;
+  font-size: 37px;
   font-family: "Bw Modelica Bold", serif;
   color: white;
   .greeting{
     line-height: 2;
-    font-size: 45px;
+    font-size: 37px;
   }
   .message {
     line-height: 1.7;
