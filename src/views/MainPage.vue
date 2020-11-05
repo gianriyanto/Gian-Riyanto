@@ -152,10 +152,10 @@ export default {
   text-align: right;
   bottom: 26px;
   right: 40px;
-  font-family: "Bw Modelica Light", serif;
+  font-family: "Bw Modelica Hairline", serif;
   font-size: 13px;
   line-height: 1.8;
-  color: #f1d85b;
+  color: #d4d3cd;
 }
 
 #navigation {
