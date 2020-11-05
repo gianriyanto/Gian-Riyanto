@@ -62,7 +62,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding-top: 30px;
+  padding: 55px 0 0 40px;
   font-family: "Bw Modelica Bold", serif;
   color: white;
 
@@ -86,18 +86,21 @@ export default {
     .skill-items{
       display: flex;
       flex-direction: row;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
+      font-family: "Bw Modelica Regular", serif;
+      font-size: 13px;
 
       .item{
-        border: 1.6px solid white;
+        border: 2px solid white;
         opacity: 1;
         border-radius: 17px;
-        font-size: 13px;
         width: fit-content;
         padding: 7px 17px 7px 17px;
         margin-right: 12px;
 
         &:hover{
+          color: #efeb6d;
+          border: 1.9px solid #efeb6d;
           opacity: 0.7;
           transition: opacity 0.2s;
           box-shadow: 0 0 10px 2px #5b52ae;

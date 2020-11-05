@@ -10,16 +10,17 @@
          data-aos="fade-left"
          data-aos-duration="800"
          data-aos-easing="ease-in-out">
-        <span v-for="project in projects"
+        <div v-for="project in projects"
               :key="project"
               class="project"
               @click="selectProject(project)">
-          <span :class="titleStyle(project)"
+          <span :class="labelStyle(project)"
                 @click="selectProject()"
-                class="project-items"
                 data-aos="fade"
                 data-aos-duration="1000"
-                data-aos-easing="ease-in-out"> {{ project.name }} </span>
+                data-aos-easing="ease-in-out">
+            {{ project.name }}
+          </span>
           <span v-if="selectedProject.name === project.name"
                 class="project-details"
                 data-aos="fade-down"
@@ -32,9 +33,11 @@
                 data-aos="fade-up"
                 data-aos-duration="1100"
                 data-aos-easing="ease-in-out">
-            <span v-for="tech in project.tech" class="tech" :key="tech"> {{ tech }}</span>
+            <span v-for="tech in project.tech" class="tech" :key="tech">
+              {{ tech }}
+            </span>
           </span>
-        </span>
+        </div>
     </div>
   </div>
 </template>
@@ -100,7 +103,7 @@ export default {
         this.selectedProject = project;
       }
     },
-    titleStyle(project) {
+    labelStyle(project) {
       return [(this.selectedProject === project) ? 'selected-project' : 'not-selected-project']
     }
   },
@@ -112,8 +115,8 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding-top: 50px;
-  width: 648px;
+  padding: 50px 0 0 30px;
+  width: 600px;
 
   .header {
     font-family: "Bw Modelica Regular", serif;
@@ -130,18 +133,16 @@ export default {
       display: flex;
       flex-direction: column;
       margin-bottom: 23px;
+      font-family: "Bw Modelica Bold", serif;
+      font-size: 42px;
 
       .selected-project{
-        font-family: "Bw Modelica Bold", serif;
         color: #fcdd56;
-        font-size: 42px;
         margin-bottom: 10px;
         cursor: pointer;
       }
       .not-selected-project{
-        font-family: "Bw Modelica Bold", serif;
         color: white;
-        font-size: 42px;
         margin-bottom: 10px;
         cursor: pointer;
 

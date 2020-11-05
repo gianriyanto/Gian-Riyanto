@@ -10,9 +10,31 @@
          data-aos="fade-left"
          data-aos-duration="1000"
          data-aos-easing="ease-in-out">
-      <span v-for="job in experiences" :key="job" class="job">
-        {{ job.position }}
-      </span>
+      <div v-for="experience in experiences"
+           :key="experience"
+           class="experience"
+           @click="selectExperience(experience)">
+        <span :class="labelStyle(experience)"
+              @click="selectExperience()">
+          {{ experience.position }}
+        </span>
+        <span v-if="selectedExperience.position === experience.position"
+              class="experience-detail"
+              data-aos="fade-down"
+              data-aos-duration="900"
+              data-aos-easing="ease-in-out">
+          <span class="experience-company">{{ experience.company }} </span> <span class="experience-period"> {{ experience.period }} </span>
+        </span>
+        <span v-if="selectedExperience.position === experience.position"
+              class="description-wrapper"
+              data-aos="fade-up"
+              data-aos-duration="900"
+              data-aos-easing="ease-in-out">
+            <ul v-for="description in experience.description" class="description" :key="description">
+              <li> {{ description }} </li>
+            </ul>
+          </span>
+      </div>
     </div>
   </div>
 </template>
@@ -22,32 +44,66 @@ export default {
   name: "Experience",
   data() {
     return {
+      selectedExperience: '',
       experiences: [
         {
+          id: 0,
           position: "Big Data Engineer",
           company: "LinkAja",
-          responsibilities: "",
-          period: "Dec 2019 - Mar 2020"
+          period: "Dec 2019 - Mar 2020",
+          description: [
+            "Proposed and developed an automated data pipeline frameworks using Apache Airflow for improved efficiency and scalability.",
+            "Implemented Direct Acyclic Graphs to schedule and monitor workflows - replacing previously manual and multi-step process.",
+            "Implemented data infrastructure processes to monitor data quality, ensuring production data is accurate and available for key stakeholders and business processes.",
+          ],
         },
         {
+          id: 1,
           position: "SAP Junior Consultant",
-          company: "DDG",
-          responsibilities: "",
-          period: "Nov 2018 - Jun 2019"
+          company: "Daya Dimensi Global (HR Path)",
+          period: "Nov 2018 - Jun 2019",
+          description: [
+            "Configured SAP SuccessFactors projects based on the client's business process and requirements.",
+            "Gathered, analysed and transformed client needs, insights and problems into tailored system solutions.",
+            "Expressed HCM best practices and related technological implementation.",
+            "Planned, designed, and executed systems integration testing to ensure systems perform in accordance to agreed requirements and customer expectation.",
+          ],
         },
         {
+          id: 2,
           position: "Sales and Product Analyst",
-          company: "Eurosoil",
-          responsibilities: "",
-          period: "Jun 2019 - Aug 2019"
+          company: "EuroSoil",
+          period: "Jun 2019 - Aug 2019",
+          description: [
+            "Conducted and prepared product and customer research analysis for Southeast Asian market expansion.",
+            "Collaboratively delivered exceptional customer satisfaction through a well orchestrated end-to-end delivery of client Purchase Orders.",
+            "Participated in client sales meetings and delivered customer service duties throughout business delivery process.",
+          ],
         },
         {
+          id: 3,
           position: "Programming Teacher Assistant",
           company: "CodeCamp",
-          responsibilities: "",
-          period: "Nov 2018 - Nov 2018"
+          period: "Nov 2018 - Nov 2018",
+          description: [
+            "Reinforced lesson plans delivered by the head teacher by providing tailored support to students understanding programming concepts and skills",
+            "Communicated technical concepts to students in a way that is easy to understand and digest."
+          ],
         },
       ]
+    }
+  },
+  methods: {
+    selectExperience(experience) {
+      if (this.selectedExperience === experience) {
+        this.selectedExperience = '';
+      }
+      else {
+        this.selectedExperience = experience;
+      }
+    },
+    labelStyle(project) {
+      return [(this.selectedExperience === project) ? 'selected-experience' : 'not-selected-experience']
     }
   }
 }
@@ -58,8 +114,8 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding-top: 50px;
-  width: 725px;
+  padding: 50px 0 0 30px;
+  width: 728px;
 
   .header {
     font-family: "Bw Modelica Regular", serif;
@@ -73,19 +129,59 @@ export default {
     display: flex;
     flex-direction: column;
 
-    .job{
+    .experience{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 42px;
       font-family: "Bw Modelica Bold", serif;
       color: white;
       font-size: 45px;
-      margin-bottom: 33px;
-      cursor: pointer;
 
-      &:hover {
-        color: #efeb6d;
-        transform: translateX(30px);
-        transition: ease-out 0.4s;
+      .selected-experience {
+        color: #fcdd56;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+
+      .not-selected-experience {
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          color: #efeb6d;
+          transform: translateX(30px);
+          transition: ease-out 0.4s;
+        }
+      }
+
+      .experience-detail{
+        font-size: 19px;
+        margin-bottom: 10px;
+
+        .experience-company{
+          color: #fcdd56;
+          font-family: "Bw Modelica Bold", serif;
+        }
+        .experience-period{
+          font-family: "Bw Modelica Thin", serif;
+          font-size: 16px;
+        }
+      }
+      .description-wrapper{
+        display: flex;
+        flex-direction: column;
+        line-height: 1.9;
+
+        .description {
+          font-family: "Bw Modelica Regular", serif;
+          font-size: 14px;
+        }
       }
     }
+  }
+  ul, li {
+    margin: 0 0 0 -12px;
+    padding: 0 0 0 -10px;
   }
 }
 </style>
