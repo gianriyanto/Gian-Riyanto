@@ -127,7 +127,6 @@ export default {
     &:hover{
       opacity: 0.7;
       transition: opacity 0.5s;
-      color: #faf441;
     }
   }
 }
