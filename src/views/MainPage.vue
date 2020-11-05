@@ -93,16 +93,16 @@ export default {
   transition: 0.3s;
 
   .circle-border{
-    border: 1.9px solid white;
+    border: 2px solid white;
     border-radius: 50%;
     width: 70px;
     height: 70px;
-    transition: all .3s ease-in-out;
+    transition: all .25s ease-in-out;
 
     &:hover{
       opacity: 0.8;
       transition: all 0.5s;
-      border: 2px solid #e2c84b;
+      border: 2.5px solid #ffe258;
       transform: scale(1.1);
     }
 

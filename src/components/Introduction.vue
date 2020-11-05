@@ -44,9 +44,9 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 40px 0 0 15px;
-  width: 685px;
-  font-size: 31px;
+  padding: 60px 0 0 15px;
+  width: 790px;
+  font-size: 37px;
   font-family: "Bw Modelica Bold", serif;
   color: white;
   line-height: 1.7;

@@ -41,12 +41,12 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 240px;
+  height: 270px;
   position: absolute;
-  bottom: 8px;
-  left: 40px;
+  bottom: 10px;
+  left: 42px;
   color: var(--bone);
-  font-size: 2.3em;
+  font-size: 40px;
 
   .resume-container {
     display: flex;
@@ -70,10 +70,10 @@ export default {
   }
 
   .show-label {
-    font-size: 15px;
+    font-size: 17px;
     font-family: "Bw Modelica Regular", serif;
     visibility: hidden;
-    padding-left: 20px;
+    padding-left: 25px;
     opacity: 0;
     transition: all 0s, opacity 0.5s ease-in-out;
   }
@@ -85,15 +85,14 @@ export default {
     transition: all .2s ease-in-out;
 
     &:hover{
-      color: #cfc26a;
-      opacity: 0.8;
-      transform: scale(1.2);
+      opacity: 0.7;
+      transform: translateX(4px);
     }
 
     &:hover + .show-label{
       visibility: visible;
       opacity: 1;
-      color: white;
+      color: #eada6d;
       transform: scale(1.1);
     }
   }
