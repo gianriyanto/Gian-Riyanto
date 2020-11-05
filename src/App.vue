@@ -50,5 +50,4 @@ html, body {
   src: local("Bw Modelica Hairline"),
   url(./fonts/BwModelica/BwModelica-Hairline.otf) format("truetype");
 }
-
 </style>

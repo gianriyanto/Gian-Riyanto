@@ -8,8 +8,8 @@
                 data-aos="fade"
                 data-aos-duration="1800"
                 data-aos-easing="ease-in-out">
-            {{ inputtedName }}
-          </span>,
+            {{inputtedName}},
+          </span>
     </span>
     <span class="message"
           data-aos="fade-left"

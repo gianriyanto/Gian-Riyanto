@@ -35,6 +35,7 @@ import InlineText from "@/components/InlineText";
 import MainPage from "@/views/MainPage";
 
 export default {
+  title: 'Gian Riyanto',
   name: "Welcome",
   components: {
     MainPage,
