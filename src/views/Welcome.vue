@@ -104,7 +104,7 @@ export default {
       width: 311px;
       margin: auto;
       line-height: 1.4;
-      font-size: 35px;
+      font-size: 32px;
 
       .message {
         font-family: "Bw Modelica Bold", serif;

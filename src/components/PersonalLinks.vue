@@ -12,7 +12,7 @@
       <span class="show-label"> LinkedIn </span>
     </span>
     <span class="github-container">
-      <font-awesome-icon class="github" :icon="['fab', 'github']" v-on:click="goToSite('https://www.linkedin.com/in/riyantogian/')"/>
+      <font-awesome-icon class="github" :icon="['fab', 'github']" v-on:click="goToSite('https://github.com/gianriyanto')"/>
       <span class="show-label"> GitHub </span>
     </span>
   </div>
@@ -104,6 +104,12 @@ a {
   a:visited {
     text-decoration: none;
     color: var(--bone);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #links {
+    display: none;
   }
 }
 

@@ -55,4 +55,21 @@ export default {
     margin-bottom: 10px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .introduction{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 311px;
+    font-size: 17px;
+    font-family: "Bw Modelica Bold", serif;
+    color: white;
+    line-height: 1.7;
+
+    .greeting{
+      margin-bottom: 10px;
+    }
+  }
+}
 </style>

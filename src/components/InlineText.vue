@@ -115,10 +115,12 @@ export default {
 @media only screen and (max-width: 768px) {
   #InLineText{
 
+    height: 100px;
+
     .input-editing{
       font-family: "Bw Modelica Bold", serif;
       color: darkgrey;
-      font-size: 30px;
+      font-size: 32px;
       width: fit-content;
       border: transparent;
       outline: transparent;
@@ -130,15 +132,12 @@ export default {
       width: fit-content;
     }
     .button{
-      position: absolute;
-      bottom: 280px;
-      left: 14px;
-      width: 305px;
+      margin: 7px auto auto auto;
       font-family: "Bw Modelica Bold", serif;
       background-color: transparent;
       font-size: 13px;
       text-decoration: none;
-      padding: 11px 20px 11px 20px;
+      padding: 9px 30px 9px 30px;
       border: 2px solid black;
       border-radius: 30px;
       outline: none;
