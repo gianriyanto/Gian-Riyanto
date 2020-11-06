@@ -144,7 +144,7 @@ export default {
   .header {
     font-family: "Bw Modelica Regular", serif;
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: var(--bone);
     opacity: 0.7;
   }

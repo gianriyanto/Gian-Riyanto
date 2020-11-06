@@ -125,7 +125,7 @@ export default {
     font-size: 20px;
     color: var(--bone);
     opacity: 0.7;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .experience-items {
     display: flex;

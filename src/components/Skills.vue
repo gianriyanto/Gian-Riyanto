@@ -77,7 +77,7 @@ export default {
     flex-direction: column;
 
     .sub-header{
-      font-family: "Bw Modelica Thin", serif;
+      font-family: "Bw Modelica Light", serif;
       font-size: 14px;
       padding-left: 6px;
       margin-bottom: 10px;
