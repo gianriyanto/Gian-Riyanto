@@ -64,18 +64,17 @@ export default {
         {
           id: 1,
           position: "SAP Junior Consultant",
-          company: "Daya Dimensi Global (HR Path)",
+          company: "Daya Dimensi Global | HR Path",
           period: "Nov 2018 - Jun 2019",
           description: [
-            "Configured SAP SuccessFactors projects based on the client's business process and requirements.",
-            "Gathered, analysed and transformed client needs, insights and problems into tailored system solutions.",
-            "Expressed HCM best practices and related technological implementation.",
-            "Planned, designed, and executed systems integration testing to ensure systems perform in accordance to agreed requirements and customer expectation.",
+            "Configured SAP SuccessFactors cloud systems by uncovering user pain-points, problems, and business process.",
+            "Gathered, analysed and transformed client requirements into tailored solutions that based on Human Capital Management best practices.",
+            "Planned, designed, and executed system integration testing to ensure the the product satisfies client's expectation.",
           ],
         },
         {
           id: 2,
-          position: "Sales and Product Analyst",
+          position: "Product and Sales Analyst",
           company: "EuroSoil",
           period: "Jun 2019 - Aug 2019",
           description: [
@@ -88,7 +87,7 @@ export default {
           id: 3,
           position: "Programming Teacher Assistant",
           company: "CodeCamp",
-          period: "Nov 2018 - Nov 2018",
+          period: "Nov 2017 - Nov 2018",
           description: [
             "Reinforced lesson plans delivered by the head teacher by providing tailored support to students understanding programming concepts and skills",
             "Communicated technical concepts to students in a way that is easy to understand and digest."
@@ -118,7 +117,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 120px 0 0 50px;
+  padding: 100px 0 0 60px;
   width: 728px;
 
   .header {
@@ -135,30 +134,36 @@ export default {
     .experience{
       display: flex;
       flex-direction: column;
-      margin-bottom: 42px;
+      margin-bottom: 44px;
       font-family: "Bw Modelica Bold", serif;
       color: white;
-      font-size: 45px;
+      font-size: 54px;
 
       .selected-experience {
         color: #fcdd56;
         cursor: pointer;
-      }
-
-        .not-selected-experience {
-        color: white;
-        cursor: pointer;
-        transition: all .2s ease-in-out;
+        transition: all 0s, opacity 0.3s ease-in-out;
 
         &:hover {
-          color: #eacd50;
-          transform: translateX(30px);
-          transition: ease-out 0.4s;
+          opacity: 0.7;
+          transition: ease-out 0.2s;
         }
       }
 
+      .not-selected-experience {
+      color: white;
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        color: #eacd50;
+        transform: translateX(30px);
+        transition: ease-out 0.4s;
+      }
+      }
+
       .experience-detail{
-        font-size: 19px;
+        font-size: 20px;
         margin-bottom: 10px;
 
         .experience-company{
@@ -166,18 +171,17 @@ export default {
           font-family: "Bw Modelica Bold", serif;
         }
         .experience-period{
-          font-family: "Bw Modelica Thin", serif;
-          font-size: 16px;
+          font-family: "Bw Modelica Hairline", serif;
         }
       }
       .description-wrapper{
         display: flex;
         flex-direction: column;
-        line-height: 2;
 
         .description {
           font-family: "Bw Modelica Regular", serif;
-          font-size: 14px;
+          font-size: 16px;
+          line-height: 2;
         }
       }
     }

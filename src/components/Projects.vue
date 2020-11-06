@@ -40,7 +40,7 @@
             <span v-if="selectedProject.name === project.name"
                   class="tech-wrapper"
                   data-aos="fade"
-                  data-aos-duration="1500"
+                  data-aos-duration="2000"
                   data-aos-easing="ease-in-out">
               <span v-for="tech in project.tech" class="tech" :key="tech">
                 {{ tech }}
@@ -138,8 +138,8 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 110px 0 0 30px;
-  width: 610px;
+  padding: 130px 0 0 10px;
+  width: 765px;
 
   .header {
     font-family: "Bw Modelica Regular", serif;
@@ -155,9 +155,9 @@ export default {
     .project{
       display: flex;
       flex-direction: column;
-      margin-bottom: 23px;
+      margin-bottom: 37px;
       font-family: "Bw Modelica Bold", serif;
-      font-size: 42px;
+      font-size: 52px;
 
       .selected-project{
         color: #fcdd56;
@@ -190,16 +190,16 @@ export default {
         flex-direction: column;
 
         .project-details {
-          font-family: "Bw Modelica Thin", serif;
+          font-family: "Bw Modelica Light", serif;
           color: white;
           font-size: 16px;
-          line-height: 1.7;
+          line-height: 1.9;
           height: fit-content;
+          margin-bottom: 15px;
         }
 
         .tech-wrapper {
-          display: inline-block;
-          margin-bottom: 20px;
+          display: flex;
           flex-direction: row;
           align-items: center;
 
@@ -211,7 +211,7 @@ export default {
             border-radius: 20px;
             font-size: 12px;
             width: fit-content;
-            padding: 7px 16px 7px 16px;
+            padding: 8px 17px;
             margin-right: 12px;
           }
         }
