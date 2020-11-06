@@ -231,14 +231,10 @@ export default {
     height: fit-content;
     width: 75vw;
     padding: 0;
-    margin: 100px 0 0 0;
+    margin: 130px 0 0 0;
 
     .header {
-      font-family: "Bw Modelica Regular", serif;
-      font-size: 20px;
-      margin-bottom: 40px;
-      color: var(--bone);
-      opacity: 0.7;
+      display: none;
     }
     .project-items{
       display: flex;

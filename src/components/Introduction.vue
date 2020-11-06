@@ -62,9 +62,9 @@ export default {
     display: flex;
     flex-direction: column;
     margin: 200px auto auto auto;
-    padding: 0;
+    padding: 0 45px 0 45px;
     width: 78vw;
-    font-size: 23px;
+    font-size: 20px;
     font-family: "Bw Modelica Bold", serif;
     color: white;
     line-height: 1.8;
