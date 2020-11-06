@@ -127,15 +127,18 @@ export default {
     .input-container{
       display: flex;
       flex-direction: column;
+      width: fit-content;
     }
     .button{
-      width: 100%;
+      position: absolute;
+      bottom: 280px;
+      left: 14px;
+      width: 305px;
       font-family: "Bw Modelica Bold", serif;
       background-color: transparent;
-      font-size: 12px;
+      font-size: 13px;
       text-decoration: none;
-      margin: 10px 0 auto 0;
-      padding: 9px 20px 9px 20px;
+      padding: 11px 20px 11px 20px;
       border: 2px solid black;
       border-radius: 30px;
       outline: none;
@@ -144,7 +147,7 @@ export default {
       transition: all .35s ease-in-out;
 
       &:hover {
-        opacity: 0.5;
+        opacity: 0.7;
         transition: all 0.5s;
       }
     }
@@ -157,7 +160,6 @@ export default {
     .input-no-value-style{
       font-family: "Bw Modelica Bold", serif;
       color: darkgrey;
-      width: 390px;
     }
   }
 }

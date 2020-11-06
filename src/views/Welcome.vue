@@ -99,13 +99,12 @@ export default {
     background-color: var(--bone);
 
     .container {
-      padding: 27px;
       display: flex;
       flex-direction: column;
+      width: 311px;
       margin: auto;
       line-height: 1.4;
-      font-size: 30px;
-      width: fit-content;
+      font-size: 35px;
 
       .message {
         font-family: "Bw Modelica Bold", serif;
