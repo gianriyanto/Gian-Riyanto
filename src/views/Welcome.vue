@@ -97,6 +97,12 @@ export default {
     width: 100%;
     min-width: 100vw;
     background-color: var(--bone);
+    overflow:   scroll;
+
+    ::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
 
     .container {
       display: flex;

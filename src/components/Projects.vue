@@ -221,4 +221,87 @@ export default {
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  #Projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75vw;
+    padding: 0;
+    margin: auto 0 auto 0;
+
+    .header {
+      font-family: "Bw Modelica Regular", serif;
+      font-size: 20px;
+      margin-bottom: 40px;
+      color: var(--bone);
+      opacity: 0.7;
+    }
+    .project-items{
+      display: flex;
+      flex-direction: column;
+
+      .project{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        font-family: "Bw Modelica Bold", serif;
+        font-size: 27px;
+
+        .selected-project{
+          color: #fcdd56;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+        .not-selected-project{
+          color: white;
+          margin-bottom: 10px;
+          cursor: pointer;
+        }
+        .project-link{
+          margin-left: 20px;
+          position: absolute;
+          font-size: 1em;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+        .project-content {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+
+          .project-details {
+            font-family: "Bw Modelica Light", serif;
+            color: white;
+            font-size: 16px;
+            line-height: 1.9;
+            height: fit-content;
+            margin-bottom: 15px;
+          }
+
+          .tech-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .tech {
+              font-family: "Bw Modelica Regular", serif;
+              color: #fcdd56;
+              border: 2px solid #fcdd56;
+              opacity: 1;
+              border-radius: 20px;
+              font-size: 12px;
+              width: fit-content;
+              padding: 8px 17px;
+              margin-right: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 </style>

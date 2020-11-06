@@ -13,7 +13,7 @@
       Hi! I'm a software engineering undergraduate (BEHons. Software) in the <span class="bold">University of Technology Sydney</span>, on track for graduation by <span class="bold">October 2021</span>. <br/> <br/>
       Driven by my intellectual curiosity and appreciation for thoughtful design, I seek to continue my lifelong learning journey amongst a collaborative team that shares my passion for delightful products and user-experience. <br/> <br/>
       I find that nothing is more rewarding than being able to transform new learnings into something that, especially when I get to meet new people and develop relationships along the way. <br/> <br/>
-      Here are some technologies that I've been fiddling with recently:
+      <span class="skills-headers"> Here are some technologies that I've been fiddling with recently: </span>
     </span>
     <span class="skills-wrapper"
           data-aos="fade-up"
@@ -76,5 +76,38 @@ export default {
 }
 .bold {
   font-family: "Bw Modelica Bold", serif;
+}
+
+@media only screen and (max-width: 768px) {
+  #About{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 85vw;
+    padding-right: 15px;
+    font-family: "Bw Modelica Regular", serif;
+
+    .header{
+      font-family: "Bw Modelica Bold", serif;
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+    .content{
+      font-size: 17px;
+      line-height: 2;
+      padding-bottom: 20px;
+    }
+  }
+  .skills-headers{
+    display: none;
+  }
+
+  .skills-wrapper {
+    display: none;
+  }
+
+  .bold {
+    font-family: "Bw Modelica Bold", serif;
+  }
 }
 </style>

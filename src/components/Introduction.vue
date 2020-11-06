@@ -45,8 +45,8 @@ export default {
   flex-direction: column;
   margin: auto;
   padding: 60px 0 0 15px;
-  width: 790px;
-  font-size: 37px;
+  width: 750px;
+  font-size: 35px;
   font-family: "Bw Modelica Bold", serif;
   color: white;
   line-height: 1.7;
@@ -60,12 +60,12 @@ export default {
   .introduction{
     display: flex;
     flex-direction: column;
-    margin: auto;
-    width: 311px;
-    font-size: 17px;
+    width: 80vw;
+    padding-right: 15px;
+    font-size: 23px;
     font-family: "Bw Modelica Bold", serif;
     color: white;
-    line-height: 1.7;
+    line-height: 1.8;
 
     .greeting{
       margin-bottom: 10px;

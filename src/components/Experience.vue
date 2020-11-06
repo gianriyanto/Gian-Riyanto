@@ -191,4 +191,73 @@ export default {
     padding: 0 0 0 -10px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  #Experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75vw;
+    padding: 0;
+    margin: auto 0 auto 0;
+
+    .header {
+      font-family: "Bw Modelica Regular", serif;
+      font-size: 20px;
+      color: var(--bone);
+      opacity: 0.7;
+      margin-bottom: 40px;
+    }
+    .experience-items {
+      display: flex;
+      flex-direction: column;
+
+      .experience{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 44px;
+        font-family: "Bw Modelica Bold", serif;
+        color: white;
+        font-size: 34px;
+
+        .selected-experience {
+          color: #fcdd56;
+          cursor: pointer;
+        }
+
+        .not-selected-experience {
+          color: white;
+          cursor: pointer;
+        }
+
+        .experience-detail{
+          font-size: 20px;
+          margin-bottom: 10px;
+
+          .experience-company{
+            color: #fcdd56;
+            font-family: "Bw Modelica Bold", serif;
+          }
+          .experience-period{
+            font-family: "Bw Modelica Hairline", serif;
+          }
+        }
+        .description-wrapper{
+          display: flex;
+          flex-direction: column;
+
+          .description {
+            font-family: "Bw Modelica Regular", serif;
+            font-size: 16px;
+            line-height: 2;
+          }
+        }
+      }
+    }
+    ul, li {
+      margin: 0 0 0 -12px;
+      padding: 0 0 0 -10px;
+    }
+  }
+}
 </style>
