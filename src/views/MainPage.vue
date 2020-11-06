@@ -3,7 +3,7 @@
     <div class="logo"
          @click="selectedTab = 'Introduction';"
          data-aos="fade-up"
-         data-aos-duration="1200"
+         data-aos-duration="1400"
          data-aos-easing="ease-in-out">
       <span class="circle-border"> <img class="my-portrait" src="@/assets/myPortrait.png" alt=""/></span>
       <span class="my-name"> Gian <span class="last-name"> Riyanto </span></span>
@@ -20,8 +20,8 @@
        </span>
       </div>
       <button class="contact"
-              data-aos="fade-down"
-              data-aos-duration="1200"
+              data-aos="fade-left"
+              data-aos-duration="1500"
               data-aos-easing="ease-in-out"
               @click="selectedTab = 'Contact';">
         <span class="contact-label"> Get in Touch </span>
@@ -143,6 +143,7 @@ export default {
   z-index: 2;
   background-image: var(--gradient);
   box-shadow: 10px 0 20px 2px #9b9b9b;
+  overflow: hidden;
 }
 
 .footer{

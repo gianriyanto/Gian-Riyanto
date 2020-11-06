@@ -32,8 +32,8 @@
           <span v-if="selectedProject" class="project-content">
             <span v-if="selectedProject.name === project.name"
                   class="project-details"
-                  data-aos="fade-left"
-                  data-aos-duration="1300"
+                  data-aos="fade"
+                  data-aos-duration="1000"
                   data-aos-easing="ease-in-out">
               {{ project.description }}
             </span>
@@ -84,7 +84,7 @@ export default {
           name: "Analytics Dashboard",
           link: "https://github.com/davidbr4gg/analytic_dashboard",
           description: "Developed a responsive analytics dashboard for users to manage, monitor, and analyse data at a glance. Worked on the front-end development designing \n" +
-              "the dashboard interface and implementing various widgets including charts, bars, cards, and tables",
+              "the dashboard interface and implementing various widgets including charts, bars, cards, and tables.",
           tech: ["Vue", "Vuex", "Node.js", "Chart.js"]
         },
         {
@@ -138,8 +138,8 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 130px 0 0 10px;
   width: 765px;
+  transform: translate(100px, 70px);
 
   .header {
     font-family: "Bw Modelica Regular", serif;
@@ -155,9 +155,9 @@ export default {
     .project{
       display: flex;
       flex-direction: column;
-      margin-bottom: 37px;
+      margin-bottom: 30px;
       font-family: "Bw Modelica Bold", serif;
-      font-size: 52px;
+      font-size: 48px;
 
       .selected-project{
         color: #fcdd56;
@@ -186,6 +186,7 @@ export default {
         }
       }
       .project-content {
+        position: relative;
         display: flex;
         flex-direction: column;
 
@@ -205,8 +206,8 @@ export default {
 
           .tech {
             font-family: "Bw Modelica Regular", serif;
-            color: white;
-            border: 2px solid white;
+            color: #fcdd56;
+            border: 2px solid #fcdd56;
             opacity: 1;
             border-radius: 20px;
             font-size: 12px;

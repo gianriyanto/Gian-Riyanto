@@ -21,14 +21,14 @@
           <span v-if="selectedExperience.position === experience.position"
                 class="experience-detail"
                 data-aos="fade"
-                data-aos-duration="1500"
+                data-aos-duration="900"
                 data-aos-easing="ease-in-out">
             <span class="experience-company">{{ experience.company }} </span> <span class="experience-period"> {{ experience.period }} </span>
           </span>
           <span v-if="selectedExperience.position === experience.position"
                 class="description-wrapper"
-                data-aos="fade-left"
-                data-aos-duration="1300"
+                data-aos="fade"
+                data-aos-duration="1000"
                 data-aos-easing="ease-in-out">
               <ul v-for="description in experience.description" class="description" :key="description">
                 <li> {{ description }} </li>
@@ -117,7 +117,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 100px 0 0 60px;
+  transform: translate(70px, 70px);
   width: 728px;
 
   .header {

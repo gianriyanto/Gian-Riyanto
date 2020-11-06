@@ -42,9 +42,9 @@ export default {
   align-items: center;
   justify-content: space-evenly;
   height: 300px;
-  position: absolute;
-  bottom: 5px;
-  left: 42px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
   color: var(--bone);
   opacity: 0.8;
   font-size: 40px;

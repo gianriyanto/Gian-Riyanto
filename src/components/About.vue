@@ -52,7 +52,7 @@ export default {
     padding-bottom: 20px;
   }
   .content{
-    font-size: 16px;
+    font-size: 17px;
     line-height: 2;
     padding-bottom: 20px;
   }
@@ -64,7 +64,8 @@ export default {
 
   .skill {
     font-family: "Bw Modelica Bold", serif;
-    border: 1.9px solid white;
+    border: 2px solid white;
+    color: white;
     opacity: 1;
     border-radius: 20px;
     font-size: 12px;
