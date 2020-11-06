@@ -139,7 +139,7 @@ export default {
   flex-direction: column;
   margin: auto;
   width: 765px;
-  transform: translate(60px, 70px);
+  transform: translate(60px, 60px);
 
   .header {
     font-family: "Bw Modelica Regular", serif;
