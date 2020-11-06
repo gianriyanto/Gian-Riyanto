@@ -91,13 +91,10 @@ export default {
   #welcome{
     display: flex;
     flex-direction: column;
-    position: fixed;
-    height: 100%;
-    min-height: 100vh;
-    width: 100%;
-    min-width: 100vw;
+    height: 100vh;
+    width: 100vw;
     background-color: var(--bone);
-    overflow:   scroll;
+    overflow: scroll;
 
     ::-webkit-scrollbar {
       width: 0;
@@ -107,7 +104,8 @@ export default {
     .container {
       display: flex;
       flex-direction: column;
-      width: 311px;
+      width: 78vw;
+      padding: 0;
       margin: auto;
       line-height: 1.4;
       font-size: 32px;

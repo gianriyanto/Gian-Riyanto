@@ -114,24 +114,24 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #InLineText{
-
-    height: 100px;
+    width: 75vw;
 
     .input-editing{
       font-family: "Bw Modelica Bold", serif;
       color: darkgrey;
       font-size: 32px;
-      width: fit-content;
       border: transparent;
       outline: transparent;
       background-color: var(--bone);
+      width: 75vw;
     }
     .input-container{
       display: flex;
       flex-direction: column;
-      width: fit-content;
+      width: 75vw;
     }
     .button{
+      width: 75vw;
       margin: 7px auto auto auto;
       font-family: "Bw Modelica Bold", serif;
       background-color: transparent;
@@ -144,21 +144,18 @@ export default {
       cursor: pointer;
       z-index: 2;
       transition: all .35s ease-in-out;
-
-      &:hover {
-        opacity: 0.7;
-        transition: all 0.5s;
-      }
     }
     .input-has-value-style{
       font-family: "Bw Modelica Bold", serif;
       background: linear-gradient(to bottom left, #860fee, #5488e5);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      width: 75vw;
     }
     .input-no-value-style{
       font-family: "Bw Modelica Bold", serif;
       color: darkgrey;
+      width: 75vw;
     }
   }
 }

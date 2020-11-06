@@ -278,29 +278,15 @@ export default {
   #MainPage{
     display: flex;
     flex-direction: column;
-    position: sticky;
-    margin-top: 100vh;
-    height: 100%;
-    min-height: 100vh;
-    width: 100%;
-    min-width: 100vw;
-    z-index: 2;
+    height: 100vh;
+    width: 80vw;
     background-image: var(--gradient);
     box-shadow: 10px 0 20px 2px #9b9b9b;
     overflow: hidden;
   }
 
   .footer{
-    position: fixed;
     display: none;
-    flex-direction: column;
-    text-align: right;
-    bottom: 26px;
-    right: 40px;
-    font-family: "Bw Modelica Hairline", serif;
-    font-size: 13px;
-    line-height: 1.8;
-    color: #d4d3cd;
   }
 
   #navigation {
@@ -317,12 +303,6 @@ export default {
         font-family: "Bw Modelica Regular", serif;
         font-size: 15px;
         color: white;
-        cursor: pointer;
-
-        &:hover{
-          opacity: 0.4;
-          transition: opacity 0.5s;
-        }
       }
     }
     .contact {

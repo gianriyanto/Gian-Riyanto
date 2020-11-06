@@ -22,8 +22,8 @@ export default {
   color: black;
 }
 html, body {
-  margin: 0px !important;
-  padding: 0px !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 :root {
   --bone: #f5f5f2;
