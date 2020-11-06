@@ -139,7 +139,7 @@ export default {
   flex-direction: column;
   margin: auto;
   width: 765px;
-  transform: translate(100px, 70px);
+  transform: translate(60px, 70px);
 
   .header {
     font-family: "Bw Modelica Regular", serif;
@@ -168,11 +168,12 @@ export default {
         color: white;
         margin-bottom: 10px;
         cursor: pointer;
+        transition: all .35s ease-in-out;
 
         &:hover{
           color: #e3d077;
           transform: translateX(30px);
-          transition: ease-out 0.4s;
+          transition: ease-out 0.35s;
         }
       }
       .project-link{

@@ -117,7 +117,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  transform: translate(70px, 70px);
+  transform: translate(20px, 70px);
   width: 728px;
 
   .header {
