@@ -223,9 +223,6 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
-  .logo{
-    display: none;
-  }
 
   #MainPage{
     display: flex;
@@ -234,22 +231,44 @@ export default {
     width: 80vw;
     background-image: var(--gradient);
     box-shadow: 10px 0 20px 2px #9b9b9b;
-    overflow: hidden;
+    overflow: scroll;
   }
-
-  .footer{
-    display: none;
-  }
-
-  #navigation {
-    position: sticky;
+  .logo{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 15%;
+    width: 280px;
+
+    .circle-border {
+      border: 2px solid white;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+
+      .my-portrait {
+        margin: auto;
+        width: 55px;
+        height: 55px;
+      }
+    }
+
+    .my-name{
+      font-family: "Bw Modelica Light", serif;
+      color: white;
+      font-size: 24px;
+      padding-left: 20px;
+
+      .last-name {
+        font-family: "Bw Modelica Regular", serif;
+      }
+    }
+  }
+
+  #navigation {
+    width: 80vw;
+    margin: 60px auto 0 auto;
 
     .nav-container {
-      margin: auto;
 
       .nav-tabs {
         font-family: "Bw Modelica Regular", serif;
@@ -293,6 +312,9 @@ export default {
         width: 100%;
       }
     }
+  }
+  .footer{
+    display: none;
   }
 }
 
