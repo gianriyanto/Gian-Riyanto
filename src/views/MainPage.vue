@@ -208,7 +208,7 @@ export default {
       left: 0;
       width: 0;
       height: 100%;
-      background: linear-gradient(to bottom left, #8744ec, #7965ea);
+      background: linear-gradient(to bottom left, #8f27f6, #5658e2);
       border-radius: 6px;
       transition: all 0.35s;
     }

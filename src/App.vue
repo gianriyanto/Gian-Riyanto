@@ -27,7 +27,7 @@ html, body {
 }
 :root {
   --bone: #f5f5f2;
-  --gradient: linear-gradient(to bottom left, #9645f8, #287dbf);
+  --gradient: linear-gradient(to bottom left, #9d00ff, #284fd6);
   --gradient-green: linear-gradient(to bottom left, #3fbaa1, #31aad4);
 }
 @font-face {
