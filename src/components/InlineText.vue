@@ -111,4 +111,54 @@ export default {
     width: 390px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  #InLineText{
+
+    .input-editing{
+      font-family: "Bw Modelica Bold", serif;
+      color: darkgrey;
+      font-size: 30px;
+      width: fit-content;
+      border: transparent;
+      outline: transparent;
+      background-color: var(--bone);
+    }
+    .input-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .button{
+      width: 100%;
+      font-family: "Bw Modelica Bold", serif;
+      background-color: transparent;
+      font-size: 12px;
+      text-decoration: none;
+      margin: 10px 0 auto 0;
+      padding: 9px 20px 9px 20px;
+      border: 2px solid black;
+      border-radius: 30px;
+      outline: none;
+      cursor: pointer;
+      z-index: 2;
+      transition: all .35s ease-in-out;
+
+      &:hover {
+        opacity: 0.5;
+        transition: all 0.5s;
+      }
+    }
+    .input-has-value-style{
+      font-family: "Bw Modelica Bold", serif;
+      background: linear-gradient(to bottom left, #860fee, #5488e5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .input-no-value-style{
+      font-family: "Bw Modelica Bold", serif;
+      color: darkgrey;
+      width: 390px;
+    }
+  }
+}
 </style>

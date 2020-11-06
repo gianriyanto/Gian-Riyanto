@@ -65,24 +65,59 @@ export default {
   width: 100%;
   min-width: 100vw;
   background-color: var(--bone);
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  line-height: 1.4;
-  font-size: 56px;
-  width: fit-content;
 
-  .message {
-    font-family: "Bw Modelica Bold", serif;
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    line-height: 1.4;
+    font-size: 56px;
+    width: fit-content;
+
+    .message {
+      font-family: "Bw Modelica Bold", serif;
+    }
+
+    .name{
+      font-family: "Bw Modelica Bold", serif;
+      background: linear-gradient(to bottom left, #9226f1, #578cea);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
+}
 
-  .name{
-    font-family: "Bw Modelica Bold", serif;
-    background: linear-gradient(to bottom left, #9226f1, #578cea);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+@media only screen and (max-width: 768px) {
+  #welcome{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    min-width: 100vw;
+    background-color: var(--bone);
+
+    .container {
+      padding: 27px;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      line-height: 1.4;
+      font-size: 30px;
+      width: fit-content;
+
+      .message {
+        font-family: "Bw Modelica Bold", serif;
+      }
+
+      .name{
+        font-family: "Bw Modelica Bold", serif;
+        background: linear-gradient(to bottom left, #9226f1, #578cea);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
   }
 }
 
