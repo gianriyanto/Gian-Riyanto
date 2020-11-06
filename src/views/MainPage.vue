@@ -225,54 +225,6 @@ export default {
 @media only screen and (max-width: 768px) {
   .logo{
     display: none;
-    position: absolute;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    top: 27px;
-    left: 35px;
-    width: 280px;
-    cursor: pointer;
-    opacity: 1;
-    transition: 0.3s;
-
-    .circle-border{
-      border: 2px solid white;
-      border-radius: 50%;
-      width: 70px;
-      height: 70px;
-      transition: all .25s ease-in-out;
-
-      &:hover{
-        opacity: 0.8;
-        transition: all 0.5s;
-        border: 2.5px solid #ffe258;
-        transform: scale(1.1);
-      }
-
-      .my-portrait{
-        margin: auto;
-        width: 70px;
-        height: 70px;
-        transition: all .3s ease-in-out;
-      }
-    }
-    .my-name{
-      font-family: "Bw Modelica Light", serif;
-      color: white;
-      font-size: 30px;
-      transition: all .3s ease-in-out;
-      padding-left: 20px;
-
-      .last-name {
-        font-family: "Bw Modelica Regular", serif;
-      }
-
-      &:hover{
-        opacity: 0.7;
-        transition: opacity 0.5s;
-      }
-    }
   }
 
   #MainPage{
@@ -294,7 +246,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    top: 42px;
+    margin-bottom: 15%;
 
     .nav-container {
       margin: auto;

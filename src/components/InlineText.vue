@@ -132,17 +132,16 @@ export default {
     }
     .button{
       width: 75vw;
-      margin: 7px auto auto auto;
+      margin: 10px auto auto auto;
       font-family: "Bw Modelica Bold", serif;
       background-color: transparent;
-      font-size: 13px;
+      font-size: 15px;
       text-decoration: none;
-      padding: 9px 30px 9px 30px;
+      padding: 12px 30px 12px 30px;
       border: 2px solid black;
-      border-radius: 30px;
+      border-radius: 35px;
       outline: none;
       cursor: pointer;
-      z-index: 2;
       transition: all .35s ease-in-out;
     }
     .input-has-value-style{

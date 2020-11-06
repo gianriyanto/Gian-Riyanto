@@ -106,7 +106,7 @@ export default {
       flex-direction: column;
       width: 78vw;
       padding: 0;
-      margin: auto;
+      margin: 75% auto auto auto;
       line-height: 1.4;
       font-size: 32px;
 

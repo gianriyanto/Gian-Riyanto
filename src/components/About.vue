@@ -79,12 +79,15 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
+
   #About{
     display: flex;
     flex-direction: column;
     color: white;
-    width: 85vw;
-    padding-right: 15px;
+    width: 75vw;
+    bottom: 0;
+    margin: calc(auto+ auto auto auto;
+    padding: 0;
     font-family: "Bw Modelica Regular", serif;
 
     .header{
@@ -93,7 +96,7 @@ export default {
       padding-bottom: 20px;
     }
     .content{
-      font-size: 17px;
+      font-size: 15px;
       line-height: 2;
       padding-bottom: 20px;
     }
