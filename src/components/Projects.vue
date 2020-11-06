@@ -261,8 +261,10 @@ export default {
           font-size: 1em;
         }
         .project-content {
+          display:none;
           position: relative;
-          display: flex;
+          height: fit-content;
+          /*display: flex;*/
           flex-direction: column;
 
           .project-details {

@@ -197,16 +197,13 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: fit-content;
     width: 75vw;
     padding: 0;
-    margin: auto 0 auto 0;
+    margin: auto;
 
     .header {
-      font-family: "Bw Modelica Regular", serif;
-      font-size: 20px;
-      color: var(--bone);
-      opacity: 0.7;
-      margin-bottom: 40px;
+      display: none;
     }
     .experience-items {
       display: flex;
