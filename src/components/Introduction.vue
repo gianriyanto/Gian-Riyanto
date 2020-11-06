@@ -61,10 +61,10 @@ export default {
   .introduction{
     display: flex;
     flex-direction: column;
-    margin: auto auto auto auto;
+    margin: 200px auto auto auto;
     padding: 0;
-    width: 80vw;
-    font-size: 22px;
+    width: 78vw;
+    font-size: 23px;
     font-family: "Bw Modelica Bold", serif;
     color: white;
     line-height: 1.8;

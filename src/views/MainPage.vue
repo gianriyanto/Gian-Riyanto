@@ -251,7 +251,6 @@ export default {
         height: 55px;
       }
     }
-
     .my-name{
       font-family: "Bw Modelica Light", serif;
       color: white;
@@ -266,7 +265,7 @@ export default {
 
   #navigation {
     width: 80vw;
-    margin: 60px auto 0 auto;
+    margin: 80px auto 0 auto;
 
     .nav-container {
 
