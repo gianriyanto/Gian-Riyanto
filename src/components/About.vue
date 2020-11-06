@@ -86,7 +86,7 @@ export default {
     color: white;
     width: 75vw;
     bottom: 0;
-    margin: calc(auto+ auto auto auto;
+    margin: auto;
     padding: 0;
     font-family: "Bw Modelica Regular", serif;
 

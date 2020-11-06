@@ -223,13 +223,14 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
+
   #Projects{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 75vw;
+    width: 70vw;
     padding: 0;
-    margin: auto 0 auto 0;
+    margin: 0;
 
     .header {
       font-family: "Bw Modelica Regular", serif;
@@ -245,28 +246,22 @@ export default {
       .project{
         display: flex;
         flex-direction: column;
-        margin-bottom: 30px;
+        margin-bottom: 21px;
         font-family: "Bw Modelica Bold", serif;
-        font-size: 27px;
+        font-size: 31px;
 
         .selected-project{
           color: #fcdd56;
           margin-bottom: 10px;
-          cursor: pointer;
         }
         .not-selected-project{
           color: white;
           margin-bottom: 10px;
-          cursor: pointer;
         }
         .project-link{
-          margin-left: 20px;
+          margin-left: 8px;
           position: absolute;
           font-size: 1em;
-
-          &:hover {
-            opacity: 0.5;
-          }
         }
         .project-content {
           position: relative;
@@ -276,10 +271,10 @@ export default {
           .project-details {
             font-family: "Bw Modelica Light", serif;
             color: white;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 1.9;
             height: fit-content;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
           }
 
           .tech-wrapper {
@@ -290,12 +285,12 @@ export default {
             .tech {
               font-family: "Bw Modelica Regular", serif;
               color: #fcdd56;
-              border: 2px solid #fcdd56;
+              border: thin solid #fcdd56;
               opacity: 1;
               border-radius: 20px;
-              font-size: 12px;
+              font-size: 9px;
               width: fit-content;
-              padding: 8px 17px;
+              padding: 6px 10px;
               margin-right: 12px;
             }
           }
