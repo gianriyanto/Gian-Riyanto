@@ -5,7 +5,7 @@
        data-aos-easing="ease-in-out">
     <span class="resume-container">
       <a class="resume" :href="`${publicPath}gianriyanto.pdf`" target="_blank"> <font-awesome-icon class="download-resume" :icon="['fas', 'file-download']"></font-awesome-icon></a>
-      <span class="show-label"> Resume </span>
+      <span class="show-label"> My Resume </span>
     </span>
     <span class="linkedin-container">
       <font-awesome-icon class="linkedin" :icon="['fab', 'linkedin']" v-on:click="goToSite('https://www.linkedin.com/in/riyantogian/')"></font-awesome-icon>
@@ -41,11 +41,12 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 270px;
+  height: 300px;
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 42px;
   color: var(--bone);
+  opacity: 0.8;
   font-size: 40px;
 
   .resume-container {

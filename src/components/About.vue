@@ -63,13 +63,13 @@ export default {
   display: inline-block;
 
   .skill {
-    font-family: "Bw Modelica Regular", serif;
+    font-family: "Bw Modelica Bold", serif;
     border: 1.9px solid white;
     opacity: 1;
     border-radius: 20px;
     font-size: 12px;
     width: fit-content;
-    padding: 8px 16px;
+    padding: 8px 15px;
     margin-right: 12px;
   }
 }

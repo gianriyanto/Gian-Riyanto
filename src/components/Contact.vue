@@ -69,10 +69,11 @@ export default {
     color: #f5de75;
     font-size: 40px;
     margin-bottom: 20px;
+    transition: all .2s ease-in-out;
 
     &:hover {
-      opacity: 0.7;
-      transition: 0.3s;
+      opacity: 0.8;
+      transition: 0.2s;
     }
   }
 
