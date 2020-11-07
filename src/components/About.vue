@@ -81,10 +81,9 @@ export default {
 @media only screen and (max-width: 768px) {
 
   #About{
-    border: thin solid lime;
     height: 100vh;
     width: 80vw;
-    padding: 0;
+    padding: 17% 0 0 0;
 
     display: flex;
     flex-direction: column;
@@ -93,7 +92,7 @@ export default {
 
     .header{
       font-family: "Bw Modelica Bold", serif;
-      font-size: 45px;
+      font-size: 25px;
       padding-bottom: 15px;
     }
     .content{

@@ -194,12 +194,11 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #Experience{
-    border: thin solid orange;
     display: flex;
     flex-direction: column;
     height: 100vh;
     width: 80vw;
-    padding: 0;
+    padding: 17% 0 0 0;
 
     .header {
       font-family: "Bw Modelica Regular", serif;

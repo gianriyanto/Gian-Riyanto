@@ -135,9 +135,9 @@ export default {
 
       .sub-header{
         font-family: "Bw Modelica Light", serif;
-        font-size: 14px;
+        font-size: 16px;
         padding-left: 6px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         opacity: 0.7;
       }
 

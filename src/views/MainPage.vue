@@ -35,7 +35,6 @@
     <div id="mobile">
       <Introduction v-bind:name="name"/>
       <About/>
-      <Skills/>
       <Projects/>
       <Experience/>
       <Skills/>
@@ -251,10 +250,9 @@ export default {
   }
   .logo{
     display: none;
-    /* display:flex; */
     flex-direction: row;
-    justify-content: center;
-    width: 280px;
+    width: 80vw;
+    height: 20vw;
 
     .circle-border {
       border: 2px solid white;
