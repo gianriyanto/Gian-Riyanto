@@ -32,7 +32,7 @@
     <div id="mobile">
       <Introduction v-bind:name="name"/>
       <div v-for="tab in tabs" >
-        <component :is="tab" v-bind:name="name"></component>
+        <component :is="tab" :key="tab" v-bind:name="name"></component>
       </div>
     </div>
     <div class="footer"
