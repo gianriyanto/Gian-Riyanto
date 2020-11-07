@@ -107,7 +107,7 @@ export default {
       width: 78vw;
       padding: 0;
       margin: 75% auto auto auto;
-      line-height: 1.4;
+      line-height: 1.6;
       font-size: 32px;
 
       .message {

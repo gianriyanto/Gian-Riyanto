@@ -85,7 +85,49 @@ export default {
       color: #f5de75;
     }
   }
+}
 
+@media only screen and (max-width: 768px) {
+  #Contact{
+    height: 100vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    padding: 100px 0 0 0;
+    text-align: center;
+    font-family: "Bw Modelica Bold", serif;
+
+    .header{
+      color: white;
+      font-size: 40px;
+      margin-bottom: 25px;
+    }
+
+    .sub-header{
+      font-family: "Bw Modelica Light", serif;
+      font-size: 20px;
+      color: var(--bone);
+      width: 80vw;
+      line-height: 2;
+    }
+
+    .content{
+      text-align: center;
+      color: #f5de75;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: #f5de75;
+      text-decoration: none;
+      a:visited {
+        text-decoration: none;
+        color: #f5de75;
+      }
+    }
+  }
 }
 
 </style>

@@ -217,7 +217,7 @@ export default {
         margin-bottom: 44px;
         font-family: "Bw Modelica Bold", serif;
         color: white;
-        font-size: 34px;
+        font-size: 30px;
 
         .selected-experience {
           color: #fcdd56;

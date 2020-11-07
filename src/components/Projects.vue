@@ -225,11 +225,10 @@ export default {
 @media only screen and (max-width: 768px) {
 
   #Projects{
-    border: thin solid gold;
     height: 100vh;
     width: 80vw;
     padding: 0;
-
+    margin-left: 0;
     display: flex;
     flex-direction: column;
 

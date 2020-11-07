@@ -39,6 +39,7 @@
       <Experience/>
       <Skills/>
       <Contact v-bind:name="name"/>
+      <personal-links/>
     </div>
     <div class="footer"
          data-aos="fade"

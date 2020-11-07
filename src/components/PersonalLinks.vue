@@ -109,7 +109,64 @@ a {
 
 @media only screen and (max-width: 768px) {
   #links {
-    display: none;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-content: center;
+    padding: 0;
+    margin: auto;
+    height: 40vh;
+    width: 80vw;
+    color: var(--bone);
+    font-size: 50px;
+
+    .resume-container {
+      display: flex;
+      flex-direction: row;
+      width: fit-content;
+      align-items: center;
+      margin: auto;
+      padding: 0;
+    }
+    .linkedin-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: fit-content;
+      margin:auto;
+      padding: 0;
+    }
+    .github-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: fit-content;
+      margin:auto;
+      padding: 0;
+    }
+
+    .show-label {
+      display:none;
+      font-size: 17px;
+      font-family: "Bw Modelica Regular", serif;
+      padding-left: 25px;
+      color: white;
+    }
+
+    .resume, .linkedin, .github {
+      margin: auto;
+    }
+  }
+
+  a {
+    color: var(--bone);
+    a:visited {
+      text-decoration: none;
+      color: var(--bone);
+    }
   }
 }
 
