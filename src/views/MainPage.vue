@@ -28,19 +28,25 @@
       </button>
     </div>
     <personal-links/>
-    <component id="desktop" :is="selectedTab" v-bind:name="name"> </component>
+    <component id="desktop"
+               :is="selectedTab"
+               v-bind:name="name">
+    </component>
     <div id="mobile">
       <Introduction v-bind:name="name"/>
-      <div v-for="tab in tabs" >
-        <component :is="tab" :key="tab" v-bind:name="name"></component>
-      </div>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Experience/>
+      <Skills/>
+      <Contact v-bind:name="name"/>
     </div>
     <div class="footer"
          data-aos="fade"
          data-aos-duration="2200"
          data-aos-easing="ease-in-out">
-      <span>Designed and developed by Gian Riyanto</span>
-      <span>Built with Vue.js and hosted with Netlify</span>
+      <span> Designed and developed by Gian Riyanto </span>
+      <span> Built with Vue.js and hosted with Netlify </span>
     </div>
   </div>
 </template>
