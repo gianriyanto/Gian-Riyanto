@@ -59,11 +59,10 @@ export default {
 @media only screen and (max-width: 768px) {
 
   .introduction{
-    display: flex;
-    flex-direction: column;
-    margin: 200px auto auto auto;
-    padding: 0 45px 0 45px;
-    width: 78vw;
+    border: thin solid red;
+    height: 100vh;
+    width: 80vw;
+    padding: 0;
     font-size: 20px;
     font-family: "Bw Modelica Bold", serif;
     color: white;

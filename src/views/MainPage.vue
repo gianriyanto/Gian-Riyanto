@@ -27,8 +27,14 @@
         <span class="contact-label"> Get in Touch </span>
       </button>
     </div>
-    <personal-links />
-    <component :is="selectedTab" v-bind:name="name"> </component>
+    <personal-links/>
+    <component id="desktop" :is="selectedTab" v-bind:name="name"> </component>
+    <div id="mobile">
+      <Introduction v-bind:name="name"/>
+      <div v-for="tab in tabs" >
+        <component :is="tab" v-bind:name="name"></component>
+      </div>
+    </div>
     <div class="footer"
          data-aos="fade"
          data-aos-duration="2200"
@@ -146,19 +152,6 @@ export default {
   overflow: hidden;
 }
 
-.footer{
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  bottom: 26px;
-  right: 40px;
-  font-family: "Bw Modelica Hairline", serif;
-  font-size: 13px;
-  line-height: 1.8;
-  color: #d4d3cd;
-}
-
 #navigation {
   position: absolute;
   display: flex;
@@ -222,19 +215,37 @@ export default {
   }
 }
 
+.footer{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  bottom: 26px;
+  right: 40px;
+  font-family: "Bw Modelica Hairline", serif;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #d4d3cd;
+}
+
+#mobile{
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
 
   #MainPage{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: fit-content;
     width: 80vw;
     background-image: var(--gradient);
     box-shadow: 10px 0 20px 2px #9b9b9b;
     overflow: scroll;
   }
   .logo{
-    display: flex;
+    display: none;
+    /* display:flex; */
     flex-direction: row;
     justify-content: center;
     width: 280px;
@@ -264,6 +275,7 @@ export default {
   }
 
   #navigation {
+    display: none;
     width: 80vw;
     margin: 80px auto 0 auto;
 
@@ -312,8 +324,17 @@ export default {
       }
     }
   }
+
   .footer{
     display: none;
+  }
+
+  #desktop{
+    display:none;
+  }
+  #mobile{
+    display: flex;
+    flex-direction: column;
   }
 }
 

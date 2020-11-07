@@ -225,16 +225,20 @@ export default {
 @media only screen and (max-width: 768px) {
 
   #Projects{
+    border: thin solid gold;
+    height: 100vh;
+    width: 80vw;
+    padding: 0;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: fit-content;
-    width: 75vw;
-    padding: 0;
-    margin: 130px 0 0 0;
 
     .header {
-      display: none;
+      font-family: "Bw Modelica Regular", serif;
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: var(--bone);
+      opacity: 0.7;
     }
     .project-items{
       display: flex;

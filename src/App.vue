@@ -25,10 +25,18 @@ html, body {
   margin: 0 !important;
   padding: 0 !important;
 }
+@media only screen and (max-width: 768px) {
+  *, html, body, {
+    margin-left:0 !important;
+    margin-right:0 !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+}
 :root {
   --bone: #f5f5f2;
-  --gradient-purple: linear-gradient(#9a48f6, #06528c);
-  --gradient: linear-gradient(to bottom left, #2ca48b, #4594b0);
+  --gradient: linear-gradient(#9a48f6, #06528c);
+  --gradient-green: linear-gradient(to bottom left, #2ca48b, #4594b0);
 }
 @font-face {
   font-family: "Bw Modelica Bold";

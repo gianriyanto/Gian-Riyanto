@@ -13,7 +13,7 @@
       I'm a software engineering student (BEHons. Software) at the <span class="bold">University of Technology Sydney</span>, on track for graduation by <span class="bold">October 2021</span>. <br/> <br/>
       Driven by my intellectual curiosity and appreciation for thoughtful design, I seek to continue my lifelong learning journey amongst a collaborative team that shares my passion for products and user-experience. <br/> <br/>
       I find that nothing is more rewarding than being able to transform new learnings into something users find delightful, especially when I get to meet new people and develop relationships along the way. <br/> <br/>
-      <span class="skills-headers"> Here are some technologies that I've been fiddling with recently: </span>
+      <span class="skills-headers"> Here are some technologies that I've been tinkering with recently: </span>
     </span>
     <span class="skills-wrapper"
           data-aos="fade-left"
@@ -81,16 +81,20 @@ export default {
 @media only screen and (max-width: 768px) {
 
   #About{
+    border: thin solid lime;
+    height: 100vh;
+    width: 80vw;
+    padding: 0;
+
     display: flex;
     flex-direction: column;
     color: white;
-    width: 75vw;
-    margin: 190px auto auto auto;
-    padding: 0;
     font-family: "Bw Modelica Regular", serif;
 
     .header{
-      display:none;
+      font-family: "Bw Modelica Bold", serif;
+      font-size: 45px;
+      padding-bottom: 15px;
     }
     .content{
       font-size: 15px;
