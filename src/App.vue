@@ -27,8 +27,8 @@ html, body {
 }
 :root {
   --bone: #f5f5f2;
-  --gradient: linear-gradient(#9a48f6, #06528c);
-  --gradient-green: linear-gradient(to bottom left, #3fbaa1, #31aad4);
+  --gradient-purple: linear-gradient(#9a48f6, #06528c);
+  --gradient: linear-gradient(to bottom left, #2ca48b, #4594b0);
 }
 @font-face {
   font-family: "Bw Modelica Bold";
