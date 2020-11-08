@@ -81,7 +81,7 @@ export default {
 @media only screen and (max-width: 768px) {
 
   #About{
-    height: 100vh;
+    height: fit-content;
     width: 70vw;
     margin: 0 auto 0 auto;
     padding: 0 0 0 0;

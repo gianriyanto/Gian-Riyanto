@@ -94,7 +94,7 @@ export default {
     display: flex;
     flex-direction: column;
     margin: 0 auto 0 auto;
-    padding: 100px 0 0 0;
+    padding: 150px 0 0 0;
     text-align: center;
     font-family: "Bw Modelica Bold", serif;
 

@@ -200,7 +200,6 @@ export default {
     height: fit-content;
     margin-bottom: 80px;
     width: 80vw;
-    margin-left: 0;
     padding: 0;
 
     .header {
