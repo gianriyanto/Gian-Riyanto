@@ -114,7 +114,7 @@ export default {
 @media only screen and (max-width: 768px) {
   #Skills{
     border: thin solid lightseagreen;
-    height: 100vh;
+    height: fit-content;
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -124,13 +124,13 @@ export default {
     color: white;
 
     .header{
-      font-size: 20px;
+      font-size: 25px;
       margin-bottom: 20px;
       padding-left: 5px;
     }
 
     .skills-wrapper{
-      display: inline-block;
+      display: flex;
       flex-direction: column;
 
       .sub-header{
@@ -142,18 +142,19 @@ export default {
       }
 
       .skill-items{
-        display: flex;
-        flex-direction: row;
+        display: block;
+        clear: both;
         margin-bottom: 30px;
         font-family: "Bw Modelica Regular", serif;
-        font-size: 10px;
+        font-size: 11px;
+        line-height: 4.5;
 
         .item{
           border: thin solid white;
           opacity: 1;
           border-radius: 17px;
           width: fit-content;
-          padding: 7px 17px 7px 17px;
+          padding: 8px 17px;
           margin-right: 12px;
 
           &:hover{

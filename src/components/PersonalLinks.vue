@@ -110,13 +110,11 @@ a {
 @media only screen and (max-width: 768px) {
   #links {
     position: absolute;
-    bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     align-content: center;
-    padding: 0;
+    padding: 0 0 25% 0;
     margin: auto;
     height: 40vh;
     width: 80vw;

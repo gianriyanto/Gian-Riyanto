@@ -54,21 +54,21 @@ export default {
   .header{
     color: white;
     font-size: 85px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .sub-header{
     font-family: "Bw Modelica Light", serif;
-    font-size: 17px;
+    font-size: 18px;
     color: var(--bone);
     width: 500px;
     line-height: 1.5;
   }
 
   .content{
-    color: #f5de75;
+    color: #e7cf5f;
     font-size: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     transition: all .2s ease-in-out;
 
     &:hover {
