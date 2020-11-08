@@ -1,8 +1,8 @@
 <template>
   <div id="Experience">
     <span class="header"
-          data-aos="fade-down"
-          data-aos-duration="1000"
+          data-aos="fade"
+          data-aos-duration="1500"
           data-aos-easing="ease-in-out">
       Experience.
     </span>
@@ -198,8 +198,9 @@ export default {
     flex-direction: column;
     min-height: 100vh;
     height: fit-content;
+    margin-bottom: 80px;
     width: 80vw;
-    padding: 17% 0 0 0;
+    padding: 0;
 
     .header {
       font-family: "Bw Modelica Regular", serif;
@@ -219,6 +220,7 @@ export default {
         font-family: "Bw Modelica Bold", serif;
         color: white;
         font-size: 30px;
+        height: fit-content;
 
         .selected-experience {
           color: #fcdd56;
@@ -232,7 +234,7 @@ export default {
         }
 
         .experience-detail{
-          font-size: 18px;
+          font-size: 14px;
           margin-bottom: 15px;
 
           .experience-company{

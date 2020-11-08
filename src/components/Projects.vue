@@ -2,7 +2,7 @@
   <div id="Projects">
     <div class="header"
           data-aos="fade"
-          data-aos-duration="1000"
+          data-aos-duration="1500"
           data-aos-easing="ease-in-out">
       Projects.
     </div>
@@ -231,6 +231,7 @@ export default {
     flex-direction: column;
     padding: 0;
     margin-left: 0;
+    margin-bottom: 50px;
 
     .header {
       font-family: "Bw Modelica Regular", serif;
