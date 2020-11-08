@@ -71,7 +71,6 @@ export default {
     .content-wrapper{
       display: flex;
       flex-direction: column;
-      margin: auto;
     }
 
     .greeting{
