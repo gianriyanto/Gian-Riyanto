@@ -225,7 +225,7 @@ export default {
 @media only screen and (max-width: 768px) {
 
   #Projects{
-    height: 100vh;
+    height: fit-content;
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -249,6 +249,7 @@ export default {
         margin-bottom: 35px;
         font-family: "Bw Modelica Bold", serif;
         font-size: 32px;
+        border: thin solid red;
 
         .selected-project{
           color: #fcdd56;
