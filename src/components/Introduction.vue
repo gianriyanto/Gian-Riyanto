@@ -1,23 +1,25 @@
 <template>
   <div class="introduction">
-    <span class="greeting"
-          data-aos="fade-down"
-          data-aos-duration="1200"
-          data-aos-easing="ease-in-out">
-      Hey <span class="user"
-                data-aos="fade"
-                data-aos-duration="1800"
-                data-aos-easing="ease-in-out">
-            {{inputtedName}},
-          </span>
-    </span>
-    <span class="message"
-          data-aos="fade-left"
-          data-aos-duration="1000"
-          data-aos-easing="ease-in-out">
-            I am a software engineering student on the lookout for experiences to learn new things and make meaningful contributions.
-            I love value-adding products, thoughtful user-experiences, and creative solutions that delight people.
-    </span>
+    <div class="content-wrapper">
+      <span class="greeting"
+            data-aos="fade-down"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out">
+        Hey <span class="user"
+                  data-aos="fade"
+                  data-aos-duration="1800"
+                  data-aos-easing="ease-in-out">
+              {{inputtedName}},
+            </span>
+      </span>
+      <span class="message"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out">
+              I am a software engineering student on the lookout for experiences to learn new things and make meaningful contributions.
+              I love value-adding products, thoughtful user-experiences, and creative solutions that delight people.
+      </span>
+    </div>
   </div>
 </template>
 
@@ -66,6 +68,12 @@ export default {
     font-family: "Bw Modelica Bold", serif;
     color: white;
     line-height: 1.8;
+
+    .content-wrapper{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
 
     .greeting{
       margin-bottom: 10px;

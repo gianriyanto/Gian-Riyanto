@@ -83,7 +83,8 @@ export default {
   #About{
     height: 100vh;
     width: 70vw;
-    padding: 17% 0 0 0;
+    margin: auto;
+    padding: 0 0 0 0;
     display: flex;
     flex-direction: column;
     color: white;
@@ -96,7 +97,7 @@ export default {
     }
     .content{
       font-size: 15px;
-      line-height: 2;
+      line-height: 2.2;
       padding-bottom: 20px;
     }
   }

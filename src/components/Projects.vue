@@ -1,7 +1,7 @@
 <template>
   <div id="Projects">
     <div class="header"
-          data-aos="fade-down"
+          data-aos="fade"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out">
       Projects.
@@ -249,7 +249,6 @@ export default {
         margin-bottom: 35px;
         font-family: "Bw Modelica Bold", serif;
         font-size: 32px;
-        border: thin solid red;
 
         .selected-project{
           color: #fcdd56;

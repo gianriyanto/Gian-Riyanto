@@ -196,7 +196,8 @@ export default {
   #Experience{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     width: 80vw;
     padding: 17% 0 0 0;
 
@@ -222,6 +223,7 @@ export default {
         .selected-experience {
           color: #fcdd56;
           cursor: pointer;
+          margin-bottom: 20px;
         }
 
         .not-selected-experience {
@@ -230,14 +232,16 @@ export default {
         }
 
         .experience-detail{
-          font-size: 20px;
-          margin-bottom: 10px;
+          font-size: 18px;
+          margin-bottom: 15px;
 
           .experience-company{
+            font-size: 18px;
             color: #fcdd56;
             font-family: "Bw Modelica Bold", serif;
           }
           .experience-period{
+            font-size: 18px;
             font-family: "Bw Modelica Hairline", serif;
           }
         }
@@ -247,8 +251,8 @@ export default {
 
           .description {
             font-family: "Bw Modelica Regular", serif;
-            font-size: 16px;
-            line-height: 2;
+            font-size: 17px;
+            line-height: 2.2;
           }
         }
       }
