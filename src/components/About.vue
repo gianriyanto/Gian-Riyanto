@@ -98,7 +98,6 @@ export default {
     .content{
       font-size: 15px;
       line-height: 2.2;
-      padding-bottom: 20px;
     }
   }
   .skills-headers{

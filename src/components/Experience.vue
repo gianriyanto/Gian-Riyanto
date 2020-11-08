@@ -198,7 +198,6 @@ export default {
     flex-direction: column;
     min-height: 100vh;
     height: fit-content;
-    margin-bottom: 80px;
     width: 80vw;
     padding: 0;
 
@@ -234,9 +233,13 @@ export default {
         }
 
         .experience-detail{
+          width: 70vw;
           position: relative;
           font-size: 14px;
           margin-bottom: 15px;
+          height: fit-content;
+          display: flex;
+          flex-direction: column;
 
           .experience-company{
             font-size: 18px;
@@ -254,7 +257,7 @@ export default {
 
           .description {
             font-family: "Bw Modelica Regular", serif;
-            font-size: 17px;
+            font-size: 14px;
             line-height: 2.2;
           }
         }
