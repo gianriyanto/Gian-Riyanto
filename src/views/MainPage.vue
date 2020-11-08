@@ -245,7 +245,7 @@ export default {
     flex-direction: column;
     height: fit-content;
     width: 80vw;
-    background-image: var(--gradient);
+    background-image: var(--gradient-mobile);
     box-shadow: 10px 0 20px 2px #9b9b9b;
     overflow: scroll;
   }

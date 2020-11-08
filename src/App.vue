@@ -26,7 +26,7 @@ html, body {
   padding: 0 !important;
 }
 @media only screen and (max-width: 768px) {
-  *, html, body, {
+  *, html, body, div, span,{
     margin-left:0 !important;
     margin-right:0 !important;
     padding-left:0 !important;
@@ -37,6 +37,7 @@ html, body {
   --bone: #f5f5f2;
   --gradient: linear-gradient(#9a48f6, #06528c);
   --gradient-green: linear-gradient(to bottom left, #2ca48b, #4594b0);
+  --gradient-mobile: linear-gradient(#9a48f6, #06528c, #7f31d9, #273db0);
 }
 @font-face {
   font-family: "Bw Modelica Bold";

@@ -113,7 +113,6 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #Skills{
-    border: thin solid lightseagreen;
     height: fit-content;
     width: 80vw;
     display: flex;

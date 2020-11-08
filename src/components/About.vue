@@ -82,9 +82,8 @@ export default {
 
   #About{
     height: 100vh;
-    width: 80vw;
+    width: 70vw;
     padding: 17% 0 0 0;
-
     display: flex;
     flex-direction: column;
     color: white;
