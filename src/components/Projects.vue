@@ -252,7 +252,7 @@ export default {
 
         .selected-project{
           color: #fcdd56;
-          margin-bottom: 10px;
+          margin-bottom: 15px;
         }
         .not-selected-project{
           color: white;
@@ -264,7 +264,7 @@ export default {
           font-size: 1em;
         }
         .project-content {
-
+          width: 70vw;
           position: relative;
           height: fit-content;
           display: flex;
@@ -280,9 +280,11 @@ export default {
           }
 
           .tech-wrapper {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            display: block;
+            clear: both;
+            font-family: "Bw Modelica Regular", serif;
+            font-size: 11px;
+            line-height: 4.2;
 
             .tech {
               font-family: "Bw Modelica Regular", serif;
@@ -290,9 +292,9 @@ export default {
               border: thin solid #fcdd56;
               opacity: 1;
               border-radius: 20px;
-              font-size: 9px;
+              font-size: 11px;
               width: fit-content;
-              padding: 6px 10px;
+              padding: 8px 14px;
               margin-right: 12px;
             }
           }

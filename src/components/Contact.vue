@@ -6,13 +6,13 @@
        data-aos-easing="ease-in-out">
     Say hello.
   </div>
-  <div class="content"
+  <div class="email"
        data-aos="fade"
        data-aos-duration="2500"
        data-aos-easing="ease-in-out">
     <a href="mailto:li.griyanto@gmail.com">li.griyanto@gmail.com</a>
   </div>
-  <div class="sub-header"
+  <div class="message"
        data-aos="fade"
        data-aos-duration="3000"
        data-aos-easing="ease-in-out">
@@ -57,7 +57,7 @@ export default {
     margin-bottom: 20px;
   }
 
-  .sub-header{
+  .message{
     font-family: "Bw Modelica Light", serif;
     font-size: 18px;
     color: var(--bone);
@@ -65,7 +65,7 @@ export default {
     line-height: 1.5;
   }
 
-  .content{
+  .email{
     color: #e7cf5f;
     font-size: 40px;
     margin-bottom: 30px;
@@ -104,19 +104,19 @@ export default {
       margin-bottom: 25px;
     }
 
-    .sub-header{
+    .email{
+      text-align: center;
+      color: #f5de75;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .message{
       font-family: "Bw Modelica Light", serif;
       font-size: 20px;
       color: var(--bone);
       width: 80vw;
       line-height: 2;
-    }
-
-    .content{
-      text-align: center;
-      color: #f5de75;
-      font-size: 22px;
-      margin-bottom: 20px;
     }
 
     a {

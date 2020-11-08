@@ -156,13 +156,6 @@ export default {
           padding: 8px 17px;
           margin-right: 12px;
 
-          &:hover{
-            color: #efeb6d;
-            border: 1.9px solid #efeb6d;
-            opacity: 0.7;
-            transition: opacity 0.2s;
-            box-shadow: 0 0 10px 2px #5b52ae;
-          }
         }
       }
     }
