@@ -236,7 +236,7 @@ export default {
     .header {
       font-family: "Bw Modelica Regular", serif;
       font-size: 20px;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       color: var(--bone);
       opacity: 0.7;
     }
@@ -249,7 +249,8 @@ export default {
         flex-direction: column;
         margin-bottom: 35px;
         font-family: "Bw Modelica Bold", serif;
-        font-size: 32px;
+        font-size: 30px;
+        width: 80vw;
 
         .selected-project{
           color: #fcdd56;
