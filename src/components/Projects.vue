@@ -227,10 +227,10 @@ export default {
   #Projects{
     height: 100vh;
     width: 80vw;
-    padding: 0;
-    margin-left: 0;
     display: flex;
     flex-direction: column;
+    padding: 0;
+    margin-left: 0;
 
     .header {
       font-family: "Bw Modelica Regular", serif;
@@ -264,10 +264,10 @@ export default {
           font-size: 1em;
         }
         .project-content {
-          display:none;
+
           position: relative;
           height: fit-content;
-          /*display: flex;*/
+          display: flex;
           flex-direction: column;
 
           .project-details {

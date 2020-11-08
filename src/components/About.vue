@@ -92,7 +92,7 @@ export default {
     .header{
       font-family: "Bw Modelica Bold", serif;
       font-size: 25px;
-      padding-bottom: 15px;
+      padding-bottom: 25px;
     }
     .content{
       font-size: 15px;
