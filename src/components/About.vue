@@ -83,7 +83,7 @@ export default {
   #About{
     height: 100vh;
     width: 70vw;
-    margin: auto;
+    margin: 0 auto 0 auto;
     padding: 0 0 0 0;
     display: flex;
     flex-direction: column;

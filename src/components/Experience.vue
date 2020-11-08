@@ -200,6 +200,7 @@ export default {
     height: fit-content;
     margin-bottom: 80px;
     width: 80vw;
+    margin-left: 0;
     padding: 0;
 
     .header {
@@ -220,7 +221,6 @@ export default {
         font-family: "Bw Modelica Bold", serif;
         color: white;
         font-size: 30px;
-        height: fit-content;
 
         .selected-experience {
           color: #fcdd56;
@@ -230,10 +230,11 @@ export default {
 
         .not-selected-experience {
           color: white;
-          cursor: pointer;
+          margin-bottom: 10px;
         }
 
         .experience-detail{
+          position: relative;
           font-size: 14px;
           margin-bottom: 15px;
 
