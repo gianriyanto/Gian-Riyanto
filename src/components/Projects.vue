@@ -1,14 +1,14 @@
 <template>
   <div id="Projects">
     <div class="header"
-          data-aos="fade"
-          data-aos-duration="1500"
+          data-aos="fade-left"
+          data-aos-duration="1000"
           data-aos-easing="ease-in-out">
       Projects.
     </div>
     <div class="project-items"
          data-aos="fade-left"
-         data-aos-duration="800"
+         data-aos-duration="1000"
          data-aos-easing="ease-in-out">
         <div v-for="project in projects"
               :key="project"

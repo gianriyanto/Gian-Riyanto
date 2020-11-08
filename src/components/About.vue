@@ -1,8 +1,8 @@
 <template>
   <div id="About">
     <span class="header"
-          data-aos="fade-down"
-          data-aos-duration="1200"
+          data-aos="fade-left"
+          data-aos-duration="1000"
           data-aos-easing="ease-in-out">
       About Me.
     </span>

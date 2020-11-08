@@ -1,15 +1,15 @@
 <template>
   <div id="Skills">
     <span class="header"
-          data-aos="fade-down"
-          data-aos-duration="1200"
+          data-aos="fade-left"
+          data-aos-duration="1000"
           data-aos-easing="ease-in-out">
       Skills.
     </span>
     <span v-for="skill in skills" :key="skill" class="skills-wrapper">
       <span class="sub-header"
             data-aos="fade"
-            data-aos-duration="2000"
+            data-aos-duration="3000"
             data-aos-easing="ease-in-out">
         {{ skill.skillType }}
       </span>
@@ -78,16 +78,16 @@ export default {
 
     .sub-header{
       font-family: "Bw Modelica Light", serif;
-      font-size: 14px;
+      font-size: 15px;
       padding-left: 6px;
-      margin-bottom: 10px;
-      opacity: 0.7;
+      margin-bottom: 15px;
+      opacity: 1;
     }
 
     .skill-items{
       display: flex;
       flex-direction: row;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       font-family: "Bw Modelica Regular", serif;
       font-size: 13px;
 
@@ -96,7 +96,7 @@ export default {
         opacity: 1;
         border-radius: 17px;
         width: fit-content;
-        padding: 7px 17px 7px 17px;
+        padding: 8px 17px;
         margin-right: 12px;
 
         &:hover{

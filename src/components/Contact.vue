@@ -8,7 +8,7 @@
   </div>
   <div class="email"
        data-aos="fade"
-       data-aos-duration="2500"
+       data-aos-duration="3000"
        data-aos-easing="ease-in-out">
     <a href="mailto:li.griyanto@gmail.com">li.griyanto@gmail.com</a>
   </div>

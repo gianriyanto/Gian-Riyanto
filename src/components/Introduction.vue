@@ -53,6 +53,11 @@ export default {
   color: white;
   line-height: 1.7;
 
+  .content-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
   .greeting{
     margin-bottom: 10px;
   }

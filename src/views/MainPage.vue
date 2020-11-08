@@ -28,10 +28,9 @@
       </button>
     </div>
     <personal-links/>
-    <component id="desktop"
-               :is="selectedTab"
-               v-bind:name="name">
-    </component>
+    <div id="desktop">
+      <component :is="selectedTab" v-bind:name="name"> </component>
+    </div>
     <div id="mobile">
       <Introduction v-bind:name="name"/>
       <About/>
@@ -232,6 +231,10 @@ export default {
   font-size: 13px;
   line-height: 1.8;
   color: #d4d3cd;
+}
+
+#desktop{
+  margin: auto;
 }
 
 #mobile{
