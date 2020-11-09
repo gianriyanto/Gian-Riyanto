@@ -142,12 +142,13 @@ export default {
       }
 
       .skill-items{
-        display: block;
-        clear: both;
+        display: inline-block;
+        clear: none;
         margin-bottom: 30px;
         font-family: "Bw Modelica Regular", serif;
         font-size: 11px;
         line-height: 4.5;
+        width: 80vw;
 
         .item{
           border: thin solid white;

@@ -68,7 +68,7 @@ export default {
   .introduction{
     height: fit-content;
     width: 70vw;
-    padding: 0;
+    padding: 15vw 0 0 0;
     font-size: 23px;
     font-family: "Bw Modelica Bold", serif;
     color: white;

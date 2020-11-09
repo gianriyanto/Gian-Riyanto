@@ -90,7 +90,7 @@ export default {
 @media only screen and (max-width: 768px) {
   #Contact{
     transform: translate(0, -30vh);
-    height: 60vh;
+    height: 80vh;
     width: 80vw;
     display: flex;
     flex-direction: column;

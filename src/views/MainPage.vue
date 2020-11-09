@@ -347,7 +347,7 @@ export default {
     height: fit-content;
 
     .mobile-tab_wrapper{
-      margin: 0 auto 10vh auto;
+      margin: 10vh auto 10vh auto;
       height: fit-content;
       width: 100vw;
     }
