@@ -114,7 +114,7 @@ export default {
       justify-content: center;
       height: 100vh;
       width: 78vw;
-      padding: 0;
+      padding: 0 0 20vh 0;
       line-height: 1.7;
       font-size: 32px;
       margin: auto;
