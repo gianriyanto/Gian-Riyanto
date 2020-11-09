@@ -1,31 +1,47 @@
 <template>
 <div id="Contact">
-  <div class="header"
+  <div class="logo-for-mobile"
+       @click="selectedTab = 'Introduction';"
        data-aos="fade-up"
-       data-aos-duration="2000"
+       data-aos-duration="1400"
        data-aos-easing="ease-in-out">
-    Say Hello.
+    <span class="circle-border"> <img class="my-portrait" src="@/assets/myPortrait.png" alt=""/></span>
+    <span class="my-name"> Gian <span class="last-name"> Riyanto </span></span>
   </div>
-  <div class="email"
-       data-aos="fade-up"
-       data-aos-duration="3000"
-       data-aos-easing="ease-in-out">
-    <a href="mailto:li.griyanto@gmail.com">li.griyanto@gmail.com</a>
+  <div class="content">
+    <div class="header"
+         data-aos="fade-up"
+         data-aos-duration="2500"
+         data-aos-easing="ease-in-out">
+      Say Hello
+    </div>
+    <div class="email">
+      <a href="mailto:li.griyanto@gmail.com"
+         data-aos="fade"
+         data-aos-duration="3000"
+         data-aos-easing="ease-in-out">li.griyanto@gmail.com</a>
+    </div>
+    <div class="message"
+         data-aos="fade-up"
+         data-aos-duration="2000"
+         data-aos-easing="ease-in-out">
+      Let's keep in touch {{ inputtedName }}! <br/>
+      I'm one inbox away, whether you have a question or you just want to say hi, I'm always up for a chat.
+    </div>
   </div>
-  <div class="message"
-       data-aos="fade-up"
-       data-aos-duration="3000"
-       data-aos-easing="ease-in-out">
-    Let's keep in touch {{ inputtedName }}! <br/>
-    I'm one inbox away, whether you have a question or you just want to say hi, I'm always up for a chat.
-  </div>
+  <personal-links class="links-for-mobile"/>
 </div>
 </template>
 
 <script>
 
+import PersonalLinks from "../components/PersonalLinks";
+
 export default {
   name: "Contact",
+  components: {
+    PersonalLinks,
+  },
   props: ['name'],
   data() {
     return {
@@ -50,6 +66,10 @@ export default {
   padding-top: 50px;
   text-align: center;
   font-family: "Bw Modelica Bold", serif;
+
+  .logo-for-mobile{
+    display: none;
+  }
 
   .header{
     color: white;
@@ -89,34 +109,68 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #Contact{
-    height: 90vh;
+    height: 85vh;
     width: 80vw;
     display: flex;
     flex-direction: column;
-    margin: 0 auto 0 auto;
-    padding: 0;
     text-align: center;
-    font-family: "Bw Modelica Bold", serif;
+    padding: 0;
 
-    .header{
-      color: white;
-      font-size: 40px;
-      margin-bottom: 25px;
-    }
-
-    .email{
-      text-align: center;
-      color: #f5de75;
-      font-size: 22px;
-      margin-bottom: 20px;
-    }
-
-    .message{
-      font-family: "Bw Modelica Light", serif;
-      font-size: 18px;
-      color: var(--bone);
+    .logo-for-mobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       width: 80vw;
-      line-height: 2;
+      height: fit-content;
+      align-items: center;
+      margin-bottom: 7vh;
+
+      .circle-border{
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        margin: 2vh;
+
+        .my-portrait{
+          margin: auto;
+          width: 70px;
+          height: 70px;
+        }
+      }
+      .my-name{
+        font-family: "Bw Modelica Light", serif;
+        color: white;
+        font-size: 30px;
+
+        .last-name {
+          font-family: "Bw Modelica Regular", serif;
+        }
+      }
+    }
+
+    .content {
+      height: fit-content;
+
+      .header {
+        color: white;
+        font-size: 30px;
+      }
+
+      .email {
+        text-align: center;
+        color: #f5de75;
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+
+      .message {
+        font-family: "Bw Modelica Light", serif;
+        font-size: 14px;
+        color: var(--bone);
+        width: 80vw;
+        line-height: 1.9;
+      }
     }
 
     a {

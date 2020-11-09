@@ -2,7 +2,7 @@
   <div id="Projects">
     <div class="header"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-easing="ease-in-out">
       Projects.
     </div>
@@ -16,7 +16,7 @@
               @click="selectProject(project)">
           <span :class="labelStyle(project)"
                 data-aos="fade"
-                data-aos-duration="1000"
+                data-aos-duration="2000"
                 data-aos-easing="ease-in-out">
             {{ project.name }}
             <font-awesome-icon

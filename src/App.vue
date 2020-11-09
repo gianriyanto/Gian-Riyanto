@@ -32,8 +32,8 @@ html, body {
   }
 }
 :root {
-  --bone: #f5f5f2;
-  --gradient: linear-gradient(#9a48f6, #06528c);
+  --bone: #ffffff;
+  --gradient: linear-gradient(#be5afc, #124d7a);
   --gradient-green: linear-gradient(to bottom left, #2ca48b, #4594b0);
   --gradient-mobile: linear-gradient(#9a48f6, #06528c, #9641ea, #305db7, #7e46e0, #642fe2);
 }

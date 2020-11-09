@@ -27,18 +27,21 @@
         <span class="contact-label"> Get in Touch </span>
       </button>
     </div>
-    <personal-links/>
+    <div class="personal-links">
+      <personal-links/>
+    </div>
     <div id="desktop">
       <component :is="selectedTab" v-bind:name="name"> </component>
     </div>
     <div id="mobile">
-      <div class="mobile-tab_wrapper"> <Introduction v-bind:name="name"/> </div>
+      <div class="mobile-tab_wrapper"><Introduction v-bind:name="name"/></div>
       <div class="mobile-tab_wrapper"><About/> </div>
       <div class="mobile-tab_wrapper"><Projects/> </div>
       <div class="mobile-tab_wrapper"><Experience/> </div>
       <div class="mobile-tab_wrapper"><Skills/> </div>
-      <div class="mobile-tab_wrapper"><Contact v-bind:name="name"/> <personal-links/> </div>
-
+      <div class="mobile-tab_wrapper">
+        <Contact v-bind:name="name"/>
+      </div>
     </div>
     <div class="footer"
          data-aos="fade"
@@ -253,32 +256,14 @@ export default {
   }
   .logo{
     display: none;
-    flex-direction: row;
-    width: 80vw;
-    height: 20vw;
+  }
 
-    .circle-border {
-      border: 2px solid white;
-      border-radius: 50%;
-      width: 55px;
-      height: 55px;
+  .footer{
+    display: none;
+  }
 
-      .my-portrait {
-        margin: auto;
-        width: 55px;
-        height: 55px;
-      }
-    }
-    .my-name{
-      font-family: "Bw Modelica Light", serif;
-      color: white;
-      font-size: 24px;
-      padding-left: 20px;
-
-      .last-name {
-        font-family: "Bw Modelica Regular", serif;
-      }
-    }
+  .personal-links{
+    display: none;
   }
 
   #navigation {
@@ -332,13 +317,10 @@ export default {
     }
   }
 
-  .footer{
-    display: none;
-  }
-
   #desktop{
     display:none;
   }
+
   #mobile{
     display: flex;
     flex-direction: column;

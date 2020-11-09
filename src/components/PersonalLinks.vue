@@ -1,7 +1,7 @@
 <template>
   <div id="links"
        data-aos="fade"
-       data-aos-duration="2200"
+       data-aos-duration="2500"
        data-aos-easing="ease-in-out">
     <span class="resume-container">
       <a class="resume" :href="`${publicPath}gianriyanto.pdf`" target="_blank"> <font-awesome-icon class="download-resume" :icon="['fas', 'file-download']"></font-awesome-icon></a>
@@ -113,11 +113,11 @@ a {
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin: auto 0 8vh 0;
-    height: 40vh;
+    margin: auto 0 5vh 0;
+    height: 33vh;
     width: 80vw;
     color: var(--bone);
-    font-size: 50px;
+    font-size: 45px;
 
     .resume-container {
       display: flex;
