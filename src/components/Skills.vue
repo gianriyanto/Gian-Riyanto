@@ -126,7 +126,6 @@ export default {
     .header{
       font-size: 25px;
       margin-bottom: 30px;
-      padding-left: 5px;
     }
 
     .skills-wrapper{
@@ -136,7 +135,7 @@ export default {
       .sub-header{
         font-family: "Bw Modelica Light", serif;
         font-size: 16px;
-        padding-left: 6px;
+        padding-left: 5px;
         margin-bottom: 10px;
         opacity: 0.7;
       }
@@ -148,7 +147,7 @@ export default {
         font-family: "Bw Modelica Regular", serif;
         font-size: 11px;
         line-height: 4.5;
-        width: 80vw;
+        width: 75vw;
 
         .item{
           border: thin solid white;
