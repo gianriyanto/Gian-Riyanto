@@ -247,6 +247,7 @@ export default {
 @media only screen and (max-width: 768px) {
 
   #MainPage{
+    position: absolute;
     display: flex;
     flex-direction: column;
     height: fit-content;
