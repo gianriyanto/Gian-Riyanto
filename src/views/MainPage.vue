@@ -113,8 +113,8 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    top: 27px;
-    left: 35px;
+    top: 30px;
+    left: 37px;
     width: 280px;
     cursor: pointer;
     opacity: 1;
@@ -163,18 +163,18 @@ export default {
     display: flex;
     flex-direction: row;
     top: 42px;
-    right: 35px;
+    right: 38px;
 
     .nav-container {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: space-evenly;
-      width: 480px;
+      width: 530px;
 
       .nav-tabs {
         font-family: "Bw Modelica Regular", serif;
-        font-size: 15px;
+        font-size: 17px;
         color: white;
         cursor: pointer;
 
@@ -207,7 +207,7 @@ export default {
         left: 0;
         width: 0;
         height: 100%;
-        background: linear-gradient(to bottom left, #8f27f6, #5658e2);
+        background: linear-gradient(to bottom left, #9749e3, #7e60e7);
         border-radius: 6px;
         transition: all 0.35s;
       }

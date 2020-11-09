@@ -41,13 +41,13 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 300px;
+  height: 310px;
   position: fixed;
-  bottom: 0px;
-  left: 40px;
+  bottom: 2px;
+  left: 43px;
   color: var(--bone);
   opacity: 0.8;
-  font-size: 40px;
+  font-size: 45px;
 
   .resume-container {
     display: flex;
