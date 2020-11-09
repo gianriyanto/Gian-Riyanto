@@ -144,10 +144,9 @@ export default {
 
       .skill-items{
         display: inline-block;
-        clear: none;
         margin-bottom: 30px;
         font-family: "Bw Modelica Regular", serif;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 4.5;
         width: 75vw;
 
