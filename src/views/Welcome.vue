@@ -100,6 +100,7 @@ export default {
     flex-direction: column;
     width: 100vw;
     background-color: var(--bone);
+    position: absolute;
     overflow-y: scroll;
 
     ::-webkit-scrollbar {
