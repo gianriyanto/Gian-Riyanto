@@ -69,10 +69,10 @@ export default {
     height: fit-content;
     width: 70vw;
     padding: 15vw 0 0 0;
-    font-size: 23px;
+    font-size: 24px;
     font-family: "Bw Modelica Bold", serif;
     color: white;
-    line-height: 1.8;
+    line-height: 1.9;
 
     .content-wrapper{
       display: flex;

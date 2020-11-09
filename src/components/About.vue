@@ -80,7 +80,7 @@ export default {
 @media only screen and (max-width: 768px) {
 
   #About{
-    height: fit-content;
+    height: 100vh;
     width: 70vw;
     padding: 0;
     display: flex;
@@ -89,6 +89,7 @@ export default {
     .header{
       font-family: "Bw Modelica Regular", serif;
       font-size: 20px;
+      margin-bottom: 5px;
       color: var(--bone);
       opacity: 0.7;
     }

@@ -247,6 +247,7 @@ export default {
 @media only screen and (max-width: 768px) {
 
   #MainPage{
+    margin-top: 150vh;
     position: absolute;
     display: flex;
     flex-direction: column;

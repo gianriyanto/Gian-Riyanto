@@ -98,10 +98,10 @@ export default {
   #welcome{
     display: flex;
     flex-direction: column;
+    height: 100vh;
     width: 100vw;
     background-color: var(--bone);
     position: absolute;
-    overflow-y: scroll;
 
     ::-webkit-scrollbar {
       width: 0;
@@ -115,9 +115,9 @@ export default {
       height: 100vh;
       width: 78vw;
       padding: 0;
-      margin: auto;
       line-height: 1.7;
       font-size: 32px;
+      margin: auto;
 
       .message {
         font-family: "Bw Modelica Bold", serif;
