@@ -135,7 +135,7 @@ export default {
 
       .sub-header{
         font-family: "Bw Modelica Bold", serif;
-        font-size: 16px;
+        font-size: 19px;
         margin-bottom: 8px;
         opacity: 0.7;
         color: #fcdd56;
@@ -147,7 +147,7 @@ export default {
         clear: none;
         margin-bottom: 30px;
         font-family: "Bw Modelica Regular", serif;
-        font-size: 11px;
+        font-size: 12px;
         line-height: 4.5;
         width: 75vw;
 
