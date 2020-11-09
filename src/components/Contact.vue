@@ -123,7 +123,7 @@ export default {
       width: 80vw;
       height: fit-content;
       align-items: center;
-      margin-bottom: 7vh;
+      margin-bottom: 6vh;
 
       .circle-border{
         border: 2px solid white;
@@ -140,8 +140,8 @@ export default {
       }
       .my-name{
         font-family: "Bw Modelica Light", serif;
-        color: white;
-        font-size: 30px;
+        color: var(--bone);
+        font-size: 27px;
 
         .last-name {
           font-family: "Bw Modelica Regular", serif;

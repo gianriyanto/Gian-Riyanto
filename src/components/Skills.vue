@@ -117,15 +117,16 @@ export default {
     width: 70vw;
     display: flex;
     flex-direction: column;
-    transform: translate(0, 0);
     padding: 0;
-
-    font-family: "Bw Modelica Bold", serif;
     color: white;
 
     .header{
-      font-size: 25px;
+      font-size: 20px;
       margin-bottom: 30px;
+      padding: 0;
+      color: var(--bone);
+      opacity: 0.7;
+      font-family: "Bw Modelica Regular", serif;
     }
 
     .skills-wrapper{
@@ -133,11 +134,12 @@ export default {
       flex-direction: column;
 
       .sub-header{
-        font-family: "Bw Modelica Light", serif;
+        font-family: "Bw Modelica Bold", serif;
         font-size: 16px;
-        padding-left: 5px;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         opacity: 0.7;
+        color: #fcdd56;
+        padding: 0;
       }
 
       .skill-items{

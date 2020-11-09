@@ -251,7 +251,7 @@ export default {
         flex-direction: column;
         margin-bottom: 20px;
         font-family: "Bw Modelica Bold", serif;
-        font-size: 26px;
+        font-size: 28px;
         width: 70vw;
 
         .selected-project{

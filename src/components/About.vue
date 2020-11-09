@@ -44,7 +44,6 @@ export default {
   margin: auto;
   color: white;
   width: 630px;
-  font-family: "Bw Modelica Regular", serif;
 
   .header{
     font-family: "Bw Modelica Bold", serif;
@@ -86,14 +85,16 @@ export default {
     padding: 0;
     display: flex;
     flex-direction: column;
-    color: white;
-    font-family: "Bw Modelica Regular", serif;
 
     .header{
-      font-family: "Bw Modelica Bold", serif;
-      font-size: 25px;
+      font-family: "Bw Modelica Regular", serif;
+      font-size: 20px;
+      color: var(--bone);
+      opacity: 0.7;
     }
     .content{
+      color: white;
+      font-family: "Bw Modelica Regular", serif;
       font-size: 15px;
       line-height: 2.2;
     }

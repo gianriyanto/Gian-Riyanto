@@ -88,10 +88,15 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
+
+  .content-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
   #welcome{
     display: flex;
     flex-direction: column;
-    height: 100vh;
     width: 100vw;
     background-color: var(--bone);
     overflow-y: scroll;
@@ -104,10 +109,12 @@ export default {
     .container {
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      height: 100vh;
       width: 78vw;
       padding: 0;
-      margin: 75% auto auto auto;
-      line-height: 1.6;
+      margin: auto;
+      line-height: 1.7;
       font-size: 32px;
 
       .message {
