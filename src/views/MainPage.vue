@@ -93,58 +93,6 @@ export default {
 
 <style lang="scss" scoped>
 
-.logo{
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  top: 27px;
-  left: 35px;
-  width: 280px;
-  cursor: pointer;
-  opacity: 1;
-  transition: 0.3s;
-
-  .circle-border{
-    border: 2px solid white;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    transition: all .25s ease-in-out;
-
-    &:hover{
-      opacity: 0.8;
-      transition: all 0.5s;
-      border: 2.5px solid #ffe258;
-      transform: scale(1.1);
-    }
-
-    .my-portrait{
-      margin: auto;
-      width: 70px;
-      height: 70px;
-      transition: all .3s ease-in-out;
-    }
-  }
-  .my-name{
-    font-family: "Bw Modelica Light", serif;
-    color: white;
-    font-size: 30px;
-    transition: all .3s ease-in-out;
-    padding-left: 20px;
-
-    .last-name {
-      font-family: "Bw Modelica Regular", serif;
-    }
-
-    &:hover{
-      opacity: 0.7;
-      transition: opacity 0.5s;
-    }
-  }
-}
-
 #MainPage{
   display: flex;
   flex-direction: column;
@@ -158,132 +106,85 @@ export default {
   background-image: var(--gradient);
   box-shadow: 10px 0 20px 2px #9b9b9b;
   overflow: hidden;
-}
 
-#navigation {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  top: 42px;
-  right: 35px;
-
-  .nav-container {
+  .logo{
+    position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    width: 480px;
+    justify-content: flex-start;
+    top: 27px;
+    left: 35px;
+    width: 280px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
 
-    .nav-tabs {
-      font-family: "Bw Modelica Regular", serif;
-      font-size: 15px;
-      color: white;
-      cursor: pointer;
+    .circle-border{
+      border: 2px solid white;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      transition: all .25s ease-in-out;
 
       &:hover{
-        opacity: 0.4;
+        opacity: 0.8;
+        transition: all 0.5s;
+        border: 2.5px solid #ffe258;
+        transform: scale(1.1);
+      }
+
+      .my-portrait{
+        margin: auto;
+        width: 70px;
+        height: 70px;
+        transition: all .3s ease-in-out;
+      }
+    }
+    .my-name{
+      font-family: "Bw Modelica Light", serif;
+      color: white;
+      font-size: 30px;
+      transition: all .3s ease-in-out;
+      padding-left: 20px;
+
+      .last-name {
+        font-family: "Bw Modelica Regular", serif;
+      }
+
+      &:hover{
+        opacity: 0.7;
         transition: opacity 0.5s;
       }
     }
   }
-  .contact {
-    border: thin solid #c8c7c7;
-    border-radius: 6px;
-    background-color: transparent;
-    outline: none;
-    padding: 16px 20px 16px 20px;
-    cursor: pointer;
-    position: relative;
-
-    .contact-label {
-      position: relative;
-      font-family: "Bw Modelica Regular", serif;
-      font-size: 14px;
-      color: white;
-      z-index: 2;
-    }
-    &:after {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 100%;
-      background: linear-gradient(to bottom left, #8f27f6, #5658e2);
-      border-radius: 6px;
-      transition: all 0.35s;
-    }
-    &:hover {
-      color: #fff;
-      opacity: 1;
-    }
-    &:hover:after {
-      width: 100%;
-    }
-  }
-}
-
-.footer{
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  bottom: 26px;
-  right: 40px;
-  font-family: "Bw Modelica Hairline", serif;
-  font-size: 13px;
-  line-height: 1.8;
-  color: #d4d3cd;
-}
-
-#desktop{
-  margin: auto;
-}
-
-#mobile{
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-
-  #MainPage{
-    margin-top: 150vh;
+  #navigation {
     position: absolute;
     display: flex;
-    flex-direction: column;
-    height: fit-content;
-    width: 100vw;
-    background-image: var(--gradient-mobile);
-    box-shadow: 10px 0 20px 2px #9b9b9b;
-    overflow-y: scroll;
-  }
-  .logo{
-    display: none;
-  }
-
-  .footer{
-    display: none;
-  }
-
-  .personal-links{
-    display: none;
-  }
-
-  #navigation {
-    display: none;
-    width: 80vw;
-    margin: 80px auto 0 auto;
+    flex-direction: row;
+    top: 42px;
+    right: 35px;
 
     .nav-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 480px;
 
       .nav-tabs {
         font-family: "Bw Modelica Regular", serif;
         font-size: 15px;
         color: white;
+        cursor: pointer;
+
+        &:hover{
+          opacity: 0.4;
+          transition: opacity 0.5s;
+        }
       }
     }
     .contact {
-      display: none;
       border: thin solid #c8c7c7;
       border-radius: 6px;
       background-color: transparent;
@@ -320,21 +221,119 @@ export default {
     }
   }
 
+  .footer{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    bottom: 26px;
+    right: 40px;
+    font-family: "Bw Modelica Hairline", serif;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #d4d3cd;
+  }
+
   #desktop{
-    display:none;
+    margin: auto;
   }
 
   #mobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  #MainPage{
+    margin-top: 150vh;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    width: 100vw;
     height: fit-content;
+    width: 100vw;
+    background-image: var(--gradient-mobile);
+    box-shadow: 10px 0 20px 2px #9b9b9b;
+    overflow-y: scroll;
 
-    .mobile-tab_wrapper{
-      margin: 4vh auto 10vh auto;
-      height: fit-content;
+    .logo{
+      display: none;
+    }
+    .footer{
+      display: none;
+    }
+
+    .personal-links{
+      display: none;
+    }
+
+    #navigation {
+      display: none;
+      width: 80vw;
+      margin: 80px auto 0 auto;
+
+      .nav-container {
+
+        .nav-tabs {
+          font-family: "Bw Modelica Regular", serif;
+          font-size: 15px;
+          color: white;
+        }
+      }
+      .contact {
+        display: none;
+        border: thin solid #c8c7c7;
+        border-radius: 6px;
+        background-color: transparent;
+        outline: none;
+        padding: 16px 20px 16px 20px;
+        cursor: pointer;
+        position: relative;
+
+        .contact-label {
+          position: relative;
+          font-family: "Bw Modelica Regular", serif;
+          font-size: 14px;
+          color: white;
+          z-index: 2;
+        }
+        &:after {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background: linear-gradient(to bottom left, #8f27f6, #5658e2);
+          border-radius: 6px;
+          transition: all 0.35s;
+        }
+        &:hover {
+          color: #fff;
+          opacity: 1;
+        }
+        &:hover:after {
+          width: 100%;
+        }
+      }
+    }
+
+    #desktop{
+      display:none;
+    }
+
+    #mobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
       width: 100vw;
+      height: fit-content;
+
+      .mobile-tab_wrapper{
+        margin: 4vh auto 10vh auto;
+        height: fit-content;
+        width: 100vw;
+      }
     }
   }
 }
