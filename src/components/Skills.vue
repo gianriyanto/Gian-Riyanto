@@ -2,7 +2,7 @@
   <div id="Skills">
     <span class="header"
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="2000"
           data-aos-easing="ease-in-out">
       Skills.
     </span>
@@ -15,7 +15,7 @@
       </span>
       <span class="skill-items"
             data-aos="fade"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
             data-aos-easing="ease-in-out">
         <span v-for="item in skill.skillItems" class="item" :key="item">
           {{ item }}

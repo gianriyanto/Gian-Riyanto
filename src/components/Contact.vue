@@ -2,13 +2,13 @@
 <div id="Contact">
   <div class="header"
        data-aos="fade-up"
-       data-aos-duration="1000"
+       data-aos-duration="2000"
        data-aos-easing="ease-in-out">
     Say Hello.
   </div>
   <div class="email"
        data-aos="fade-up"
-       data-aos-duration="2000"
+       data-aos-duration="3000"
        data-aos-easing="ease-in-out">
     <a href="mailto:li.griyanto@gmail.com">li.griyanto@gmail.com</a>
   </div>

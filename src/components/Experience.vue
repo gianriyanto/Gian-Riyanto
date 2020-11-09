@@ -2,13 +2,13 @@
   <div id="Experience">
     <div class="header"
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="2000"
           data-aos-easing="ease-in-out">
       Experience.
     </div>
     <div class="experience-items"
          data-aos="fade"
-         data-aos-duration="1000"
+         data-aos-duration="2000"
          data-aos-easing="ease-in-out">
       <div v-for="experience in experiences"
            :key="experience"
