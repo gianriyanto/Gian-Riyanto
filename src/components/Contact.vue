@@ -17,7 +17,7 @@
     </div>
     <div class="email">
       <a href="mailto:li.griyanto@gmail.com"
-         data-aos="fade"
+         data-aos="fade-up"
          data-aos-duration="3000"
          data-aos-easing="ease-in-out">li.griyanto@gmail.com</a>
     </div>
@@ -109,7 +109,7 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #Contact{
-    height: 85vh;
+    height: 90vh;
     width: 80vw;
     display: flex;
     flex-direction: column;
