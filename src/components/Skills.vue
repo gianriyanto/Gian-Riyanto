@@ -9,7 +9,7 @@
     <span v-for="skill in skills" :key="skill" class="skills-wrapper">
       <span class="sub-header"
             data-aos="fade"
-            data-aos-duration="3000"
+            data-aos-duration="2000"
             data-aos-easing="ease-in-out">
         {{ skill.skillType }}
       </span>
