@@ -67,7 +67,7 @@ export default {
           id: 0,
           name: "This Personal Website",
           link: "https://github.com/gianriyanto/Gian-Riyanto",
-          description: "As you can see there isn't too much to fill in this portfolio. In all honesty, building this personal website is just another reason for me to play around with Vue.js and explore different UI/UX designs.",
+          description: "In all honesty, building this personal website is just another reason for me to tinker with Vue.js, explore different UI/UX designs, and learn about responsive UIs",
           tech: ["Vue", "Vuex", "Node.js", "Netlify"]
         },
         {
