@@ -1,13 +1,13 @@
 <template>
   <div id="Projects">
     <div class="header"
-          data-aos="fade-left"
+          data-aos="fade"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out">
       Projects.
     </div>
     <div class="project-items"
-         data-aos="fade-left"
+         data-aos="fade"
          data-aos-duration="1000"
          data-aos-easing="ease-in-out">
         <div v-for="project in projects"
@@ -89,7 +89,7 @@ export default {
         },
         {
           id: 3,
-          name: "Team Chat App",
+          name: "Team Chat Platform",
           link: "",
           description: "Developed a team communication and project management platform with a team of 15 developers using Agile methodology and scrum framework.",
           tech: ["React", "Node.js", "Firebase"]
@@ -163,6 +163,7 @@ export default {
         color: #fcdd56;
         margin-bottom: 10px;
         cursor: pointer;
+        transition: all 0s, opacity 0.3s ease-in-out;
       }
       .not-selected-project{
         color: white;
@@ -225,20 +226,21 @@ export default {
 @media only screen and (max-width: 768px) {
 
   #Projects{
-    height: fit-content;
-    width: 80vw;
     display: flex;
     flex-direction: column;
+    transform: translate(15vw, -70px);
+    height: fit-content;
+    margin: 0 auto 0 auto;
+    width: 70vw;
+    margin-left: 0 !important;
     padding: 0;
-    margin-left: 0;
-    margin-bottom: 50px;
 
     .header {
       font-family: "Bw Modelica Regular", serif;
       font-size: 20px;
-      margin-bottom: 50px;
       color: var(--bone);
       opacity: 0.7;
+      margin-bottom: 50px;
     }
     .project-items{
       display: flex;
@@ -247,27 +249,28 @@ export default {
       .project{
         display: flex;
         flex-direction: column;
-        margin-bottom: 35px;
+        margin-bottom: 40px;
         font-family: "Bw Modelica Bold", serif;
-        font-size: 30px;
-        width: 80vw;
+        font-size: 26px;
+        width: 70vw;
 
         .selected-project{
           color: #fcdd56;
           margin-bottom: 15px;
+          width: 70vw;
         }
         .not-selected-project{
           color: white;
           margin-bottom: 10px;
         }
         .project-link{
-          margin-left: 8px;
+          margin-left: 6px;
           position: absolute;
           font-size: 1em;
         }
         .project-content {
           width: 70vw;
-          position: relative;
+          position: sticky;
           height: fit-content;
           display: flex;
           flex-direction: column;
@@ -295,7 +298,7 @@ export default {
               opacity: 1;
               border-radius: 20px;
               font-size: 11px;
-              width: fit-content;
+              width: 70vw;;
               padding: 8px 14px;
               margin-right: 12px;
             }

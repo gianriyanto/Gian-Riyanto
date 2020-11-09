@@ -66,8 +66,9 @@ export default {
 @media only screen and (max-width: 768px) {
 
   .introduction{
-    height: 80vh;
+    height: fit-content;
     width: 70vw;
+    padding: 0;
     font-size: 23px;
     font-family: "Bw Modelica Bold", serif;
     color: white;

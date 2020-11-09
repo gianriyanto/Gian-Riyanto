@@ -83,8 +83,7 @@ export default {
   #About{
     height: fit-content;
     width: 70vw;
-    margin: 0 auto 0 auto;
-    padding: 0 0 0 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     color: white;
@@ -93,7 +92,6 @@ export default {
     .header{
       font-family: "Bw Modelica Bold", serif;
       font-size: 25px;
-      padding-bottom: 25px;
     }
     .content{
       font-size: 15px;

@@ -32,13 +32,13 @@
       <component :is="selectedTab" v-bind:name="name"> </component>
     </div>
     <div id="mobile">
-      <Introduction v-bind:name="name"/>
-      <About/>
-      <Projects/>
-      <Experience/>
-      <Skills/>
-      <Contact v-bind:name="name"/>
-      <personal-links/>
+      <div class="mobile-tab_wrapper"> <Introduction v-bind:name="name"/> </div>
+      <div class="mobile-tab_wrapper"><About/> </div>
+      <div class="mobile-tab_wrapper"><Projects/> </div>
+      <div class="mobile-tab_wrapper"><Experience/> </div>
+      <div class="mobile-tab_wrapper"><Skills/> </div>
+      <div class="mobile-tab_wrapper"><Contact v-bind:name="name"/> </div>
+      <div class="mobile-tab_wrapper"><personal-links/></div>
     </div>
     <div class="footer"
          data-aos="fade"
@@ -247,10 +247,9 @@ export default {
     display: flex;
     flex-direction: column;
     height: fit-content;
-    width: 80vw;
+    width: 100vw;
     background-image: var(--gradient-mobile);
     box-shadow: 10px 0 20px 2px #9b9b9b;
-    overflow: scroll;
   }
   .logo{
     display: none;
@@ -343,6 +342,15 @@ export default {
   #mobile{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+    height: fit-content;
+
+    .mobile-tab_wrapper{
+      margin: 0 auto 10vh auto;
+      height: fit-content;
+      width: 100vw;
+    }
   }
 }
 

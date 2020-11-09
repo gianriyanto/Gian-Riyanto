@@ -27,17 +27,15 @@ html, body {
 }
 @media only screen and (max-width: 768px) {
   *, html, body, div, span,{
-    margin-left:0 !important;
-    margin-right:0 !important;
-    padding-left:0 !important;
-    padding-right:0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 :root {
   --bone: #f5f5f2;
   --gradient: linear-gradient(#9a48f6, #06528c);
   --gradient-green: linear-gradient(to bottom left, #2ca48b, #4594b0);
-  --gradient-mobile: linear-gradient(#9a48f6, #06528c, #7f31d9, #273db0);
+  --gradient-mobile: linear-gradient(#9a48f6, #06528c, #b849e0, #305db7, #9a48f6, #9a48f6);
 }
 @font-face {
   font-family: "Bw Modelica Bold";

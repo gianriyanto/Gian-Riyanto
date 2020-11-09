@@ -1,7 +1,7 @@
 <template>
   <div id="Skills">
     <span class="header"
-          data-aos="fade-left"
+          data-aos="fade"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out">
       Skills.
@@ -14,7 +14,7 @@
         {{ skill.skillType }}
       </span>
       <span class="skill-items"
-            data-aos="fade-left"
+            data-aos="fade"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out">
         <span v-for="item in skill.skillItems" class="item" :key="item">
@@ -45,7 +45,7 @@ export default {
         },
         {
           skillType: "Tools",
-          skillItems: ['Git', 'Netlify', 'Confluence', 'Trello', 'JIRA', 'Jupyter Notebook']
+          skillItems: ['Git', 'Netlify', 'Confluence', 'Trello', 'JIRA', 'Jupyter']
         },
         {
           skillType: "Knowledge",
@@ -114,9 +114,10 @@ export default {
 @media only screen and (max-width: 768px) {
   #Skills{
     height: fit-content;
-    width: 80vw;
+    width: 70vw;
     display: flex;
     flex-direction: column;
+    transform: translate(0, -20vh);
     padding: 0;
 
     font-family: "Bw Modelica Bold", serif;

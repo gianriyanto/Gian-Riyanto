@@ -1,13 +1,13 @@
 <template>
   <div id="Experience">
-    <span class="header"
-          data-aos="fade-left"
+    <div class="header"
+          data-aos="fade"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out">
       Experience.
-    </span>
+    </div>
     <div class="experience-items"
-         data-aos="fade-left"
+         data-aos="fade"
          data-aos-duration="1000"
          data-aos-easing="ease-in-out">
       <div v-for="experience in experiences"
@@ -17,7 +17,7 @@
         <span :class="labelStyle(experience)">
           {{ experience.position }}
         </span>
-        <span v-if="selectExperience">
+        <span v-if="selectExperience" class="experience-content">
           <span v-if="selectedExperience.position === experience.position"
                 class="experience-detail"
                 data-aos="fade"
@@ -30,8 +30,8 @@
                 data-aos="fade"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out">
-              <ul v-for="description in experience.description" class="description" :key="description">
-                <li> {{ description }} </li>
+              <ul class="description">
+                <li v-for="description in experience.description" :key="description"> {{ description }} </li>
               </ul>
           </span>
         </span>
@@ -64,7 +64,7 @@ export default {
         {
           id: 1,
           position: "SAP Junior Consultant",
-          company: "Daya Dimensi Global | HR Path",
+          company: "HR Path",
           period: "Nov 2018 - Jun 2019",
           description: [
             "Configured SAP SuccessFactors cloud systems by uncovering user pain-points, problems, and business process.",
@@ -142,6 +142,7 @@ export default {
       .selected-experience {
         color: #fcdd56;
         cursor: pointer;
+        margin-bottom: 10px;
         transition: all 0s, opacity 0.3s ease-in-out;
 
         &:hover {
@@ -155,33 +156,38 @@ export default {
       cursor: pointer;
       transition: all .2s ease-in-out;
 
-      &:hover {
-        color: #eacd50;
-        transform: translateX(30px);
-        transition: ease-out 0.4s;
-      }
-      }
-
-      .experience-detail{
-        font-size: 20px;
-        margin-bottom: 10px;
-
-        .experience-company{
-          color: #fcdd56;
-          font-family: "Bw Modelica Bold", serif;
-        }
-        .experience-period{
-          font-family: "Bw Modelica Hairline", serif;
+        &:hover {
+          color: #eacd50;
+          transform: translateX(30px);
+          transition: ease-out 0.4s;
         }
       }
-      .description-wrapper{
+
+      .experience-content {
         display: flex;
         flex-direction: column;
 
-        .description {
-          font-family: "Bw Modelica Regular", serif;
-          font-size: 16px;
-          line-height: 2;
+        .experience-detail{
+          font-size: 20px;
+          margin-bottom: 10px;
+
+          .experience-company{
+            color: #fcdd56;
+            font-family: "Bw Modelica Bold", serif;
+          }
+          .experience-period{
+            font-family: "Bw Modelica Hairline", serif;
+          }
+        }
+        .description-wrapper{
+          display: flex;
+          flex-direction: column;
+
+          .description {
+            font-family: "Bw Modelica Regular", serif;
+            font-size: 16px;
+            line-height: 2;
+          }
         }
       }
     }
@@ -193,13 +199,15 @@ export default {
 }
 
 @media only screen and (max-width: 768px) {
+
   #Experience{
+    height: fit-content;
+    transform: translate(0, -10vh);
+    width: 70vw;
+    margin: 0 auto 0 auto;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    height: fit-content;
-    width: 80vw;
-    padding: 0;
 
     .header {
       font-family: "Bw Modelica Regular", serif;
@@ -211,54 +219,64 @@ export default {
     .experience-items {
       display: flex;
       flex-direction: column;
+      max-width: 70vw;
 
       .experience{
         display: flex;
         flex-direction: column;
         margin-bottom: 44px;
         font-family: "Bw Modelica Bold", serif;
-        color: white;
-        font-size: 30px;
-        width: 80vw;
+        font-size: 28px;
+        width: 70vw;
 
         .selected-experience {
           color: #fcdd56;
-          cursor: pointer;
           margin-bottom: 20px;
+          width: 70vw;
         }
 
         .not-selected-experience {
+          width: 70vw;
           color: white;
           margin-bottom: 10px;
         }
 
-        .experience-detail{
+        .experience-content{
           width: 70vw;
-          position: relative;
-          font-size: 14px;
-          margin-bottom: 15px;
+          position: sticky;
           height: fit-content;
           display: flex;
           flex-direction: column;
 
-          .experience-company{
-            font-size: 18px;
-            color: #fcdd56;
-            font-family: "Bw Modelica Bold", serif;
-          }
-          .experience-period{
-            font-size: 18px;
-            font-family: "Bw Modelica Hairline", serif;
-          }
-        }
-        .description-wrapper{
-          display: flex;
-          flex-direction: column;
+          .experience-detail{
+            width: 70vw;
+            height: fit-content;
+            margin-bottom: 15px;
+            font-size: 12px;
+            display: flex;
+            flex-direction: row;
 
-          .description {
-            font-family: "Bw Modelica Regular", serif;
-            font-size: 14px;
-            line-height: 2.2;
+            .experience-company{
+              font-size: 14px;
+              color: #fcdd56;
+              font-family: "Bw Modelica Bold", serif;
+              margin-right: 5px;
+            }
+            .experience-period{
+              font-size: 14px;
+              font-family: "Bw Modelica Hairline", serif;
+            }
+          }
+          .description-wrapper{
+            display: flex;
+            flex-direction: column;
+            width: 70vw;
+
+            .description {
+              font-family: "Bw Modelica Regular", serif;
+              font-size: 14px;
+              line-height: 2.2;
+            }
           }
         }
       }

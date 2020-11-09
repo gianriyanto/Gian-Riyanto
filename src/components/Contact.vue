@@ -4,7 +4,7 @@
        data-aos="fade-down"
        data-aos-duration="1000"
        data-aos-easing="ease-in-out">
-    Say hello.
+    Say Hello.
   </div>
   <div class="email"
        data-aos="fade"
@@ -89,12 +89,14 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #Contact{
-    height: 100vh;
+    transform: translate(0, -30vh);
+    height: 60vh;
     width: 80vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 0 auto 0 auto;
-    padding: 150px 0 0 0;
+    padding: 0;
     text-align: center;
     font-family: "Bw Modelica Bold", serif;
 
@@ -113,7 +115,7 @@ export default {
 
     .message{
       font-family: "Bw Modelica Light", serif;
-      font-size: 20px;
+      font-size: 18px;
       color: var(--bone);
       width: 80vw;
       line-height: 2;

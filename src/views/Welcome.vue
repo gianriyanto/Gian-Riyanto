@@ -94,7 +94,7 @@ export default {
     height: 100vh;
     width: 100vw;
     background-color: var(--bone);
-    overflow: scroll;
+    overflow-y: scroll;
 
     ::-webkit-scrollbar {
       width: 0;
