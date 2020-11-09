@@ -2,14 +2,14 @@
   <div id="Skills">
     <span class="header"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-easing="ease-in-out">
       Skills.
     </span>
     <span v-for="skill in skills" :key="skill" class="skills-wrapper">
       <span class="sub-header"
             data-aos="fade"
-            data-aos-duration="2000"
+            data-aos-duration="3000"
             data-aos-easing="ease-in-out">
         {{ skill.skillType }}
       </span>
@@ -33,7 +33,7 @@ export default {
       skills: [
         {
           skillType: "Web",
-          skillItems: ['React', 'Vue', 'Vuex', 'Node', 'HTML', '(S)CSS', 'Node.js', 'Express']
+          skillItems: ['React', 'Vue', 'Vuex', 'Node.js', 'HTML', '(S)CSS', 'Node.js', 'Express']
         },
         {
           skillType: "Languages",
@@ -63,10 +63,10 @@ export default {
   flex-direction: column;
   margin: auto;
   padding: 70px 0 0 40px;
-  font-family: "Bw Modelica Bold", serif;
   color: white;
 
   .header{
+    font-family: "Bw Modelica Bold", serif;
     font-size: 45px;
     margin-bottom: 20px;
     padding-left: 5px;
@@ -77,8 +77,9 @@ export default {
     flex-direction: column;
 
     .sub-header{
-      font-family: "Bw Modelica Light", serif;
-      font-size: 15px;
+      font-family: "Bw Modelica Regular", serif;
+      color: #eacd50;
+      font-size: 18px;
       padding-left: 6px;
       margin-bottom: 15px;
       opacity: 1;
@@ -89,12 +90,12 @@ export default {
       flex-direction: row;
       margin-bottom: 40px;
       font-family: "Bw Modelica Regular", serif;
-      font-size: 13px;
+      font-size: 14px;
 
       .item{
         border: 2px solid white;
         opacity: 1;
-        border-radius: 17px;
+        border-radius: 20px;
         width: fit-content;
         padding: 8px 17px;
         margin-right: 12px;
@@ -148,7 +149,7 @@ export default {
         font-family: "Bw Modelica Regular", serif;
         font-size: 11px;
         line-height: 4.5;
-        width: 75vw;
+        width: 73vw;
 
         .item{
           border: thin solid white;

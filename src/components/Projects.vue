@@ -229,6 +229,7 @@ export default {
     display: flex;
     flex-direction: column;
     transform: translate(15vw, 0);
+    min-height: 100vh;
     height: fit-content;
     margin: 0 auto 0 auto;
     width: 70vw;
@@ -249,9 +250,9 @@ export default {
       .project{
         display: flex;
         flex-direction: column;
-        margin-bottom: 20px;
+        margin-bottom: 5vh;
         font-family: "Bw Modelica Bold", serif;
-        font-size: 28px;
+        font-size: 35px;
         width: 70vw;
 
         .selected-project{

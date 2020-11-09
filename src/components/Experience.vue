@@ -117,8 +117,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  transform: translate(20px, 70px);
-  width: 728px;
+  transform: translate(20px, 60px);
 
   .header {
     font-family: "Bw Modelica Regular", serif;
@@ -134,10 +133,12 @@ export default {
     .experience{
       display: flex;
       flex-direction: column;
-      margin-bottom: 44px;
+      margin-bottom: 5vh;
       font-family: "Bw Modelica Bold", serif;
       color: white;
       font-size: 54px;
+      width: 40vw;
+      min-width: 490px;
 
       .selected-experience {
         color: #fcdd56;
@@ -201,6 +202,7 @@ export default {
 @media only screen and (max-width: 768px) {
 
   #Experience{
+    min-height: 100vh;
     height: fit-content;
     transform: translate(0,0);
     width: 70vw;
@@ -224,9 +226,9 @@ export default {
       .experience{
         display: flex;
         flex-direction: column;
-        margin-bottom: 44px;
+        margin-bottom: 5vh;
         font-family: "Bw Modelica Bold", serif;
-        font-size: 28px;
+        font-size: 35px;
         width: 70vw;
 
         .selected-experience {

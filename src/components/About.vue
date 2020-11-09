@@ -93,7 +93,7 @@ I believe nothing is more rewarding than an opportunity to transform new things 
 @media only screen and (max-width: 768px) {
 
   #About{
-    height: 100vh;
+    height: fit-content;
     width: 70vw;
     padding: 0;
     display: flex;
