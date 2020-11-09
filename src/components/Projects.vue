@@ -1,7 +1,7 @@
 <template>
   <div id="Projects">
     <div class="header"
-          data-aos="fade"
+          data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out">
       Projects.

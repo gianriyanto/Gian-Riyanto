@@ -1,19 +1,19 @@
 <template>
 <div id="Contact">
   <div class="header"
-       data-aos="fade-down"
+       data-aos="fade-up"
        data-aos-duration="1000"
        data-aos-easing="ease-in-out">
     Say Hello.
   </div>
   <div class="email"
-       data-aos="fade"
-       data-aos-duration="3000"
+       data-aos="fade-up"
+       data-aos-duration="2000"
        data-aos-easing="ease-in-out">
     <a href="mailto:li.griyanto@gmail.com">li.griyanto@gmail.com</a>
   </div>
   <div class="message"
-       data-aos="fade"
+       data-aos="fade-up"
        data-aos-duration="3000"
        data-aos-easing="ease-in-out">
     Let's keep in touch {{ inputtedName }}! <br/>

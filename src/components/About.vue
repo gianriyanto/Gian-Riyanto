@@ -1,14 +1,14 @@
 <template>
   <div id="About">
     <span class="header"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out">
       About Me.
     </span>
     <span class="content"
-          data-aos="fade-left"
-          data-aos-duration="1000"
+          data-aos="fade"
+          data-aos-duration="3000"
           data-aos-easing="ease-in-out">
       I'm a software engineering student (BEHons. Software) at the <span class="bold">University of Technology Sydney</span>, on track for graduation by <span class="bold">October 2021</span>. <br/> <br/>
       Driven by my intellectual curiosity and appreciation for thoughtful design, I seek to continue my lifelong learning journey amongst a collaborative team that shares my passion for products and user-experience. <br/> <br/>
@@ -16,7 +16,7 @@
       <span class="skills-headers"> Here are some technologies that I've been tinkering with recently: </span>
     </span>
     <span class="skills-wrapper"
-          data-aos="fade-left"
+          data-aos="fade"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out">
       <span v-for="skill in skills" class="skill" :key="skill"> {{ skill }} </span>
