@@ -37,8 +37,8 @@
       <div class="mobile-tab_wrapper"><Projects/> </div>
       <div class="mobile-tab_wrapper"><Experience/> </div>
       <div class="mobile-tab_wrapper"><Skills/> </div>
-      <div class="mobile-tab_wrapper"><Contact v-bind:name="name"/> </div>
-      <div class="mobile-tab_wrapper"><personal-links/></div>
+      <div class="mobile-tab_wrapper"><Contact v-bind:name="name"/> <personal-links/> </div>
+
     </div>
     <div class="footer"
          data-aos="fade"
@@ -347,7 +347,7 @@ export default {
     height: fit-content;
 
     .mobile-tab_wrapper{
-      margin: 10vh auto 10vh auto;
+      margin: 7vh auto 7vh auto;
       height: fit-content;
       width: 100vw;
     }

@@ -125,7 +125,7 @@ export default {
 
     .header{
       font-size: 25px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       padding-left: 5px;
     }
 
@@ -137,7 +137,7 @@ export default {
         font-family: "Bw Modelica Light", serif;
         font-size: 16px;
         padding-left: 6px;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         opacity: 0.7;
       }
 

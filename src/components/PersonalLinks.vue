@@ -112,10 +112,8 @@ a {
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: center;
-    padding: 0 0 25% 0;
-    margin: auto;
+    margin: auto 0 8vh 0;
     height: 40vh;
     width: 80vw;
     color: var(--bone);

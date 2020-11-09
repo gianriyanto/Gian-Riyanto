@@ -239,6 +239,10 @@ export default {
           width: 70vw;
           color: white;
           margin-bottom: 10px;
+
+          &:hover {
+            transform: translateX(0);
+          }
         }
 
         .experience-content{

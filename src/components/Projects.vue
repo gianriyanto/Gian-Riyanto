@@ -249,7 +249,7 @@ export default {
       .project{
         display: flex;
         flex-direction: column;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         font-family: "Bw Modelica Bold", serif;
         font-size: 26px;
         width: 70vw;
@@ -262,6 +262,10 @@ export default {
         .not-selected-project{
           color: white;
           margin-bottom: 10px;
+
+          &:hover {
+            transform: translateX(0);
+          }
         }
         .project-link{
           margin-left: 6px;

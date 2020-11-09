@@ -89,12 +89,11 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #Contact{
-    transform: translate(0, -30vh);
-    height: 80vh;
+    border: thin solid green;
+    height: 90vh;
     width: 80vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     margin: 0 auto 0 auto;
     padding: 0;
     text-align: center;
