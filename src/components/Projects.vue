@@ -228,7 +228,7 @@ export default {
   #Projects{
     display: flex;
     flex-direction: column;
-    transform: translate(15vw, -70px);
+    transform: translate(15vw, 0);
     height: fit-content;
     margin: 0 auto 0 auto;
     width: 70vw;

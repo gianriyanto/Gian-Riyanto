@@ -89,7 +89,6 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #Contact{
-    border: thin solid green;
     height: 90vh;
     width: 80vw;
     display: flex;

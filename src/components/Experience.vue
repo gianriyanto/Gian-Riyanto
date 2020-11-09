@@ -202,7 +202,7 @@ export default {
 
   #Experience{
     height: fit-content;
-    transform: translate(0, -10vh);
+    transform: translate(0,0);
     width: 70vw;
     margin: 0 auto 0 auto;
     padding: 0;

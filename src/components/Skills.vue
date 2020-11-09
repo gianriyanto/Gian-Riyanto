@@ -117,7 +117,7 @@ export default {
     width: 70vw;
     display: flex;
     flex-direction: column;
-    transform: translate(0, -20vh);
+    transform: translate(0, 0);
     padding: 0;
 
     font-family: "Bw Modelica Bold", serif;
