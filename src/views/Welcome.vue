@@ -11,7 +11,7 @@
                 data-aos="fade-down"
                 data-aos-duration="2500"
                 data-aos-easing="ease-in-out">
-            Gian.
+            {{ myName }}.
           </span>
         </span>
         <span class="message"
@@ -44,6 +44,7 @@ export default {
   data() {
     return {
       name: { nameInput: 'Name?', edit: false, isValid: false},
+      myName: "Gian"
     }
   },
 }

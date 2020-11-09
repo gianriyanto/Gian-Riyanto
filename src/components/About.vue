@@ -7,13 +7,18 @@
       About Me.
     </span>
     <span class="content"
+          v-for="(line, id) in aboutMe.split('\n')"
+          :key="id"
           data-aos="fade"
           data-aos-duration="3000"
           data-aos-easing="ease-in-out">
-      I'm a software engineering student (BEHons. Software) at the <span class="bold">University of Technology Sydney</span>, on track for graduation by <span class="bold">October 2021</span>. <br/> <br/>
-      Driven by my intellectual curiosity and appreciation for thoughtful design, I seek to continue my lifelong learning journey amongst a collaborative team that shares my passion for products and user-experience. <br/> <br/>
-      I find that nothing is more rewarding than being able to transform new learnings into something users find delightful, especially when I get to meet new people and develop relationships along the way. <br/> <br/>
-      <span class="skills-headers"> Here are some technologies that I've been tinkering with recently: </span>
+        {{line}}
+    </span>
+    <span class="skills-headers"
+          data-aos="fade"
+          data-aos-duration="3000"
+          data-aos-easing="ease-in-out">
+      Here are some technologies that I've been tinkering with recently:
     </span>
     <span class="skills-wrapper"
           data-aos="fade"
@@ -30,6 +35,9 @@ export default {
   data() {
     return {
       skills: ["Javascript", "React", "Vue", "HTML", "(S)CSS", "Node.js", "Python"],
+      aboutMe: `Hey there, I am a software engineer with an obsession for detail and a passion for value creation. I am currently a studying (BEHons. Software) at the University of Technology Sydney, on track for graduation by October 2021.
+My greatest pleasure comes from being able to engage with challenging problems, uncovering customer pain points, and seek out new solutions for the next software iteration.
+I believe nothing is more rewarding than an opportunity to transform new things I learn into something users find delightful, especially when I get to meet new people and develop relationships along the way.`
     }
   }
 }
@@ -43,7 +51,8 @@ export default {
   padding: 60px 0 0 30px;
   margin: auto;
   color: white;
-  width: 630px;
+  min-width: 30vw;
+  width: 40vw;
 
   .header{
     font-family: "Bw Modelica Bold", serif;
@@ -51,30 +60,34 @@ export default {
     padding-bottom: 20px;
   }
   .content{
+    font-family: "Bw Modelica Regular", serif;
+    font-size: 16px;
+    line-height: 1.8;
+    padding-bottom: 20px;
+    white-space: pre-line;
+  }
+  .skills-headers{
+    font-family: "Bw Modelica Regular", serif;
     font-size: 17px;
     line-height: 2;
     padding-bottom: 20px;
   }
-}
+  .skills-wrapper{
+    flex-direction: row;
+    display: flex;
 
-.skills-wrapper{
-  flex-direction: row;
-  display: flex;
-
-  .skill {
-    font-family: "Bw Modelica Bold", serif;
-    border: 2px solid white;
-    color: white;
-    opacity: 1;
-    border-radius: 20px;
-    font-size: 12px;
-    width: fit-content;
-    padding: 8px 15px;
-    margin-right: 12px;
+    .skill {
+      font-family: "Bw Modelica Bold", serif;
+      border: 2px solid white;
+      color: white;
+      opacity: 1;
+      border-radius: 20px;
+      font-size: 12px;
+      width: fit-content;
+      padding: 8px 1vw;
+      margin-right: 1vw;
+    }
   }
-}
-.bold {
-  font-family: "Bw Modelica Bold", serif;
 }
 
 @media only screen and (max-width: 768px) {
@@ -99,17 +112,13 @@ export default {
       font-size: 15px;
       line-height: 2.2;
     }
-  }
-  .skills-headers{
-    display: none;
-  }
+    .skills-headers{
+      display: none;
+    }
 
-  .skills-wrapper {
-    display: none;
-  }
-
-  .bold {
-    font-family: "Bw Modelica Bold", serif;
+    .skills-wrapper {
+      display: none;
+    }
   }
 }
 </style>

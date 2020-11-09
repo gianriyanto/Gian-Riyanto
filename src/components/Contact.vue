@@ -26,7 +26,7 @@
          data-aos-duration="2000"
          data-aos-easing="ease-in-out">
       Let's keep in touch {{ inputtedName }}! <br/>
-      I'm one inbox away, whether you have a question or you just want to say hi, I'm always up for a chat.
+      I'm one inbox away. Whether you have a question or you just want to say hi, I'm always up for a chat.
     </div>
   </div>
   <personal-links class="links-for-mobile"/>

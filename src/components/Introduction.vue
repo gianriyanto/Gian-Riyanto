@@ -16,8 +16,7 @@
             data-aos="fade-left"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out">
-              I am a software engineering student on the lookout for experiences to learn new things and make meaningful contributions.
-              I love value-adding products, thoughtful user-experiences, and creative solutions that delight people.
+              {{ introduction }}
       </span>
     </div>
   </div>
@@ -30,6 +29,8 @@ export default {
   data(){
     return {
       inputtedName: this.name,
+      introduction: "I am a software engineering student on the lookout for experiences to learn new things and make meaningful contributions.\n" +
+          "I love value-adding products, thoughtful user-experiences, and creative solutions that delight people."
     }
   },
   watch: {
