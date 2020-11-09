@@ -26,7 +26,7 @@
                      data-aos-easing="ease-in-out"/>
       </div>
     </div>
-    <MainPage v-bind:name="name.nameInput.slice(0, -1)"/>
+    <MainPage class="test" v-bind:name="name.nameInput.slice(0, -1)"/>
   </div>
 </template>
 
@@ -54,6 +54,7 @@ export default {
 .content-wrapper {
   display: flex;
   flex-direction: column;
+  height: fit-content;
 }
 
 #welcome{
