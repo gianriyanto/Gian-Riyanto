@@ -67,7 +67,8 @@ export default {
           id: 0,
           name: "This Personal Website",
           link: "https://github.com/gianriyanto/Gian-Riyanto",
-          description: "In all honesty, building this personal website is just another reason for me to tinker with Vue.js, explore different UI/UX designs, and learn about responsive UIs",
+          description: "In all honesty, building this personal website is just another reason for me to tinker with Vue.js (and yes I think Vue is pretty cool), explore different UI/UX designs, and learn creating responsive interfaces. \n" +
+              "I greatly enjoy the process of transforming ideas into code as well as an opportunity to dive into all the nuances of exploring new frameworks that I can leverage in future projects.",
           tech: ["Vue", "Vuex", "Node.js", "Netlify"]
         },
         {
@@ -76,23 +77,23 @@ export default {
           link: "https://ioweyou.netlify.app/",
           description: "Built and deployed a favours-tracking web application with a MERN stack. " +
               "Worked primarily as a front-end developer - designed, developed and implemented the client-side application for which the product received an honourable mention for its UI/UX design.\n" +
-              "Here I learnt developing clean, maintainable, and well-designed code, as well as practiced effective product management skills to ensure optimal delivery of the web app.",
-          tech: ["React", "Node.js", "MongoDB", "Express"]
+              "Here I learnt developing clean, maintainable, and well-designed code, as well as practiced effective product management to ensure efficient delivery of product. (Unfortunately, this website is not yet )mobile responsive)",
+          tech: ["React.js", "Node.js", "MongoDB", "Express"]
         },
         {
           id: 2,
           name: "Analytics Dashboard",
           link: "https://github.com/davidbr4gg/analytic_dashboard",
-          description: "Developed a responsive analytics dashboard for users to manage, monitor, and analyse data at a glance. Worked on the front-end development designing \n" +
-              "the dashboard interface and implementing various widgets including charts, bars, cards, and tables.",
+          description: "Developed a responsive analytics dashboard for users to manage, monitor, and analyse data at a glance. Worked as a front-end developer designing \n" +
+              "the dashboard interface and implementing various dynamic widgets such as line charts, bar charts, statistical cards, and tables.",
           tech: ["Vue", "Vuex", "Node.js", "Chart.js"]
         },
         {
           id: 3,
           name: "Team Chat Platform",
           link: "",
-          description: "Developed a team communication and project management platform with a team of 15 developers using Agile methodology and scrum framework.",
-          tech: ["React", "Node.js", "Firebase"]
+          description: "Developed a team communication and project management platform where users can create group and subgroup chat channels. Collaborated with a team of 15 people following the agile methodology and scrum framework practices",
+          tech: ["React.js", "Node.js", "Firebase"]
         },
         {
           id: 4,
@@ -107,7 +108,7 @@ export default {
           name: "Automated Data Pipeline",
           link: "https://github.com/gianriyanto/Automated-Data-Pipeline",
           description: "Developed a data pipeline framework to automate previously laborious multi-step tasks. Programatically authored an implementation of Direct Acyclic Graphs to monitor and orchestrate workflows\n" +
-              " for various big-data processes that is currently still maintained for expanding business use-cases. ",
+              " for various big-data processes that is currently still maintained for expanding business use-cases.",
           tech: ["Python", "PyCharm", "Airflow", "Google Cloud Platform"]
         },
       ]
