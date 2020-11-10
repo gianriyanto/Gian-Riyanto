@@ -162,8 +162,8 @@ export default {
     position: absolute;
     display: flex;
     flex-direction: row;
-    top: 42px;
-    right: 38px;
+    top: 45px;
+    right: 40px;
 
     .nav-container {
       display: flex;
@@ -174,7 +174,7 @@ export default {
 
       .nav-tabs {
         font-family: "Bw Modelica Regular", serif;
-        font-size: 17px;
+        font-size: 15px;
         color: white;
         cursor: pointer;
 
