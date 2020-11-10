@@ -33,10 +33,10 @@ html, body {
 }
 :root {
   --bone: #ffffff;
-  --test: #934bbf;
-  --gradient: linear-gradient(#9647c1, #123fb0);
+  --gradient-black: linear-gradient(#1d1d1d, black);
+  --gradient: linear-gradient(#965bc1, #0b308d);
   --gradient-green: linear-gradient(to bottom left, #2ca48b, #4594b0);
-  --gradient-mobile: linear-gradient(#be5afc, #0b5d9b, #6011cb, #1d3799, #934bbf, #1d5599, #be5afc, #0a3b83);
+  --gradient-mobile: linear-gradient(#965bc1, #0b308d, #965bc1, #0b308d, #965bc1, #0b308d);
 }
 @font-face {
   font-family: "Bw Modelica Bold";

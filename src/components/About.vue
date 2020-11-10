@@ -52,7 +52,6 @@ I believe nothing is more rewarding than an opportunity to transform new things 
   padding: 60px 0 0 30px;
   margin: auto;
   color: white;
-  min-width: 605px;
   width: 36vw;
 
   .header{

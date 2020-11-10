@@ -109,7 +109,7 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #Contact{
-    height: 90vh;
+    height: 85vh;
     width: 80vw;
     display: flex;
     flex-direction: column;
