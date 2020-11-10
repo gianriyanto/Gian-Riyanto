@@ -11,19 +11,19 @@
   <div class="content">
     <div class="header"
          data-aos="fade-up"
-         data-aos-duration="2500"
+         data-aos-duration="1500"
          data-aos-easing="ease-in-out">
       Say Hello
     </div>
-    <div class="email">
-      <a href="mailto:li.griyanto@gmail.com"
-         data-aos="fade-up"
-         data-aos-duration="3000"
-         data-aos-easing="ease-in-out">li.griyanto@gmail.com</a>
+    <div class="email"
+         data-aos="fade"
+         data-aos-duration="2300"
+         data-aos-easing="ease-in-sine">
+      <a href="mailto:li.griyanto@gmail.com" >li.griyanto@gmail.com</a>
     </div>
     <div class="message"
-         data-aos="fade-up"
-         data-aos-duration="2000"
+         data-aos="fade"
+         data-aos-duration="2300"
          data-aos-easing="ease-in-out">
       Let's keep in touch {{ inputtedName }}! <br/>
       I'm one inbox away. Whether you have a question or you just want to say hi, I'm always up for a chat.
