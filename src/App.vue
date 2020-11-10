@@ -34,7 +34,7 @@ html, body {
 :root {
   --bone: #ffffff;
   --test: #0a3b83;
-  --gradient: linear-gradient(#be5afc, #124d7a);
+  --gradient: linear-gradient(#8c3eb7, #123fb0);
   --gradient-green: linear-gradient(to bottom left, #2ca48b, #4594b0);
   --gradient-mobile: linear-gradient(#be5afc, #0b5d9b, #8338d6, #1d3799, #be5afc, #1d5599, #8143d7, #0a3b83);
 }
