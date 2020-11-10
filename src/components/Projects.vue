@@ -158,7 +158,7 @@ export default {
       flex-direction: column;
       margin-bottom: 30px;
       font-family: "Bw Modelica Bold", serif;
-      font-size: 48px;
+      font-size: 53px;
 
       .selected-project{
         color: #fcdd56;
@@ -196,7 +196,7 @@ export default {
         .project-details {
           font-family: "Bw Modelica Light", serif;
           color: white;
-          font-size: 16px;
+          font-size: 18px;
           line-height: 1.9;
           height: fit-content;
           margin-bottom: 15px;
@@ -213,9 +213,9 @@ export default {
             border: 2px solid #fcdd56;
             opacity: 1;
             border-radius: 20px;
-            font-size: 12px;
+            font-size: 13px;
             width: fit-content;
-            padding: 8px 17px;
+            padding: 8px 18px;
             margin-right: 12px;
           }
         }

@@ -136,9 +136,9 @@ export default {
       margin-bottom: 5vh;
       font-family: "Bw Modelica Bold", serif;
       color: white;
-      font-size: 54px;
-      width: 40vw;
-      min-width: 490px;
+      font-size: 58px;
+      width: 35vw;
+      min-width: 660px;
 
       .selected-experience {
         color: #fcdd56;
@@ -186,7 +186,7 @@ export default {
 
           .description {
             font-family: "Bw Modelica Regular", serif;
-            font-size: 16px;
+            font-size: 19px;
             line-height: 2;
           }
         }

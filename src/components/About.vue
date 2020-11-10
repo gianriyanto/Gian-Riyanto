@@ -52,7 +52,7 @@ I believe nothing is more rewarding than an opportunity to transform new things 
   padding: 60px 0 0 30px;
   margin: auto;
   color: white;
-  min-width: 30vw;
+  min-width: 605px;
   width: 36vw;
 
   .header{
@@ -62,7 +62,7 @@ I believe nothing is more rewarding than an opportunity to transform new things 
   }
   .content{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 16px;
+    font-size: 19px;
     line-height: 1.8;
     padding-bottom: 20px;
     white-space: pre-line;
@@ -83,9 +83,9 @@ I believe nothing is more rewarding than an opportunity to transform new things 
       color: white;
       opacity: 1;
       border-radius: 20px;
-      font-size: 12px;
+      font-size: 13px;
       width: fit-content;
-      padding: 8px 1vw;
+      padding: 9px 0.8vw;
       margin-right: 0.7vw;
     }
   }

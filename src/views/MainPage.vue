@@ -226,10 +226,10 @@ export default {
     display: flex;
     flex-direction: column;
     text-align: right;
-    bottom: 26px;
+    bottom: 29px;
     right: 40px;
     font-family: "Bw Modelica Hairline", serif;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.8;
     color: #d4d3cd;
   }
