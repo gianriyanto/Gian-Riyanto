@@ -36,7 +36,7 @@ html, body {
   --test: #934bbf;
   --gradient: linear-gradient(#9647c1, #123fb0);
   --gradient-green: linear-gradient(to bottom left, #2ca48b, #4594b0);
-  --gradient-mobile: linear-gradient(#be5afc, #0b5d9b, #6011cb, #1d3799, #934bbf, #1d5599, #8143d7, #0a3b83);
+  --gradient-mobile: linear-gradient(#be5afc, #0b5d9b, #6011cb, #1d3799, #934bbf, #1d5599, #be5afc, #0a3b83);
 }
 @font-face {
   font-family: "Bw Modelica Bold";
