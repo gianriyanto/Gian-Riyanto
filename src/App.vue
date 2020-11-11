@@ -19,13 +19,13 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
 #app {
-  color: black;
+
 }
 html, body {
   margin: 0 !important;
   padding: 0 !important;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   *, html, body, div, span,{
     margin: 0 !important;
     padding: 0 !important;
@@ -34,7 +34,7 @@ html, body {
 :root {
   --bone: #ffffff;
   --gradient-black: linear-gradient(#1d1d1d, black);
-  --gradient: linear-gradient(#965bc1, #0b308d);
+  --gradient: linear-gradient(#965bc1, #103896);
   --gradient-green: linear-gradient(to bottom left, #2ca48b, #4594b0);
   --gradient-mobile: linear-gradient(#965bc1, #0b308d, #965bc1, #0b308d, #965bc1, #0b308d);
 }
