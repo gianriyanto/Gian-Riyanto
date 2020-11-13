@@ -60,14 +60,14 @@ I believe nothing is more rewarding than transforming new things I learn into me
   }
   .content{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.9;
     padding-bottom: 20px;
     white-space: pre-line;
   }
   .skills-headers{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 2;
     padding-bottom: 20px;
   }

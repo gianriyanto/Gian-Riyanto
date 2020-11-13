@@ -174,7 +174,7 @@ export default {
 
       .nav-tabs {
         font-family: "Bw Modelica Regular", serif;
-        font-size: 15px;
+        font-size: 16px;
         color: white;
         cursor: pointer;
 
@@ -229,7 +229,7 @@ export default {
     bottom: 29px;
     right: 40px;
     font-family: "Bw Modelica Hairline", serif;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.8;
     color: #d4d3cd;
   }
