@@ -64,6 +64,29 @@ export default {
   }
 }
 
+@media only screen and (max-width: 1835px) {
+  .introduction{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 60px 0 0 15px;
+    width: 47vw;
+    font-size: 30px;
+    font-family: "Bw Modelica Bold", serif;
+    color: white;
+    line-height: 1.7;
+
+    .content-wrapper{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .greeting{
+      margin-bottom: 10px;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
 
   .introduction{
