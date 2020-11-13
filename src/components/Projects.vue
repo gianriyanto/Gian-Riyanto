@@ -139,8 +139,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 765px;
-  transform: translate(60px, 60px);
+  transform: translate(40px, 60px);
 
   .header {
     font-family: "Bw Modelica Regular", serif;
@@ -158,7 +157,8 @@ export default {
       flex-direction: column;
       margin-bottom: 30px;
       font-family: "Bw Modelica Bold", serif;
-      font-size: 53px;
+      font-size: 3vw;
+      width: 45vw;
 
       .selected-project{
         color: #fcdd56;
@@ -196,7 +196,7 @@ export default {
         .project-details {
           font-family: "Bw Modelica Light", serif;
           color: white;
-          font-size: 18px;
+          font-size: 15px;
           line-height: 1.9;
           height: fit-content;
           margin-bottom: 15px;
@@ -213,9 +213,9 @@ export default {
             border: 2px solid #fcdd56;
             opacity: 1;
             border-radius: 20px;
-            font-size: 13px;
+            font-size: 11px;
             width: fit-content;
-            padding: 8px 18px;
+            padding: 7px 18px;
             margin-right: 12px;
           }
         }

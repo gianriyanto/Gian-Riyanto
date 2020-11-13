@@ -51,7 +51,7 @@ I believe nothing is more rewarding than transforming new things I learn into me
   padding: 60px 0 0 30px;
   margin: auto;
   color: white;
-  width: 41vw;
+  width: 42vw;
 
   .header{
     font-family: "Bw Modelica Bold", serif;
@@ -60,15 +60,15 @@ I believe nothing is more rewarding than transforming new things I learn into me
   }
   .content{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 18px;
-    line-height: 1.9;
+    font-size: 16px;
+    line-height: 1.8;
     padding-bottom: 20px;
     white-space: pre-line;
   }
   .skills-headers{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 18px;
-    line-height: 2;
+    font-size: 16px;
+    line-height: 1.9;
     padding-bottom: 20px;
   }
   .skills-wrapper{
@@ -81,9 +81,9 @@ I believe nothing is more rewarding than transforming new things I learn into me
       color: white;
       opacity: 1;
       border-radius: 20px;
-      font-size: 13px;
+      font-size: 12px;
       width: fit-content;
-      padding: 9px 1vw;
+      padding: 8px 1vw;
       margin-right: 0.9vw;
     }
   }

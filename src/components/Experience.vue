@@ -117,7 +117,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  transform: translate(20px, 60px);
+  transform: translate(30px, 60px);
 
   .header {
     font-family: "Bw Modelica Regular", serif;
@@ -136,8 +136,8 @@ export default {
       margin-bottom: 5vh;
       font-family: "Bw Modelica Bold", serif;
       color: white;
-      font-size: 58px;
-      width: 35vw;
+      font-size: 3.3vw;
+      width: 38vw;
       min-width: 660px;
 
       .selected-experience {
@@ -169,7 +169,7 @@ export default {
         flex-direction: column;
 
         .experience-detail{
-          font-size: 20px;
+          font-size: 16px;
           margin-bottom: 10px;
 
           .experience-company{
@@ -186,8 +186,8 @@ export default {
 
           .description {
             font-family: "Bw Modelica Regular", serif;
-            font-size: 19px;
-            line-height: 2;
+            font-size: 16px;
+            line-height: 1.9;
           }
         }
       }
