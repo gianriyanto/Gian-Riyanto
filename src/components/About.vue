@@ -34,7 +34,7 @@ export default {
   name: "About",
   data() {
     return {
-      skills: ["Javascript", "React", "Vue", "HTML", "(S)CSS", "Node.js", "Python"],
+      skills: ["React", "Vue", "HTML", "(S)CSS", "Node.js", "Javascript", "Python"],
       aboutMe: `Hey there, I am a software engineer with an obsession for detail and a passion for value creation. I am currently studying (BEHons. Software) at the University of Technology Sydney, on track for graduation by October 2021.
 My greatest pleasure comes from being able to dwell on creating thoughtful user experience, uncovering customer pain points, and seek out new solutions for the next software iteration.
 From decomposing high-level problems down to single lines of code, to tinkering with new technologies and frameworks, I enjoy the collaborative process of solving interesting problems.
@@ -52,7 +52,7 @@ I believe nothing is more rewarding than an opportunity to transform new things 
   padding: 60px 0 0 30px;
   margin: auto;
   color: white;
-  width: 36vw;
+  width: 41vw;
 
   .header{
     font-family: "Bw Modelica Bold", serif;
@@ -62,13 +62,13 @@ I believe nothing is more rewarding than an opportunity to transform new things 
   .content{
     font-family: "Bw Modelica Regular", serif;
     font-size: 19px;
-    line-height: 1.8;
+    line-height: 1.9;
     padding-bottom: 20px;
     white-space: pre-line;
   }
   .skills-headers{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 17px;
+    font-size: 19px;
     line-height: 2;
     padding-bottom: 20px;
   }
@@ -84,8 +84,8 @@ I believe nothing is more rewarding than an opportunity to transform new things 
       border-radius: 20px;
       font-size: 13px;
       width: fit-content;
-      padding: 9px 0.8vw;
-      margin-right: 0.7vw;
+      padding: 9px 1vw;
+      margin-right: 0.9vw;
     }
   }
 }
