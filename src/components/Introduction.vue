@@ -29,7 +29,7 @@ export default {
   data(){
     return {
       inputtedName: this.name,
-      introduction: "I am a software engineering student on the lookout for experiences to learn, tinker, and make meaningful contributions.\n" +
+      introduction: "I am a software engineering student on the lookout for experiences where I can learn, tinker, and make meaningful contributions.\n" +
           "I love the collaborative process of building value adding products and thoughtful user experiences that delight people."
     }
   },
