@@ -207,7 +207,7 @@ export default {
         left: 0;
         width: 0;
         height: 100%;
-        background: linear-gradient(to bottom left, #9749e3, #7e60e7);
+        background: linear-gradient(to bottom left, #ae3fff, #4e61d6);
         border-radius: 6px;
         transition: all 0.35s;
       }
