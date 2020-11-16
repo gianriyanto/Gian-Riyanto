@@ -67,7 +67,7 @@ export default {
 
   .header{
     font-family: "Bw Modelica Bold", serif;
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 20px;
     padding-left: 5px;
   }
@@ -79,25 +79,25 @@ export default {
     .sub-header{
       font-family: "Bw Modelica Regular", serif;
       color: #eacd50;
-      font-size: 18px;
+      font-size: 15px;
       padding-left: 6px;
-      margin-bottom: 15px;
+      margin-bottom: 1vh;
       opacity: 1;
     }
 
     .skill-items{
       display: flex;
       flex-direction: row;
-      margin-bottom: 40px;
+      margin-bottom: 4vh;
       font-family: "Bw Modelica Regular", serif;
-      font-size: 14px;
+      font-size: 13px;
 
       .item{
-        border: 2px solid white;
+        border: 1.9px solid white;
         opacity: 1;
         border-radius: 20px;
         width: fit-content;
-        padding: 8px 17px;
+        padding: 7px 1vw;
         margin-right: 12px;
 
         &:hover{
