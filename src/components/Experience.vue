@@ -56,7 +56,7 @@ export default {
           company: "LinkAja",
           period: "Dec 2019 - Mar 2020",
           description: [
-            "Proposed and developed an automated data pipeline frameworks using Apache Airflow for improved efficiency and scalability.",
+            "Proposed and developed an automated data pipeline frameworks using Apache Airflow to orchestrate big-data processes, improving overall efficiency and scalability.",
             "Implemented Direct Acyclic Graphs to schedule and monitor workflows - replacing previously manual and multi-step process.",
             "Implemented data infrastructure processes to monitor data quality, ensuring production data is accurate and available for key stakeholders and business processes.",
           ],
@@ -74,13 +74,13 @@ export default {
         },
         {
           id: 2,
-          position: "Product and Sales Analyst",
+          position: "Product Sales Analyst",
           company: "EuroSoil",
           period: "Jun 2019 - Aug 2019",
           description: [
-            "Conducted and prepared product and customer research analysis for Southeast Asian market expansion.",
-            "Collaboratively delivered exceptional customer satisfaction through a well orchestrated end-to-end delivery of client Purchase Orders.",
-            "Participated in client sales meetings and delivered customer service duties throughout business delivery process.",
+            "Conducted and presented product and customer research analysis to support Southeast Asian market expansion.",
+            "Delivered end-to-end process of client Purchase Orders, ensuring a high-quality customer experience",
+            "Prepared, participated, and consulted in client meetings to gather product needs and requirements",
           ],
         },
         {
