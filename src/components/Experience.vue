@@ -137,7 +137,7 @@ export default {
       font-family: "Bw Modelica Bold", serif;
       color: white;
       font-size: 3.3vw;
-      width: 44vw;
+      width: 40vw;
 
       .selected-experience {
         color: #fcdd56;

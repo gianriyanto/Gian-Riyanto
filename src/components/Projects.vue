@@ -158,7 +158,7 @@ export default {
       margin-bottom: 30px;
       font-family: "Bw Modelica Bold", serif;
       font-size: 3vw;
-      width: 45vw;
+      width: 43vw;
 
       .selected-project{
         color: #fcdd56;
