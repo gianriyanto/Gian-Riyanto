@@ -15,18 +15,18 @@
          data-aos-easing="ease-in-out">
       Say Hello
     </div>
-    <div class="email"
-         data-aos="fade"
-         data-aos-duration="2300"
-         data-aos-easing="ease-in-sine">
-      <a href="mailto:li.griyanto@gmail.com" >li.griyanto@gmail.com</a>
-    </div>
+    <button class="email-button"
+            data-aos="fade"
+            data-aos-duration="2300"
+            data-aos-easing="ease-in-sine">
+      <a class="email-label" href="mailto:li.griyanto@gmail.com" > li.griyanto@gmail.com </a>
+    </button>
     <div class="message"
          data-aos="fade"
          data-aos-duration="2300"
          data-aos-easing="ease-in-out">
       Let's keep in touch {{ inputtedName }}! <br/>
-      I'm one inbox away. Whether you have a question or you just want to say hi, I'm always up for a chat.
+      Whether you have a question or you just want to say hi, I'm always up for a chat.
     </div>
   </div>
   <personal-links class="links-for-mobile"/>
@@ -74,26 +74,55 @@ export default {
   .header{
     color: white;
     font-size: 85px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .message{
-    font-family: "Bw Modelica Light", serif;
-    font-size: 18px;
+    font-family: "Bw Modelica Regular", serif;
+    font-size: 16px;
     color: var(--bone);
-    width: 500px;
+    width: 400px;
     line-height: 1.5;
+    margin: auto;
   }
 
-  .email{
+  .email-button{
     color: #e7cf5f;
-    font-size: 40px;
-    margin-bottom: 30px;
     transition: all .2s ease-in-out;
+    cursor: pointer;
+    padding: 9px 3vw;
+    border: solid #e7cf5f;
+    border-radius: 50px;
+    background-color: transparent;
+    outline: none;
+    position: relative;
+    margin-bottom: 20px;
 
+    .email-label {
+      position: relative;
+      font-family: "Bw Modelica Bold", serif;
+      font-size: 18px;
+      color: #e7cf5f;
+      z-index: 2;
+      margin: auto;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: linear-gradient(to bottom left, #7f4ffc, #4e61d6);
+      border-radius: 50px;
+      transition: all 0.35s;
+    }
     &:hover {
-      opacity: 0.8;
-      transition: 0.2s;
+      color: #fff;
+      opacity: 1;
+    }
+    &:hover:after {
+      width: 100%;
     }
   }
 
@@ -157,18 +186,31 @@ export default {
         font-size: 30px;
       }
 
-      .email {
-        text-align: center;
-        color: #f5de75;
-        font-size: 20px;
-        margin-bottom: 15px;
+      .email-button {
+        color: #e7cf5f;
+        padding: 7px 7vw;
+        border: thin solid #e7cf5f;
+        border-radius: 50px;
+        background-color: transparent;
+        outline: none;
+        position: relative;
+        margin-bottom: 10px;
+
+        .email-label {
+          position: relative;
+          font-family: "Bw Modelica Bold", serif;
+          font-size: 13px;
+          color: #e7cf5f;
+          z-index: 2;
+          margin: auto;
+        }
       }
 
       .message {
         font-family: "Bw Modelica Light", serif;
-        font-size: 14px;
+        font-size: 13px;
         color: var(--bone);
-        width: 80vw;
+        width: 70vw;
         line-height: 1.9;
       }
     }

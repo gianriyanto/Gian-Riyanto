@@ -189,7 +189,7 @@ export default {
       border-radius: 6px;
       background-color: transparent;
       outline: none;
-      padding: 16px 20px 16px 20px;
+      padding: 16px 20px;
       cursor: pointer;
       position: relative;
 
