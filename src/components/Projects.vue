@@ -77,7 +77,7 @@ export default {
           link: "https://ioweyou.netlify.app/",
           description: "Built and deployed a favours-tracking web application with a MERN stack. " +
               "Worked primarily as a front-end developer - designed, developed and implemented the client-side application for which the product received an honourable mention for its UI/UX design.\n" +
-              "Here I learnt developing clean, maintainable, and well-designed code, as well as practiced effective product management to ensure efficient delivery of product. (Unfortunately, this website is not yet )mobile responsive)",
+              "Here I learnt developing clean, maintainable, and well-designed code, as well as practiced effective product management to ensure efficient delivery of product. (Unfortunately, this website is not yet mobile responsive)",
           tech: ["React.js", "Node.js", "MongoDB", "Express"]
         },
         {
