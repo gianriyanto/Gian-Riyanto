@@ -35,9 +35,9 @@ export default {
   data() {
     return {
       skills: ["React", "Vue", "HTML", "(S)CSS", "Node.js", "Javascript", "Python"],
-      aboutMe: `Hey there, I am a software engineer with an appetite for tinkering, obsession for detail, and a passion for value creation. I am currently studying (BEHons. Software) at the University of Technology Sydney, on track for graduation by October 2021.
-From decomposing high-level problems down to single lines of code, to learning new technologies and frameworks, I enjoy the collaborative process of solving interesting and challenging problems.
-I believe nothing is more rewarding than an opportunity to transform new things I learn into meaningful contributions, especially when I get to meet new people and develop relationships along the way.`
+      aboutMe: `Hey there, I am a software engineer with a strong growth mindset, obsession for detail, and a passion for value creation. I am currently studying (BEHons. Software) at the University of Technology Sydney, on track for graduation by October 2021.
+I enjoy the collaborative process of decomposing high-level problems into manageable bite-sized components with a focus on building meaningful products that empower and delight people who use them.
+I believe nothing is more rewarding than an opportunity to transform new things I learn to tackle interesting complex problems, especially when I get to meet like-minded people and develop relationships along the way.`
     }
   }
 }
