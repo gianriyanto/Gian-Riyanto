@@ -15,12 +15,13 @@
          data-aos-easing="ease-in-out">
       Say Hello
     </div>
-    <button class="email-button"
+    <a class="email-button"
             data-aos="fade"
             data-aos-duration="2300"
-            data-aos-easing="ease-in-sine">
-      <a class="email-label" href="mailto:li.griyanto@gmail.com" > li.griyanto@gmail.com </a>
-    </button>
+            data-aos-easing="ease-in-sine"
+            href="mailto:li.griyanto@gmail.com">
+      <span class="email-label"> {{ email }} </span>
+    </a>
     <div class="message"
          data-aos="fade"
          data-aos-duration="2300"
@@ -83,7 +84,7 @@ export default {
     color: var(--bone);
     width: 400px;
     line-height: 1.5;
-    margin: auto;
+    margin: 20px auto auto auto;
   }
 
   .email-button{

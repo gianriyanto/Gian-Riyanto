@@ -52,7 +52,7 @@ export default {
       experiences: [
         {
           id: 0,
-          position: "Big Data Engineer",
+          position: "Software Engineer",
           company: "LinkAja",
           period: "Dec 2019 - Mar 2020",
           description: [
