@@ -19,15 +19,18 @@
                 data-aos-duration="2000"
                 data-aos-easing="ease-in-out">
             {{ project.name }}
-            <font-awesome-icon
-                v-if="selectedProject.name === project.name"
-                class="project-link"
-                :icon="['fas', 'external-link-alt']"
-                data-aos="fade"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
-                v-on:click="goToSite(project.link)">
-            </font-awesome-icon>
+            <span v-if="selectedProject.imageFile">
+              <a class="project-image" :href="`${publicPath}`+ project.imageFile" target="_blank">
+                <font-awesome-icon
+                    v-if="selectedProject.name === project.name"
+                    class="image"
+                    :icon="['fas', 'image']"
+                    data-aos="fade"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out">
+                </font-awesome-icon>
+              </a>
+            </span>
           </span>
           <span v-if="selectedProject" class="project-content">
             <span v-if="selectedProject.name === project.name"
@@ -45,6 +48,15 @@
               <span v-for="tech in project.tech" class="tech" :key="tech">
                 {{ tech }}
               </span>
+              <font-awesome-icon
+                  v-if="selectedProject.name === project.name"
+                  class="project-link"
+                  :icon="['fas', 'external-link-alt']"
+                  data-aos="fade"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  v-on:click="goToSite(project.githubLink)">
+            </font-awesome-icon>
             </span>
           </span>
           <span v-else-if="!selectedProject">
@@ -61,57 +73,61 @@ export default {
   name: "Projects",
   data() {
     return {
+      publicPath: process.env.BASE_URL,
       selectedProject: '',
       projects: [
         {
           id: 0,
           name: "This Personal Website",
-          link: "https://github.com/gianriyanto/Gian-Riyanto",
+          githubLink: "https://github.com/gianriyanto/Gian-Riyanto",
           description: "In all honesty, building this personal website is just another reason for me to tinker with Vue.js (and yes I think Vue is pretty cool), explore different UI/UX designs, and learn creating responsive interfaces. \n" +
               "I enjoy the process of transforming design and ideas into code as well all the nuances of exploring new technologies",
-          tech: ["Vue", "Vuex", "Node.js", "Netlify"]
+          tech: ["Vue", "Vuex", "Node.js", "Netlify"],
         },
         {
           id: 1,
           name: "I OWE YOU",
-          link: "https://ioweyou.netlify.app/",
+          githubLink: "https://ioweyou.netlify.app/",
           description: "Built and deployed a favours-tracking web application with a MERN stack. " +
               "Worked primarily as a front-end developer - designed, developed and implemented the client-side application for which the product received an honourable mention for its UI/UX design.\n" +
               "Here I learnt developing clean, maintainable, and well-designed code, as well as practiced effective product management to ensure efficient delivery of product. (Unfortunately, this website is not yet mobile responsive)",
-          tech: ["React.js", "Node.js", "MongoDB", "Express"]
+          tech: ["React.js", "Node.js", "MongoDB", "Express"],
+          imageFile: "I-OWE-YOU.pdf",
         },
         {
           id: 2,
           name: "Analytics Dashboard",
-          link: "https://github.com/davidbr4gg/analytic_dashboard",
+          githubLink: "https://github.com/davidbr4gg/analytic_dashboard",
           description: "Developed a responsive analytics dashboard for users to manage, monitor, and analyse data at a glance. Worked as a front-end developer designing \n" +
               "the dashboard interface and implementing various dynamic widgets such as line charts, bar charts, statistical cards, and tables.",
-          tech: ["Vue", "Vuex", "Node.js", "Chart.js"]
+          tech: ["Vue", "Vuex", "Node.js", "Chart.js"],
+          imageFile: "AnalyticsDashboard.pdf",
         },
         {
           id: 3,
           name: "Team Chat Platform",
-          link: "",
+          githubLink: "https://github.com/davidbr4gg/teams-ui",
           description: "Developed a team communication and project management platform where users can create group and subgroup chat channels. Collaborated with a team of 15 people following the agile methodology and scrum framework practices",
-          tech: ["React.js", "Node.js", "Firebase"]
+          tech: ["React.js", "Node.js", "Firebase"],
         },
         {
           id: 4,
           name: "Supervised Learning Project",
-          link: "https://github.com/gianriyanto/supervised-learning-project",
+          githubLink: "https://github.com/gianriyanto/supervised-learning-project",
           description: "Implemented a machine learning classification algorithm to predict target values in a dataset. Iteratively evaluated and optimised the data pipeline to improve \n" +
               "efficiency, accuracy and performance. I employed a range of data mining, exploration, and machine learning practices to optimally solve the data analytics problem.",
-          tech: ["Python", "Scikit-learn", "PyCharm", "Pandas", "NumPy", "Seaborn"]
+          tech: ["Python", "Scikit-learn", "PyCharm", "Pandas", "NumPy"],
         },
         {
           id: 5,
           name: "Automated Data Pipeline",
-          link: "https://github.com/gianriyanto/Automated-Data-Pipeline",
+          githubLink: "https://github.com/gianriyanto/Automated-Data-Pipeline",
           description: "Developed a data pipeline framework to automate previously laborious multi-step tasks. Programatically authored an implementation of Direct Acyclic Graphs to monitor and orchestrate workflows\n" +
               " for various big-data processes that is currently still maintained for expanding business use-cases.",
-          tech: ["Python", "PyCharm", "Airflow", "Google Cloud Platform"]
+          tech: ["Python", "PyCharm", "Airflow", "Google Cloud Platform"],
+          showImageModal: false
         },
-      ]
+      ],
     }
   },
   methods: {
@@ -178,6 +194,17 @@ export default {
           transition: ease-out 0.35s;
         }
       }
+      .project-image{
+        margin-left: 10px;
+        position: absolute;
+        font-size: 1em;
+        transition: all .35s ease-in-out;
+        color: #e3d077;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
       .project-link{
         margin-left: 20px;
         position: absolute;
@@ -185,7 +212,7 @@ export default {
         transition: all .35s ease-in-out;
 
         &:hover {
-          opacity: 0.5;
+          opacity: 0.6;
         }
       }
       .project-content {
@@ -210,7 +237,7 @@ export default {
           .tech {
             font-family: "Bw Modelica Regular", serif;
             color: #fcdd56;
-            border: 2px solid #fcdd56;
+            border: thin solid #fcdd56;
             opacity: 1;
             border-radius: 20px;
             font-size: 11px;
@@ -218,9 +245,28 @@ export default {
             padding: 7px 18px;
             margin-right: 12px;
           }
+          .project-link{
+            color: #e3d077;
+            margin-left: 5px;
+            position: sticky;
+            font-size: 0.7em;
+            transition: all .35s ease-in-out;
+
+            &:hover {
+              opacity: 0.5;
+            }
+          }
         }
       }
     }
+  }
+}
+
+a {
+  color: var(--bone);
+  a:visited {
+    text-decoration: none;
+    color: var(--bone);
   }
 }
 
@@ -305,7 +351,7 @@ export default {
               border-radius: 20px;
               font-size: 11px;
               width: 70vw;;
-              padding: 8px 14px;
+              padding: 7px 14px;
               margin-right: 12px;
             }
           }
