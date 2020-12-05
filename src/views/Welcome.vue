@@ -56,6 +56,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: fit-content;
+  overflow-x: hidden;
 }
 
 #welcome{
