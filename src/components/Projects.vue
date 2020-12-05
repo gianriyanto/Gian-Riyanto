@@ -205,16 +205,6 @@ export default {
           opacity: 0.5;
         }
       }
-      .project-link{
-        margin-left: 20px;
-        position: absolute;
-        font-size: 1em;
-        transition: all .35s ease-in-out;
-
-        &:hover {
-          opacity: 0.6;
-        }
-      }
       .project-content {
         position: relative;
         display: flex;
@@ -249,7 +239,7 @@ export default {
             color: #e3d077;
             margin-left: 5px;
             position: sticky;
-            font-size: 0.7em;
+            font-size: 0.5em;
             transition: all .35s ease-in-out;
 
             &:hover {
@@ -315,10 +305,11 @@ a {
             transform: translateX(0);
           }
         }
-        .project-link{
-          margin-left: 6px;
+        .project-image{
+          margin-left: 10px;
           position: absolute;
           font-size: 1em;
+          color: #e3d077;
         }
         .project-content {
           width: 70vw;
@@ -353,6 +344,12 @@ a {
               width: 70vw;;
               padding: 7px 14px;
               margin-right: 12px;
+            }
+            .project-link {
+              color: #e3d077;
+              margin-left: 5px;
+              position: sticky;
+              font-size: 2em;
             }
           }
         }
