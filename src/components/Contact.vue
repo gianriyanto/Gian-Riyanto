@@ -2,7 +2,7 @@
 <div id="Contact">
   <div class="logo-for-mobile"
        @click="selectedTab = 'Introduction';"
-       data-aos="fade-up"
+       data-aos="fade"
        data-aos-duration="1400"
        data-aos-easing="ease-in-out">
     <span class="circle-border"> <img class="my-portrait" src="@/assets/myPortrait.png" alt=""/></span>
@@ -10,18 +10,11 @@
   </div>
   <div class="content">
     <div class="header"
-         data-aos="fade-up"
+         data-aos="fade"
          data-aos-duration="1500"
          data-aos-easing="ease-in-out">
       Say Hello
     </div>
-    <a class="email-button"
-            data-aos="fade"
-            data-aos-duration="2300"
-            data-aos-easing="ease-in-sine"
-            href="mailto:li.griyanto@gmail.com">
-      <span class="email-label"> {{ email }} </span>
-    </a>
     <div class="message"
          data-aos="fade"
          data-aos-duration="2300"
@@ -29,6 +22,13 @@
       Let's keep in touch {{ inputtedName }}! <br/>
       Whether you have a question or you just want to say hi, I'm always up for a chat.
     </div>
+    <a class="email-button"
+       data-aos="fade"
+       data-aos-duration="2300"
+       data-aos-easing="ease-in-sine"
+       href="mailto:li.griyanto@gmail.com">
+      <span class="email-label"> {{ email }} </span>
+    </a>
   </div>
   <personal-links class="links-for-mobile"/>
 </div>
@@ -75,7 +75,6 @@ export default {
   .header{
     color: white;
     font-size: 85px;
-    margin-bottom: 15px;
   }
 
   .message{
@@ -84,47 +83,34 @@ export default {
     color: var(--bone);
     width: 400px;
     line-height: 1.5;
-    margin: 20px auto auto auto;
+    margin: 15px auto 40px auto;
   }
 
   .email-button{
     color: #e7cf5f;
-    transition: all .2s ease-in-out;
     cursor: pointer;
-    padding: 9px 3vw;
-    border: solid #e7cf5f;
-    border-radius: 50px;
+    padding: 17px 3vw;
+    border: thin solid #e7cf5f;
+    border-radius: 6px;
     background-color: transparent;
     outline: none;
-    position: relative;
-    margin-bottom: 20px;
+    transition: all 0.35s ease-in-out;
 
     .email-label {
       position: relative;
-      font-family: "Bw Modelica Bold", serif;
-      font-size: 18px;
+      letter-spacing: 0.5px;
+      font-family: "Bw Modelica Regular", serif;
+      font-size: 16px;
       color: #e7cf5f;
       z-index: 2;
       margin: auto;
     }
-    &:after {
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 0;
-      width: 0;
-      height: 100%;
-      background: linear-gradient(to bottom left, #7f4ffc, #4e61d6);
-      border-radius: 50px;
-      transition: all 0.35s;
-    }
+
     &:hover {
       color: #fff;
-      opacity: 1;
+      opacity: 0.7;
     }
-    &:hover:after {
-      width: 100%;
-    }
+
   }
 
   a {

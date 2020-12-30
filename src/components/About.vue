@@ -1,7 +1,7 @@
 <template>
   <div id="About">
     <span class="header"
-          data-aos="fade-up"
+          data-aos="fade"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out">
       About Me.
@@ -10,7 +10,7 @@
           v-for="(line, id) in aboutMe.split('\n')"
           :key="id"
           data-aos="fade"
-          data-aos-duration="3000"
+          data-aos-duration="2000"
           data-aos-easing="ease-in-out">
         {{line}}
     </span>
