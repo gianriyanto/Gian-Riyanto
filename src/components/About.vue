@@ -36,8 +36,8 @@ export default {
     return {
       skills: ["React", "Vue", "HTML", "(S)CSS", "Node.js", "Javascript", "Python"],
       aboutMe: `Hey there, I am a software engineer with a strong growth mindset, obsession for detail, and a passion for value creation. I am currently studying (BEHons. Software) at the University of Technology Sydney, on track for graduation by October 2021.
-I enjoy the collaborative process of decomposing high-level problems into manageable bite-sized components with a focus on building meaningful products that empower and delight people who use them.
-I believe nothing is more rewarding than an opportunity to transform new things I learn to tackle interesting complex problems, especially when I get to meet like-minded people and develop relationships along the way.`
+I enjoy the collaborative process of decomposing high-level problems into manageable bite-sized components with a focus on building meaningful products that empower and delight people.
+I believe nothing is more rewarding than an opportunity to transform new things I learn to tackle interesting problems, especially when I get to meet like-minded people and develop relationships along the way.`
     }
   }
 }
@@ -51,7 +51,8 @@ I believe nothing is more rewarding than an opportunity to transform new things 
   padding: 60px 0 0 30px;
   margin: auto;
   color: white;
-  width: 42vw;
+  width: 40vw;
+  min-width: 515px;
 
   .header{
     font-family: "Bw Modelica Bold", serif;
@@ -60,14 +61,14 @@ I believe nothing is more rewarding than an opportunity to transform new things 
   }
   .content{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.8;
     padding-bottom: 20px;
     white-space: pre-line;
   }
   .skills-headers{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.9;
     padding-bottom: 20px;
   }
@@ -108,7 +109,7 @@ I believe nothing is more rewarding than an opportunity to transform new things 
     .content{
       color: white;
       font-family: "Bw Modelica Regular", serif;
-      font-size: 15px;
+      font-size: 13px;
       line-height: 2.2;
     }
     .skills-headers{

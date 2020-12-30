@@ -33,10 +33,9 @@ html, body {
 }
 :root {
   --bone: #ffffff;
-  --gradient-black: linear-gradient(#1d1d1d, black);
-  --gradient: linear-gradient(#9449fa, #234799);
-  --gradient-green: linear-gradient(to bottom left, #2ca48b, #4594b0);
-  --gradient-mobile: linear-gradient(#965bc1, #0b308d, #965bc1, #0b308d, #965bc1, #0b308d);
+  --gradient-black: linear-gradient(#1d1d1d, #1f1f1f);
+  --gradient: linear-gradient(to top right, #4776E6, #8E54E9);
+  --gradient-mobile: linear-gradient(#4776E6, #8E54E9, #4776E6, #8E54E9);
 }
 @font-face {
   font-family: "Bw Modelica Bold";

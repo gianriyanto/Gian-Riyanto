@@ -123,21 +123,19 @@ export default {
     .circle-border{
       border: 2px solid white;
       border-radius: 50%;
-      width: 70px;
-      height: 70px;
+      width: 65px;
+      height: 65px;
       transition: all .25s ease-in-out;
 
       &:hover{
-        opacity: 1;
+        opacity: 0.7;
         transition: all 0.25s;
-        border: 2.5px solid #ffe258;
-        transform: scale(1.1);
       }
 
       .my-portrait{
         margin: auto;
-        width: 70px;
-        height: 70px;
+        width: 65px;
+        height: 65px;
         transition: all .3s ease-in-out;
       }
     }
@@ -154,7 +152,6 @@ export default {
 
       &:hover{
         opacity: 0.7;
-        transition: opacity 0.5s;
       }
     }
   }
@@ -171,6 +168,7 @@ export default {
       align-items: center;
       justify-content: space-evenly;
       width: 30vw;
+      min-width: 350px;
 
       .nav-tabs {
         font-family: "Bw Modelica Regular", serif;
