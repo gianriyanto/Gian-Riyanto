@@ -89,7 +89,7 @@ export default {
   .email-button{
     color: #e7cf5f;
     cursor: pointer;
-    padding: 17px 3vw;
+    padding: 15px 2vw;
     border: thin solid #e7cf5f;
     border-radius: 6px;
     background-color: transparent;
@@ -100,7 +100,7 @@ export default {
       position: relative;
       letter-spacing: 0.5px;
       font-family: "Bw Modelica Regular", serif;
-      font-size: 16px;
+      font-size: 15px;
       color: #e7cf5f;
       z-index: 2;
       margin: auto;
@@ -169,23 +169,24 @@ export default {
       height: fit-content;
 
       .header {
+        display: none;
         color: white;
         font-size: 30px;
       }
 
-      .email-button {
+      .email-button{
         color: #e7cf5f;
-        padding: 7px 7vw;
+        cursor: pointer;
+        padding: 14px 3vw;
         border: thin solid #e7cf5f;
-        border-radius: 50px;
+        border-radius: 6px;
         background-color: transparent;
         outline: none;
-        position: relative;
-        margin-bottom: 10px;
 
         .email-label {
           position: relative;
-          font-family: "Bw Modelica Bold", serif;
+          letter-spacing: 0.5px;
+          font-family: "Bw Modelica Regular", serif;
           font-size: 13px;
           color: #e7cf5f;
           z-index: 2;
