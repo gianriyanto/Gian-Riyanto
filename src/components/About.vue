@@ -52,7 +52,6 @@ I believe nothing is more rewarding than an opportunity to transform new things 
   margin: auto;
   color: white;
   width: 40vw;
-  min-width: 515px;
 
   .header{
     font-family: "Bw Modelica Bold", serif;

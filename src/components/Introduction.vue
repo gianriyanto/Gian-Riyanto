@@ -93,7 +93,7 @@ export default {
     height: fit-content;
     width: 70vw;
     padding: 5vh 0 0 0;
-    font-size: 23.5px;
+    font-size: 21px;
     font-family: "Bw Modelica Bold", serif;
     color: white;
     line-height: 1.9;

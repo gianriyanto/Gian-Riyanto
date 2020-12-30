@@ -26,7 +26,7 @@ html, body {
   padding: 0 !important;
 }
 @media only screen and (max-width: 769px) {
-  *, html, body, div, span,{
+  *, html, body, div, span, {
     margin: 0 !important;
     padding: 0 !important;
   }
