@@ -1,68 +1,108 @@
 <template>
-  <div id="Projects">
-    <div class="header"
-          data-aos="fade"
-          data-aos-duration="2000"
-          data-aos-easing="ease-in-out">
+  <div id="Projects"
+       data-aos="fade"
+       data-aos-duration="1000"
+       data-aos-easing="ease-in-out">
+    <div class="header">
       Projects.
     </div>
-    <div class="project-items"
-         data-aos="fade"
-         data-aos-duration="2000"
-         data-aos-easing="ease-in-out">
-        <div v-for="project in projects"
-              :key="project"
-              class="project"
-              @click="selectProject(project)">
+    <div class="project-items">
+      <div class="project-column-0">
+        <div v-for="project in projects[0]"
+             :key="project"
+             class="project"
+             @click="selectProject(project)">
+        <span :class="labelStyle(project)"
+              data-aos="fade"
+              data-aos-duration="2000"
+              data-aos-easing="ease-in-out">
+          {{ project.name }}
+<!--          <span v-if="selectedProject.imageFile">-->
+<!--            <a class="project-image" :href="`${publicPath}`+ project.imageFile" target="_blank">-->
+<!--              <font-awesome-icon-->
+<!--                  v-if="selectedProject.name === project.name"-->
+<!--                  class="image"-->
+<!--                  :icon="['fas', 'image']"-->
+<!--                  data-aos="fade"-->
+<!--                  data-aos-duration="1000"-->
+<!--                  data-aos-easing="ease-in-out">-->
+<!--              </font-awesome-icon>-->
+<!--            </a>-->
+<!--          </span>-->
+        </span>
+<!--          <span v-if="selectedProject" class="project-content"-->
+<!--                data-aos="fade"-->
+<!--                data-aos-duration="1000"-->
+<!--                data-aos-easing="ease-in-out">-->
+<!--          <span v-if="selectedProject.name === project.name"-->
+<!--                class="project-details">-->
+<!--            {{ project.description }}-->
+<!--          </span>-->
+<!--          <span v-if="selectedProject.name === project.name" class="tech-wrapper">-->
+<!--            <span v-for="tech in project.tech" class="tech" :key="tech">-->
+<!--              {{ tech }}-->
+<!--            </span>-->
+<!--            <font-awesome-icon-->
+<!--                v-if="selectedProject.name === project.name"-->
+<!--                class="project-link"-->
+<!--                :icon="['fas', 'external-link-alt']"-->
+<!--                v-on:click="goToSite(project.githubLink)">-->
+<!--          </font-awesome-icon>-->
+<!--          </span>-->
+<!--        </span>-->
+<!--          <span v-else-if="!selectedProject">-->
+<!--          &lt;!&ndash; shows nothing when no project is selected &ndash;&gt;-->
+<!--        </span>-->
+        </div>
+      </div>
+      <div class="project-column-1">
+        <div v-for="project in projects[1]"
+           :key="project"
+           class="project">
+<!--           @click="selectProject(project)">-->
           <span :class="labelStyle(project)"
                 data-aos="fade"
                 data-aos-duration="2000"
                 data-aos-easing="ease-in-out">
             {{ project.name }}
-            <span v-if="selectedProject.imageFile">
-              <a class="project-image" :href="`${publicPath}`+ project.imageFile" target="_blank">
-                <font-awesome-icon
-                    v-if="selectedProject.name === project.name"
-                    class="image"
-                    :icon="['fas', 'image']"
-                    data-aos="fade"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out">
-                </font-awesome-icon>
-              </a>
-            </span>
+<!--            <span v-if="selectedProject.imageFile">-->
+<!--              <a class="project-image" :href="`${publicPath}`+ project.imageFile" target="_blank">-->
+<!--                <font-awesome-icon-->
+<!--                    v-if="selectedProject.name === project.name"-->
+<!--                    class="image"-->
+<!--                    :icon="['fas', 'image']"-->
+<!--                    data-aos="fade"-->
+<!--                    data-aos-duration="1000"-->
+<!--                    data-aos-easing="ease-in-out">-->
+<!--                </font-awesome-icon>-->
+<!--              </a>-->
+<!--            </span>-->
           </span>
-          <span v-if="selectedProject" class="project-content">
-            <span v-if="selectedProject.name === project.name"
-                  class="project-details"
-                  data-aos="fade"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out">
-              {{ project.description }}
-            </span>
-            <span v-if="selectedProject.name === project.name"
-                  class="tech-wrapper"
-                  data-aos="fade"
-                  data-aos-duration="2000"
-                  data-aos-easing="ease-in-out">
-              <span v-for="tech in project.tech" class="tech" :key="tech">
-                {{ tech }}
-              </span>
-              <font-awesome-icon
-                  v-if="selectedProject.name === project.name"
-                  class="project-link"
-                  :icon="['fas', 'external-link-alt']"
-                  data-aos="fade"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
-                  v-on:click="goToSite(project.githubLink)">
-            </font-awesome-icon>
-            </span>
-          </span>
-          <span v-else-if="!selectedProject">
-            <!-- shows nothing when no project is selected -->
-          </span>
-        </div>
+<!--        <span v-if="selectedProject" class="project-content"-->
+<!--              data-aos="fade"-->
+<!--              data-aos-duration="1000"-->
+<!--              data-aos-easing="ease-in-out">-->
+<!--            <span v-if="selectedProject.name === project.name"-->
+<!--                  class="project-details">-->
+<!--              {{ project.description }}-->
+<!--            </span>-->
+<!--            <span v-if="selectedProject.name === project.name" class="tech-wrapper">-->
+<!--              <span v-for="tech in project.tech" class="tech" :key="tech">-->
+<!--                {{ tech }}-->
+<!--              </span>-->
+<!--              <font-awesome-icon-->
+<!--                  v-if="selectedProject.name === project.name"-->
+<!--                  class="project-link"-->
+<!--                  :icon="['fas', 'external-link-alt']"-->
+<!--                  v-on:click="goToSite(project.githubLink)">-->
+<!--            </font-awesome-icon>-->
+<!--            </span>-->
+<!--          </span>-->
+<!--        <span v-else-if="!selectedProject">-->
+<!--            &lt;!&ndash; shows nothing when no project is selected &ndash;&gt;-->
+<!--          </span>-->
+      </div>
+      </div>
     </div>
   </div>
 </template>
@@ -76,57 +116,87 @@ export default {
       publicPath: process.env.BASE_URL,
       selectedProject: '',
       projects: [
-        {
-          id: 0,
-          name: "This Personal Website",
-          githubLink: "https://github.com/gianriyanto/Gian-Riyanto",
-          description: "In all honesty, building this personal website is just another reason for me to tinker with Vue.js (and yes I think Vue is pretty cool), explore different UI/UX designs, and learn creating responsive interfaces. \n" +
-              "I enjoy the process of transforming design and ideas into code as well all the nuances of exploring new technologies",
-          tech: ["Vue", "Vuex", "Node.js", "Netlify"],
-        },
-        {
-          id: 1,
-          name: "I OWE YOU",
-          githubLink: "https://ioweyou.netlify.app/",
-          description: "Built and deployed a favours-tracking web application with a MERN stack. " +
-              "Worked primarily as a front-end developer - designed, developed and implemented the client-side application for which the product received an honourable mention for its UI/UX design.\n" +
-              "Here I learnt developing clean, maintainable, and well-designed code, as well as practiced effective product management to ensure efficient delivery of product. (Unfortunately, this website is not yet mobile responsive)",
-          tech: ["React.js", "Node.js", "MongoDB", "Express"],
-          imageFile: "I-OWE-YOU.pdf",
-        },
-        {
-          id: 2,
-          name: "Analytics Dashboard",
-          githubLink: "https://github.com/davidbr4gg/analytic_dashboard",
-          description: "Developed a responsive analytics dashboard for users to manage, monitor, and analyse data at a glance. Worked as a front-end developer designing \n" +
-              "the dashboard interface and implementing various dynamic widgets such as line charts, bar charts, statistical cards, and tables.",
-          tech: ["Vue", "Vuex", "Node.js", "Chart.js"],
-          imageFile: "AnalyticsDashboard.pdf",
-        },
-        {
-          id: 3,
-          name: "Team Chat Platform",
-          githubLink: "https://github.com/davidbr4gg/teams-ui",
-          description: "Developed a team communication and project management platform where users can create group and subgroup chat channels. Collaborated with a team of 15 people following the agile methodology and scrum framework practices",
-          tech: ["React.js", "Node.js", "Firebase"],
-        },
-        {
-          id: 4,
-          name: "Supervised Learning Project",
-          githubLink: "https://github.com/gianriyanto/supervised-learning-project",
-          description: "Implemented a machine learning classification algorithm to predict target values in a dataset. Iteratively evaluated and optimised the data pipeline to improve \n" +
-              "efficiency, accuracy and performance. I employed a range of data mining, exploration, and machine learning practices to optimally solve the data analytics problem.",
-          tech: ["Python", "Scikit-learn", "PyCharm", "Pandas", "NumPy"],
-        },
-        {
-          id: 5,
-          name: "Automated Data Pipeline",
-          githubLink: "https://github.com/gianriyanto/Automated-Data-Pipeline",
-          description: "Developed a data pipeline framework to automate previously laborious multi-step tasks. Programatically authored an implementation of Direct Acyclic Graphs to monitor and orchestrate workflows\n" +
-              " for various big-data processes that is currently still maintained for expanding business use-cases.",
-          tech: ["Python", "PyCharm", "Airflow", "Google Cloud Platform"],
-          showImageModal: false
-        },
+        [
+          {
+            id: 0,
+            name: "Consultgianti.com",
+            githubLink: "",
+            description: "",
+            tech: ["Vue", "Vuex", "npm", "Netlify"],
+          },
+          {
+            id: 0,
+            name: "Consultchen.com",
+            githubLink: "",
+            description: "",
+            tech: ["Vue", "Vuex", "npm", "Netlify"],
+          },
+          {
+            id: 0,
+            name: "Aspectama Web App",
+            githubLink: "",
+            description: "",
+            tech: ["Vue", "Vuex", "npm", "Netlify"],
+          },
+          {
+            id: 0,
+            name: "Interactive Login Page",
+            githubLink: "",
+            description: "",
+            tech: ["Vue"],
+          },
+          {
+            id: 1,
+            name: "I OWE YOU",
+            githubLink: "https://ioweyou.netlify.app/",
+            description: "Built and deployed a favours-tracking web application with a MERN stack. " +
+                "Designed, developed and implemented the client-side application for which the product received an honourable mention for its UI/UX design.\n" +
+                "Here I learnt developing clean, maintainable, and well-designed code, as well as practiced effective product management to ensure efficient delivery of product. (Unfortunately, this website is not yet mobile responsive)",
+            tech: ["React.js", "Node.js", "MongoDB", "Express"],
+            imageFile: "I-OWE-YOU.pdf",
+          },
+        ],
+        [
+          {
+            id: 0,
+            name: "This Personal Website",
+            githubLink: "https://github.com/gianriyanto/Gian-Riyanto",
+            description: "Building this personal website was just another reason for me to learn Vue.js and explore with some UI/UX designs I had in mind. \n" +
+                "I'm always looking at ways to translate my designs into code, all whilst tinkering with new technologies.",
+            tech: ["Vue", "Vuex", "npm", "Netlify"],
+          },
+          {
+            id: 3,
+            name: "Team Chat Platform",
+            githubLink: "https://github.com/davidbr4gg/teams-ui",
+            description: "Developed a team communication and project management platform where users can create group and subgroup chat channels. Collaborated with a team of 15 people following the agile methodology and scrum framework practices",
+            tech: ["React.js", "Node.js", "Firebase"],
+          },
+          {
+            id: 0,
+            name: "Cryptocurrency Dashboard",
+            githubLink: "",
+            description: "",
+            tech: ["Vue", "Vuex", "npm"],
+          },
+          {
+            id: 2,
+            name: "Analytics Dashboard",
+            githubLink: "https://github.com/davidbr4gg/analytic_dashboard",
+            description: "Developed a responsive analytics dashboard for users to manage, monitor, and analyse data at a glance. Worked as a front-end developer designing \n" +
+                "the dashboard interface and implementing various dynamic widgets such as line charts, bar charts, statistical cards, and tables.",
+            tech: ["Vue", "Vuex", "Node.js", "Chart.js"],
+            imageFile: "AnalyticsDashboard.pdf",
+          },
+          {
+            id: 4,
+            name: "Supervised Learning Project",
+            githubLink: "https://github.com/gianriyanto/supervised-learning-project",
+            description: "Implemented a machine learning classification algorithm to predict target values in a dataset. Iteratively evaluated and optimised the data pipeline to improve \n" +
+                "efficiency, accuracy and performance. I employed a range of data mining, exploration, and machine learning practices to optimally solve the data analytics problem.",
+            tech: ["Python", "Scikit-learn", "PyCharm", "Pandas", "NumPy"],
+          },
+        ]
       ],
     }
   },
@@ -139,8 +209,9 @@ export default {
         this.selectedProject = project;
       }
     },
-    labelStyle(project) {
-      return [(this.selectedProject === project) ? 'selected-project' : 'not-selected-project']
+    labelStyle() {
+      return 'not-selected-project'
+      // return [(this.selectedProject === project) ? 'selected-project' : 'not-selected-project']
     },
     goToSite(url) {
         window.open(url, '_blank');
@@ -158,40 +229,43 @@ export default {
   transform: translate(40px, 60px);
 
   .header {
-    font-family: "Bw Modelica Regular", serif;
+    font-family: "Bw Modelica Bold", serif;
     font-size: 20px;
     margin-bottom: 40px;
-    color: var(--bone);
-    opacity: 0.7;
+    color: #b3b3b3;
   }
   .project-items{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
+    .project-column-0, .project-column-1{
+      display: flex;
+      flex-direction: column;
+    }
 
     .project{
       display: flex;
       flex-direction: column;
       margin-bottom: 30px;
       font-family: "Bw Modelica Bold", serif;
-      font-size: 3vw;
+      font-size: 2.5vw;
       width: 43vw;
 
       .selected-project{
-        color: #fcdd56;
-        margin-bottom: 10px;
+        color: #404040;
         cursor: pointer;
+        margin-bottom: 15px;
         transition: all 0s, opacity 0.3s ease-in-out;
       }
       .not-selected-project{
-        color: white;
-        margin-bottom: 10px;
+        color: #1f1f1f;
         cursor: pointer;
         transition: all .35s ease-in-out;
 
         &:hover{
-          color: #e3d077;
-          transform: translateX(30px);
-          transition: ease-out 0.35s;
+          color: #404040;
+          transform: translateX(15px);
+          transition: ease-out 0.2s;
         }
       }
       .project-image{
@@ -199,7 +273,7 @@ export default {
         position: absolute;
         font-size: 1em;
         transition: all .35s ease-in-out;
-        color: #e3d077;
+        color: #404040;
 
         &:hover {
           opacity: 0.5;
@@ -212,8 +286,8 @@ export default {
 
         .project-details {
           font-family: "Bw Modelica Light", serif;
-          color: white;
-          font-size: 15px;
+          color: #1f1f1f;
+          font-size: 12px;
           line-height: 1.9;
           height: fit-content;
           margin-bottom: 15px;
@@ -226,17 +300,17 @@ export default {
 
           .tech {
             font-family: "Bw Modelica Regular", serif;
-            color: #fcdd56;
-            border: thin solid #fcdd56;
+            color: #404040;
+            border: thin solid #404040;
             opacity: 1;
             border-radius: 20px;
             font-size: 11px;
             width: fit-content;
-            padding: 7px 18px;
+            padding: 5px 13px;
             margin-right: 12px;
           }
           .project-link{
-            color: #e3d077;
+            color: #404040;
             margin-left: 5px;
             position: sticky;
             font-size: 0.5em;
@@ -253,10 +327,10 @@ export default {
 }
 
 a {
-  color: var(--bone);
+  color: #1f1f1f;
   a:visited {
     text-decoration: none;
-    color: var(--bone);
+    color: #1f1f1f;
   }
 }
 

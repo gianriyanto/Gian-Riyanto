@@ -51,7 +51,7 @@ export default {
   width: 46vw;
   font-size: 39px;
   font-family: "Bw Modelica Bold", serif;
-  color: white;
+  color: #1f1f1f;
   line-height: 1.7;
 
   .content-wrapper{
@@ -73,7 +73,7 @@ export default {
     width: 47vw;
     font-size: 30px;
     font-family: "Bw Modelica Bold", serif;
-    color: white;
+    color: #1f1f1f;
     line-height: 1.7;
 
     .content-wrapper{
@@ -95,7 +95,7 @@ export default {
     padding: 5vh 0 0 0;
     font-size: 21px;
     font-family: "Bw Modelica Bold", serif;
-    color: white;
+    color: #1f1f1f;
     line-height: 1.9;
 
     .content-wrapper{

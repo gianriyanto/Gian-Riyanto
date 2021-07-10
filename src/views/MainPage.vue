@@ -27,9 +27,6 @@
         <span class="contact-label"> Get in Touch </span>
       </button>
     </div>
-    <div class="personal-links">
-      <personal-links/>
-    </div>
     <div id="desktop">
       <component :is="selectedTab" v-bind:name="name"> </component>
     </div>
@@ -47,8 +44,9 @@
          data-aos="fade"
          data-aos-duration="2200"
          data-aos-easing="ease-in-out">
-      <span> Designed and developed by Gian Riyanto </span>
-      <span> Built with Vue.js and hosted with Netlify </span>
+      <div class="personal-links">
+        <personal-links/>
+      </div>
     </div>
   </div>
 </template>
@@ -140,14 +138,14 @@ export default {
       }
     }
     .my-name{
-      font-family: "Bw Modelica Light", serif;
-      color: white;
-      font-size: 30px;
+      font-family: "Bw Modelica Bold", serif;
+      color: #1f1f1f;
+      font-size: 25px;
       transition: all .3s ease-in-out;
       padding-left: 20px;
 
       .last-name {
-        font-family: "Bw Modelica Regular", serif;
+        font-family: "Bw Modelica Bold", serif;
       }
 
       &:hover{
@@ -168,34 +166,38 @@ export default {
       align-items: center;
       justify-content: space-evenly;
       width: 30vw;
-      min-width: 350px;
+      min-width: 370px;
+      margin-right: 15px;
 
       .nav-tabs {
         font-family: "Bw Modelica Regular", serif;
-        font-size: 14px;
-        color: white;
+        font-size: 15px;
+        color: #1f1f1f;
         cursor: pointer;
+        padding: 15px 25px;
+        border-radius: 8px;
+        transition: all 0.35s;
 
         &:hover{
           opacity: 0.4;
-          transition: opacity 0.5s;
+          background-color: #e0e0e0;
         }
       }
     }
     .contact {
-      border: thin solid #c8c7c7;
-      border-radius: 6px;
+      border: thin solid #565656;
+      border-radius: 8px;
       background-color: transparent;
       outline: none;
-      padding: 16px 20px;
+      padding: 15px 25px;
       cursor: pointer;
       position: relative;
 
       .contact-label {
         position: relative;
         font-family: "Bw Modelica Regular", serif;
-        font-size: 14px;
-        color: white;
+        font-size: 13px;
+        color: #1f1f1f;
         z-index: 2;
       }
       &:after {
@@ -205,7 +207,7 @@ export default {
         left: 0;
         width: 0;
         height: 100%;
-        background: linear-gradient(to bottom left, #ae3fff, #4e61d6);
+        background: linear-gradient(to bottom left, #d7d7d7, #e2e2e2);
         border-radius: 6px;
         transition: all 0.35s;
       }

@@ -1,31 +1,22 @@
 <template>
-<div id="Contact">
+<div id="Contact"
+     data-aos="fade"
+     data-aos-duration="1400"
+     data-aos-easing="ease-in-out">
   <div class="logo-for-mobile"
-       @click="selectedTab = 'Introduction';"
-       data-aos="fade"
-       data-aos-duration="1400"
-       data-aos-easing="ease-in-out">
+       @click="selectedTab = 'Introduction';">
     <span class="circle-border"> <img class="my-portrait" src="@/assets/myPortrait.png" alt=""/></span>
     <span class="my-name"> Gian <span class="last-name"> Riyanto </span></span>
   </div>
   <div class="content">
-    <div class="header"
-         data-aos="fade"
-         data-aos-duration="1500"
-         data-aos-easing="ease-in-out">
-      Say Hello
+    <div class="header">
+      Say hey
     </div>
-    <div class="message"
-         data-aos="fade"
-         data-aos-duration="2300"
-         data-aos-easing="ease-in-out">
+    <div class="message">
       Let's keep in touch {{ inputtedName }}! <br/>
       Whether you have a question or you just want to say hi, I'm always up for a chat.
     </div>
     <a class="email-button"
-       data-aos="fade"
-       data-aos-duration="2300"
-       data-aos-easing="ease-in-sine"
        href="mailto:li.griyanto@gmail.com">
       <span class="email-label"> {{ email }} </span>
     </a>
@@ -73,24 +64,24 @@ export default {
   }
 
   .header{
-    color: white;
+    color: #1f1f1f;;
     font-size: 85px;
   }
 
   .message{
     font-family: "Bw Modelica Regular", serif;
     font-size: 16px;
-    color: var(--bone);
+    color: #1f1f1f;;
     width: 400px;
     line-height: 1.5;
     margin: 15px auto 40px auto;
   }
 
   .email-button{
-    color: #e7cf5f;
+    color: #1f1f1f;
     cursor: pointer;
     padding: 15px 2vw;
-    border: thin solid #e7cf5f;
+    border: thin solid #1f1f1f;
     border-radius: 6px;
     background-color: transparent;
     outline: none;
@@ -101,24 +92,24 @@ export default {
       letter-spacing: 0.5px;
       font-family: "Bw Modelica Regular", serif;
       font-size: 15px;
-      color: #e7cf5f;
+      color: #1f1f1f;
       z-index: 2;
       margin: auto;
     }
 
     &:hover {
-      color: #fff;
+      color: #1f1f1f;;
       opacity: 0.7;
     }
 
   }
 
   a {
-    color: #f5de75;
+    color: #1f1f1f;
     text-decoration: none;
     a:visited {
       text-decoration: none;
-      color: #f5de75;
+      color: #1f1f1f;
     }
   }
 }
@@ -142,7 +133,7 @@ export default {
       margin-bottom: 6vh;
 
       .circle-border{
-        border: 2px solid white;
+        border: 2px solid #1f1f1f;;
         border-radius: 50%;
         width: 70px;
         height: 70px;
@@ -156,7 +147,7 @@ export default {
       }
       .my-name{
         font-family: "Bw Modelica Light", serif;
-        color: var(--bone);
+        color: #1f1f1f;;
         font-size: 27px;
 
         .last-name {
@@ -170,7 +161,7 @@ export default {
 
       .header {
         display: none;
-        color: white;
+        color: #1f1f1f;
         font-size: 30px;
       }
 

@@ -1,43 +1,73 @@
 <template>
-  <div id="Experience">
-    <div class="header"
-          data-aos="fade"
-          data-aos-duration="2000"
-          data-aos-easing="ease-in-out">
+  <div id="Experience"
+       data-aos="fade"
+       data-aos-duration="1000"
+       data-aos-easing="ease-in-out">
+    <div class="header">
       Experience.
     </div>
-    <div class="experience-items"
-         data-aos="fade"
-         data-aos-duration="2000"
-         data-aos-easing="ease-in-out">
-      <div v-for="experience in experiences"
+    <div class="experience-items">
+      <div class="experience-column-0">
+        <div v-for="experience in experiences[0]"
+             :key="experience"
+             class="experience"
+             @click="selectExperience(experience)">
+        <span :class="labelStyle(experience)">
+          {{ experience.position }}
+        </span>
+<!--          <span v-if="selectExperience" class="experience-content">-->
+<!--          <span v-if="selectedExperience.position === experience.position"-->
+<!--                class="experience-detail"-->
+<!--                data-aos="fade"-->
+<!--                data-aos-duration="900"-->
+<!--                data-aos-easing="ease-in-out">-->
+<!--            <span class="experience-company">{{ experience.company }} </span> <span class="experience-period"> {{ experience.period }} </span>-->
+<!--          </span>-->
+<!--          <span v-if="selectedExperience.position === experience.position"-->
+<!--                class="description-wrapper"-->
+<!--                data-aos="fade"-->
+<!--                data-aos-duration="1000"-->
+<!--                data-aos-easing="ease-in-out">-->
+<!--              <ul class="description">-->
+<!--                <li v-for="description in experience.description" :key="description"> {{ description }} </li>-->
+<!--              </ul>-->
+<!--          </span>-->
+<!--        </span>-->
+<!--          <span v-else-if="!selectExperience">-->
+          <!-- shows nothing when no project is selected -->
+<!--        </span>-->
+        </div>
+      </div>
+      <div class="experience-column-1">
+        <div v-for="experience in experiences[1]"
            :key="experience"
            class="experience"
            @click="selectExperience(experience)">
         <span :class="labelStyle(experience)">
           {{ experience.position }}
         </span>
-        <span v-if="selectExperience" class="experience-content">
-          <span v-if="selectedExperience.position === experience.position"
-                class="experience-detail"
-                data-aos="fade"
-                data-aos-duration="900"
-                data-aos-easing="ease-in-out">
-            <span class="experience-company">{{ experience.company }} </span> <span class="experience-period"> {{ experience.period }} </span>
-          </span>
-          <span v-if="selectedExperience.position === experience.position"
-                class="description-wrapper"
-                data-aos="fade"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out">
-              <ul class="description">
-                <li v-for="description in experience.description" :key="description"> {{ description }} </li>
-              </ul>
-          </span>
-        </span>
-        <span v-else-if="!selectExperience">
-          <!-- shows nothing when no project is selected -->
-        </span>
+<!--        <span v-if="selectExperience" class="experience-content">-->
+<!--          <span v-if="selectedExperience.position === experience.position"-->
+<!--                class="experience-detail"-->
+<!--                data-aos="fade"-->
+<!--                data-aos-duration="900"-->
+<!--                data-aos-easing="ease-in-out">-->
+<!--            <span class="experience-company">{{ experience.company }} </span> <span class="experience-period"> {{ experience.period }} </span>-->
+<!--          </span>-->
+<!--          <span v-if="selectedExperience.position === experience.position"-->
+<!--                class="description-wrapper"-->
+<!--                data-aos="fade"-->
+<!--                data-aos-duration="1000"-->
+<!--                data-aos-easing="ease-in-out">-->
+<!--              <ul class="description">-->
+<!--                <li v-for="description in experience.description" :key="description"> {{ description }} </li>-->
+<!--              </ul>-->
+<!--          </span>-->
+<!--        </span>-->
+<!--        <span v-else-if="!selectExperience">-->
+<!--          &lt;!&ndash; shows nothing when no project is selected &ndash;&gt;-->
+<!--        </span>-->
+      </div>
       </div>
     </div>
   </div>
@@ -50,49 +80,61 @@ export default {
     return {
       selectedExperience: '',
       experiences: [
-        {
-          id: 0,
-          position: "Software Engineer",
-          company: "LinkAja",
-          period: "Dec 2019 - Mar 2020",
-          description: [
-            "Proposed and developed an automated data pipeline frameworks using Apache Airflow to orchestrate big-data processes, improving overall efficiency and scalability.",
-            "Implemented Direct Acyclic Graphs to schedule and monitor workflows - replacing previously manual and multi-step process.",
-            "Implemented data infrastructure processes to monitor data quality, ensuring production data is accurate and available for key stakeholders and business processes.",
-          ],
-        },
-        {
-          id: 1,
-          position: "SAP Junior Consultant",
-          company: "HR Path",
-          period: "Nov 2018 - Jun 2019",
-          description: [
-            "Configured SAP SuccessFactors cloud systems by uncovering user pain-points, problems, and business process.",
-            "Gathered, analysed and transformed client requirements into tailored solutions that based on Human Capital Management best practices.",
-            "Planned, designed, and executed system integration testing to ensure the the product satisfies client's expectation.",
-          ],
-        },
-        {
-          id: 2,
-          position: "Product Sales Analyst",
-          company: "EuroSoil",
-          period: "Jun 2019 - Aug 2019",
-          description: [
-            "Conducted and presented product and customer research analysis to support Southeast Asian market expansion.",
-            "Delivered end-to-end process of client Purchase Orders, ensuring a high-quality customer experience",
-            "Prepared, participated, and consulted in client meetings to gather product needs and requirements",
-          ],
-        },
-        {
-          id: 3,
-          position: "Programming Teacher Assistant",
-          company: "CodeCamp",
-          period: "Nov 2017 - Nov 2018",
-          description: [
-            "Reinforced lesson plans delivered by the head teacher by providing tailored support to students understanding programming concepts and skills",
-            "Communicated technical concepts to students in a way that is easy to understand and digest."
-          ],
-        },
+        [
+          {
+            position: "Software Engineer",
+            company: "HelloFresh",
+            period: "Jan 2021 - Present",
+            description: [],
+          },
+          {
+            position: "Web Developer",
+            company: "Freelance",
+            period: "Oct 2020 - Jul 2021",
+            description: [],
+          },
+          {
+            position: "Software Engineer",
+            company: "LinkAja",
+            period: "Dec 2019 - Mar 2020",
+            description: [
+              "Proposed and developed an automated data pipeline frameworks using Apache Airflow to orchestrate big-data processes, improving overall efficiency and scalability.",
+              "Implemented Direct Acyclic Graphs to schedule and monitor workflows - replacing previously manual and multi-step process.",
+              "Implemented data infrastructure processes to monitor data quality, ensuring production data is accurate and available for key stakeholders and business processes.",
+            ],
+          },
+          {
+            position: "Technology Consultant",
+            company: "HR Path",
+            period: "Nov 2018 - Jun 2019",
+            description: [
+              "Configured SAP SuccessFactors cloud systems by uncovering user pain-points, problems, and business process.",
+              "Gathered, analysed and transformed client requirements into tailored solutions that based on Human Capital Management best practices.",
+              "Planned, designed, and executed system integration testing to ensure the the product satisfies client's expectation.",
+            ],
+          },
+        ],
+        [
+          {
+            position: "Product Analyst",
+            company: "EuroSoil",
+            period: "Jun 2019 - Aug 2019",
+            description: [
+              "Conducted and presented product and customer research analysis to support Southeast Asian market expansion.",
+              "Delivered end-to-end process of client Purchase Orders, ensuring a high-quality customer experience",
+              "Prepared, participated, and consulted in client meetings to gather product needs and requirements",
+            ],
+          },
+          {
+            position: "Programming Teacher Assistant",
+            company: "CodeCamp",
+            period: "Nov 2017 - Nov 2018",
+            description: [
+              "Reinforced lesson plans delivered by the head teacher by providing tailored support to students understanding programming concepts and skills",
+              "Communicated technical concepts to students in a way that is easy to understand and digest."
+            ],
+          },
+        ],
       ]
     }
   },
@@ -120,29 +162,32 @@ export default {
   transform: translate(30px, 60px);
 
   .header {
-    font-family: "Bw Modelica Regular", serif;
+    font-family: "Bw Modelica Bold", serif;
     font-size: 20px;
-    color: var(--bone);
-    opacity: 0.7;
     margin-bottom: 40px;
+    color: #b3b3b3;
   }
   .experience-items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
+    .experience-column-0 .experience-column-1{
+      display: flex;
+      flex-direction: column;
+    }
 
     .experience{
       display: flex;
       flex-direction: column;
       margin-bottom: 5vh;
       font-family: "Bw Modelica Bold", serif;
-      color: white;
-      font-size: 3.3vw;
+      color: #1f1f1f;
+      font-size: 2.7vw;
       width: 40vw;
 
       .selected-experience {
-        color: #fcdd56;
+        color: #404040;
         cursor: pointer;
-        margin-bottom: 10px;
         transition: all 0s, opacity 0.3s ease-in-out;
 
         &:hover {
@@ -152,14 +197,14 @@ export default {
       }
 
       .not-selected-experience {
-      color: white;
-      cursor: pointer;
-      transition: all .2s ease-in-out;
+        color: #1f1f1f;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
 
         &:hover {
-          color: #eacd50;
-          transform: translateX(30px);
-          transition: ease-out 0.4s;
+          color: #404040;
+          transform: translateX(5px);
+          transition: ease-out 0.2s;
         }
       }
 
@@ -168,11 +213,11 @@ export default {
         flex-direction: column;
 
         .experience-detail{
-          font-size: 16px;
+          font-size: 13px;
           margin-bottom: 10px;
 
           .experience-company{
-            color: #fcdd56;
+            color: #404040;
             font-family: "Bw Modelica Bold", serif;
           }
           .experience-period{
@@ -185,7 +230,7 @@ export default {
 
           .description {
             font-family: "Bw Modelica Regular", serif;
-            font-size: 16px;
+            font-size: 12px;
             line-height: 1.9;
           }
         }
@@ -213,7 +258,7 @@ export default {
     .header {
       font-family: "Bw Modelica Regular", serif;
       font-size: 20px;
-      color: var(--bone);
+      color: #1f1f1f;
       opacity: 0.7;
       margin-bottom: 40px;
     }
@@ -231,14 +276,14 @@ export default {
         width: 70vw;
 
         .selected-experience {
-          color: #fcdd56;
+          color: #404040;
           margin-bottom: 20px;
           width: 70vw;
         }
 
         .not-selected-experience {
           width: 70vw;
-          color: white;
+          color: #404040;
           margin-bottom: 10px;
 
           &:hover {
@@ -263,7 +308,7 @@ export default {
 
             .experience-company{
               font-size: 14px;
-              color: #fcdd56;
+              color: #404040;
               font-family: "Bw Modelica Bold", serif;
               margin-right: 5px;
             }
