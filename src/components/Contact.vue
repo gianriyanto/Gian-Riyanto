@@ -166,10 +166,10 @@ export default {
       }
 
       .email-button{
-        color: #e7cf5f;
+        color: #1f1f1f;
         cursor: pointer;
         padding: 14px 3vw;
-        border: thin solid #e7cf5f;
+        border: thin solid #1f1f1f;
         border-radius: 6px;
         background-color: transparent;
         outline: none;
@@ -179,7 +179,7 @@ export default {
           letter-spacing: 0.5px;
           font-family: "Bw Modelica Regular", serif;
           font-size: 13px;
-          color: #e7cf5f;
+          color: #1f1f1f;
           z-index: 2;
           margin: auto;
         }
@@ -188,18 +188,18 @@ export default {
       .message {
         font-family: "Bw Modelica Light", serif;
         font-size: 13px;
-        color: var(--bone);
+        color: #1f1f1f;
         width: 70vw;
         line-height: 1.9;
       }
     }
 
     a {
-      color: #f5de75;
+      color: #1f1f1f;
       text-decoration: none;
       a:visited {
         text-decoration: none;
-        color: #f5de75;
+        color: #1f1f1f;
       }
     }
   }

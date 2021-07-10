@@ -252,8 +252,8 @@ export default {
     flex-direction: column;
     height: fit-content;
     width: 100vw;
-    background-image: var(--gradient-mobile);
-    box-shadow: 10px 0 20px 2px #9b9b9b;
+    background-image: var(--gradient);
+    box-shadow: 10px 0 20px 2px #d4d4d4;
     overflow-y: scroll;
 
     .logo{

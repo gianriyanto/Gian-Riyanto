@@ -93,12 +93,12 @@ Nothing is more rewarding than an opportunity to transform new things I learn to
     .header{
       font-family: "Bw Modelica Regular", serif;
       font-size: 20px;
-      margin-bottom: 5px;
-      color: var(--bone);
+      margin-bottom: 40px;
+      color: #1f1f1f;
       opacity: 0.7;
     }
     .content{
-      color: white;
+      color: #1f1f1f;
       font-family: "Bw Modelica Regular", serif;
       font-size: 13px;
       line-height: 2.2;

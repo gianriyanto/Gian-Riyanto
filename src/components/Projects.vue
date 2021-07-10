@@ -241,12 +241,13 @@ export default {
     .project-column-0, .project-column-1{
       display: flex;
       flex-direction: column;
+      width: 40vw;
     }
 
     .project{
       display: flex;
       flex-direction: column;
-      margin-bottom: 30px;
+      margin-bottom: 45px;
       font-family: "Bw Modelica Bold", serif;
       font-size: 2.5vw;
       width: 43vw;
@@ -350,7 +351,7 @@ a {
     .header {
       font-family: "Bw Modelica Regular", serif;
       font-size: 20px;
-      color: var(--bone);
+      color: #1f1f1f;
       opacity: 0.7;
       margin-bottom: 50px;
     }
@@ -367,12 +368,12 @@ a {
         width: 70vw;
 
         .selected-project{
-          color: #fcdd56;
+          color: #1f1f1f;
           margin-bottom: 15px;
           width: 70vw;
         }
         .not-selected-project{
-          color: white;
+          color: #1f1f1f;
           margin-bottom: 10px;
 
           &:hover {
@@ -383,7 +384,7 @@ a {
           margin-left: 10px;
           position: absolute;
           font-size: 1em;
-          color: #e3d077;
+          color: #1f1f1f;
         }
         .project-content {
           width: 70vw;
@@ -394,7 +395,7 @@ a {
 
           .project-details {
             font-family: "Bw Modelica Light", serif;
-            color: white;
+            color: #1f1f1f;
             font-size: 14px;
             line-height: 1.9;
             height: fit-content;
@@ -410,8 +411,8 @@ a {
 
             .tech {
               font-family: "Bw Modelica Regular", serif;
-              color: #fcdd56;
-              border: thin solid #fcdd56;
+              color: #1f1f1f;
+              border: thin solid #1f1f1f;
               opacity: 1;
               border-radius: 20px;
               font-size: 11px;
@@ -420,7 +421,7 @@ a {
               margin-right: 12px;
             }
             .project-link {
-              color: #e3d077;
+              color: #1f1f1f;
               margin-left: 5px;
               position: sticky;
               font-size: 2em;

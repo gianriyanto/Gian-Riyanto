@@ -12,9 +12,14 @@
              :key="experience"
              class="experience"
              @click="selectExperience(experience)">
-        <span :class="labelStyle(experience)">
-          {{ experience.position }}
-        </span>
+          <span :class="labelStyle(experience)">
+            {{ experience.position }}
+          </span>
+          <span class="experience-content">
+            <span class="experience-detail">
+              <span class="experience-company">{{ experience.company }} </span> <span class="experience-period"> {{ experience.period }} </span>
+            </span>
+          </span>
 <!--          <span v-if="selectExperience" class="experience-content">-->
 <!--          <span v-if="selectedExperience.position === experience.position"-->
 <!--                class="experience-detail"-->
@@ -45,6 +50,11 @@
            @click="selectExperience(experience)">
         <span :class="labelStyle(experience)">
           {{ experience.position }}
+        </span>
+        <span class="experience-content">
+          <span class="experience-detail">
+            <span class="experience-company">{{ experience.company }} </span> <span class="experience-period"> {{ experience.period }} </span>
+          </span>
         </span>
 <!--        <span v-if="selectExperience" class="experience-content">-->
 <!--          <span v-if="selectedExperience.position === experience.position"-->
@@ -173,17 +183,18 @@ export default {
 
     .experience-column-0 .experience-column-1{
       display: flex;
+      width: 30%;
       flex-direction: column;
     }
 
     .experience{
       display: flex;
       flex-direction: column;
-      margin-bottom: 5vh;
+      margin-bottom: 4vh;
       font-family: "Bw Modelica Bold", serif;
       color: #1f1f1f;
       font-size: 2.7vw;
-      width: 40vw;
+      width: 37vw;
 
       .selected-experience {
         color: #404040;
@@ -209,15 +220,16 @@ export default {
       }
 
       .experience-content {
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
 
         .experience-detail{
-          font-size: 13px;
+          font-size: 18px;
           margin-bottom: 10px;
 
           .experience-company{
-            color: #404040;
+            color: #929292;
             font-family: "Bw Modelica Bold", serif;
           }
           .experience-period{
@@ -302,18 +314,17 @@ export default {
             width: 70vw;
             height: fit-content;
             margin-bottom: 15px;
-            font-size: 12px;
             display: flex;
             flex-direction: row;
 
             .experience-company{
-              font-size: 14px;
+              font-size: 16px;
               color: #404040;
               font-family: "Bw Modelica Bold", serif;
               margin-right: 5px;
             }
             .experience-period{
-              font-size: 14px;
+              font-size: 16px;
               font-family: "Bw Modelica Hairline", serif;
             }
           }

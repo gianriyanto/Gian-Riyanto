@@ -102,7 +102,7 @@ export default {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    background-color: var(--bone);
+    background-color: var(--gradient);
     position: absolute;
 
     ::-webkit-scrollbar {
@@ -127,7 +127,7 @@ export default {
 
       .name{
         font-family: "Bw Modelica Bold", serif;
-        background: linear-gradient(to bottom left, #9226f1, #578cea);
+        background: var(--gradient);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }

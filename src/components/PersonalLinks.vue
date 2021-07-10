@@ -79,7 +79,7 @@ export default {
 }
 
 a {
-  color:  #b1acac;
+  color:  #1f1f1f;
   a:visited {
     text-decoration: none;
     color: #1f1f1f;
@@ -93,9 +93,9 @@ a {
     flex-direction: column;
     align-content: center;
     margin: auto 0 5vh 0;
-    height: 33vh;
+    height: 30vh;
     width: 80vw;
-    color: var(--bone);
+    color: #1f1f1f;
     font-size: 45px;
 
     .resume-container {
@@ -128,7 +128,7 @@ a {
       font-size: 17px;
       font-family: "Bw Modelica Regular", serif;
       padding-left: 25px;
-      color: white;
+      color: #1f1f1f;
     }
 
     .resume, .linkedin, .github {
@@ -137,10 +137,10 @@ a {
   }
 
   a {
-    color: var(--bone);
+    color: #1f1f1f;
     a:visited {
       text-decoration: none;
-      color: var(--bone);
+      color: #1f1f1f;
     }
   }
 }
