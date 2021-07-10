@@ -26,9 +26,9 @@ export default {
   data() {
     return {
       skills: ["React", "Vue", "HTML", "(S)CSS", "Javascript", "Python"],
-      aboutMe: `Hey there, I am a software engineer with a strong growth mindset, obsession for detail, and a passion for value creation. I am currently studying (BEHons. Software) at the University of Technology Sydney, on track for graduation by October 2021.
-I enjoy the collaborative process of decomposing high-level problems into manageable bite-sized components with a focus on building meaningful products that empower and delight people.
-Nothing is more rewarding than an opportunity to transform new things I learn to tackle interesting problems, especially when I get to meet like-minded people and develop relationships along the way.`
+      aboutMe: `Hey there, I am a software engineer with a strong growth mindset, an obsession for detail, and a knack for value creation. My passion extends beyond code, I love what I do because I get to tackle interesting problems by building products and experiences that are meaningful to people.
+I enjoy the collaborative process of decomposing high-level problems into manageable bite-sized components and working through them methodically as a team.
+Nothing is more rewarding than an opportunity to learn new things, build cool things, meet like-minded people, and develop relationships along the way.`
     }
   }
 }
@@ -42,7 +42,7 @@ Nothing is more rewarding than an opportunity to transform new things I learn to
   padding: 60px 0 0 30px;
   margin: auto;
   color: #1f1f1f;
-  width: 40vw;
+  width: 41vw;
 
   .header{
     font-family: "Bw Modelica Bold", serif;
@@ -59,7 +59,7 @@ Nothing is more rewarding than an opportunity to transform new things I learn to
   }
   .skills-headers{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.9;
     padding-bottom: 20px;
   }
