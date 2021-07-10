@@ -79,10 +79,10 @@ export default {
 }
 
 a {
-  color:  #1f1f1f;
+  color:  #b1acac;
   a:visited {
     text-decoration: none;
-    color: #1f1f1f;
+    color: #b1acac;
   }
 }
 
@@ -125,10 +125,6 @@ a {
 
     .show-label {
       display:none;
-      font-size: 17px;
-      font-family: "Bw Modelica Regular", serif;
-      padding-left: 25px;
-      color: #1f1f1f;
     }
 
     .resume, .linkedin, .github {
