@@ -48,8 +48,8 @@
         <personal-links/>
       </div>
     </div>
-    <div class="email">
-      <font-awesome-icon class="email-icon" :icon="['fa', 'envelope']" v-on:click="goToSite('li.griyanto@gmail.com')"/>
+    <div class="email" href="mailto:li.griyanto@gmail.com">
+      <font-awesome-icon class="email-icon" :icon="['fa', 'envelope']"/>
     </div>
   </div>
 </template>
@@ -82,6 +82,7 @@ export default {
       tabs: ["About", "Projects", "Experience", "Skills"],
       selectedTab: "Introduction",
       inputtedName: this.name,
+      email: 'li.griyanto@gmail.com',
     }
   },
   watch: {
