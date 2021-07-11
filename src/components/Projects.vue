@@ -226,7 +226,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  transform: translate(40px, 60px);
+  transform: translate(40px, 30px);
 
   .header {
     font-family: "Bw Modelica Bold", serif;
@@ -247,9 +247,9 @@ export default {
     .project{
       display: flex;
       flex-direction: column;
-      margin-bottom: 45px;
+      margin-bottom: 4vh;
       font-family: "Bw Modelica Bold", serif;
-      font-size: 2.5vw;
+      font-size: 2.3vw;
       width: 43vw;
 
       .selected-project{

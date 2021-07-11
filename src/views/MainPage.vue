@@ -101,8 +101,12 @@ export default {
   width: 100%;
   min-width: 100vw;
   z-index: 2;
-  background-image: var(--gradient);
-  box-shadow: 10px 0 20px 2px #9b9b9b;
+  //background-image: var(--gradient);
+  background: rgba( 255, 255, 255, 0.8 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 15.5px );
+  -webkit-backdrop-filter: blur( 15.5px );
+  //box-shadow: 30px 0 20px 2px #d6d6d6;
   overflow: hidden;
 
   .logo{

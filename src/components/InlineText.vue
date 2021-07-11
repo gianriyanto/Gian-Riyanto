@@ -69,12 +69,12 @@ export default {
 #InLineText{
   .input-editing{
     font-family: "Bw Modelica Bold", serif;
-    color: darkgrey;
+    color: #1f1f1f;
     font-size: 56px;
     width: 390px;
     border: transparent;
     outline: transparent;
-    background-color: var(--bone);
+    background-color: transparent;
   }
   .input-container{
     display: flex;
@@ -85,9 +85,10 @@ export default {
     background-color: transparent;
     font-size: 15px;
     text-decoration: none;
-    margin: auto 0 auto 20px;
-    padding: 9px 20px 9px 20px;
-    border: solid black;
+    margin: auto 0 auto 30px;
+    padding: 10px 30px 10px 30px;
+    border: solid #1f1f1f;
+    color: #1f1f1f;
     border-radius: 30px;
     outline: none;
     cursor: pointer;
@@ -95,19 +96,19 @@ export default {
     transition: all .35s ease-in-out;
 
     &:hover {
-      opacity: 0.5;
-      transition: all 0.5s;
+      opacity: 0.7;
+      transition: all 0.3s;
     }
   }
   .input-has-value-style{
     font-family: "Bw Modelica Bold", serif;
-    background: linear-gradient(to bottom left, #860fee, #5488e5);
+    background: #1f1f1f;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .input-no-value-style{
     font-family: "Bw Modelica Bold", serif;
-    color: darkgrey;
+    color: #1f1f1f;
     width: 390px;
   }
 }

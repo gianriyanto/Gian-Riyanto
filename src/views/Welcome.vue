@@ -3,26 +3,26 @@
     <div id="welcome">
       <div class="container">
         <span class="message"
-              data-aos="fade-down"
-              data-aos-duration="1800"
+              data-aos="fade"
+              data-aos-duration="1500"
               data-aos-easing="ease-in-out">
           Hello, I'm
           <span class="name"
-                data-aos="fade-down"
-                data-aos-duration="2500"
+                data-aos="fade"
+                data-aos-duration="2100"
                 data-aos-easing="ease-in-out">
             {{ myName }}.
           </span>
         </span>
         <span class="message"
               data-aos="fade"
-              data-aos-duration="2700"
+              data-aos-duration="1500"
               data-aos-easing="ease-in-out">
           Nice to meet you,
         </span>
         <inline-text v-bind:nameData="name"
-                     data-aos="fade-up"
-                     data-aos-duration="1800"
+                     data-aos="fade"
+                     data-aos-duration="2100"
                      data-aos-easing="ease-in-out"/>
       </div>
     </div>
@@ -67,7 +67,7 @@ export default {
   min-height: 100vh;
   width: 100%;
   min-width: 100vw;
-  background-color: var(--bone);
+  background-color: #ffffff;
 
   .container {
     display: flex;
@@ -79,13 +79,12 @@ export default {
 
     .message {
       font-family: "Bw Modelica Bold", serif;
+      color: #1f1f1f;
     }
 
     .name{
       font-family: "Bw Modelica Bold", serif;
-      background: linear-gradient(to bottom left, #9226f1, #578cea);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #1f1f1f;
     }
   }
 }

@@ -169,7 +169,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  transform: translate(30px, 60px);
+  transform: translate(30px, 50px);
 
   .header {
     font-family: "Bw Modelica Bold", serif;
@@ -193,7 +193,7 @@ export default {
       margin-bottom: 4vh;
       font-family: "Bw Modelica Bold", serif;
       color: #1f1f1f;
-      font-size: 2.7vw;
+      font-size: 2.6vw;
       width: 37vw;
 
       .selected-experience {

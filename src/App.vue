@@ -34,7 +34,7 @@ html, body {
 :root {
   --bone: #ffffff;
   --gradient-black: linear-gradient(#1d1d1d, #1f1f1f);
-  --gradien-purplet: linear-gradient(to top right, #4776E6, #8E54E9);
+  --gradient-purple: linear-gradient(to top right, #4776E6, #8E54E9);
   --gradient: linear-gradient(to top right, #ffffff, #f6f6f6);
   --gradient-mobile: linear-gradient(#4776E6, #8E54E9, #4776E6, #8E54E9);
 }
