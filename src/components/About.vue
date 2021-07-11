@@ -12,7 +12,7 @@
         {{line}}
     </span>
     <span class="skills-headers">
-      Here are some technologies that I've been tinkering with recently:
+      Here are some technologies I've been tinkering with recently
     </span>
     <span class="skills-wrapper">
       <span v-for="skill in skills" class="skill" :key="skill"> {{ skill }} </span>
@@ -42,7 +42,7 @@ Nothing is more rewarding than an opportunity to learn new things, build cool th
   padding: 60px 0 0 30px;
   margin: auto;
   color: #1f1f1f;
-  width: 41vw;
+  width: 47vw;
 
   .header{
     font-family: "Bw Modelica Bold", serif;
@@ -52,14 +52,14 @@ Nothing is more rewarding than an opportunity to learn new things, build cool th
   }
   .content{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 15px;
-    line-height: 1.8;
+    font-size: 17px;
+    line-height: 1.7;
     padding-bottom: 20px;
     white-space: pre-line;
   }
   .skills-headers{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 1.9;
     padding-bottom: 20px;
   }
@@ -75,7 +75,7 @@ Nothing is more rewarding than an opportunity to learn new things, build cool th
       border-radius: 20px;
       font-size: 12px;
       width: fit-content;
-      padding: 8px 1vw;
+      padding: 8px 1.2vw;
       margin-right: 0.9vw;
     }
   }

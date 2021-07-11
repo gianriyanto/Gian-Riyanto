@@ -247,9 +247,9 @@ export default {
     .project{
       display: flex;
       flex-direction: column;
-      margin-bottom: 4vh;
+      margin-bottom: 4.3vh;
       font-family: "Bw Modelica Bold", serif;
-      font-size: 2.3vw;
+      font-size: 2.4vw;
       width: 43vw;
 
       .selected-project{

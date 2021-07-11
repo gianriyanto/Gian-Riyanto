@@ -62,8 +62,8 @@ export default {
   .header{
     font-family: "Bw Modelica Bold", serif;
     font-size: 20px;
-    margin-bottom: 30px;
     color: #b3b3b3;
+    margin-bottom: 30px;
   }
 
   .skills-wrapper{
@@ -71,10 +71,10 @@ export default {
     flex-direction: column;
 
     .sub-header{
-      font-family: "Bw Modelica Regular", serif;
+      font-family: "Bw Modelica Bold", serif;
       color: #404040;
       font-size: 13px;
-      padding-left: 6px;
+      padding-left: 0;
       margin-bottom: 2vh;
       opacity: 1;
     }

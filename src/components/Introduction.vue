@@ -1,22 +1,14 @@
 <template>
-  <div class="introduction">
+  <div class="introduction"
+       data-aos="fade"
+       data-aos-duration="2100"
+       data-aos-easing="ease-in-out">
     <div class="content-wrapper">
-      <span class="greeting"
-            data-aos="fade-down"
-            data-aos-duration="1200"
-            data-aos-easing="ease-in-out">
-        Hey <span class="user"
-                  data-aos="fade"
-                  data-aos-duration="1800"
-                  data-aos-easing="ease-in-out">
-              {{inputtedName}},
-            </span>
+      <span class="greeting">
+        Hey <span class="user">{{inputtedName}}, </span>
       </span>
-      <span class="message"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out">
-              {{ introduction }}
+      <span class="message">
+        {{ introduction }}
       </span>
     </div>
   </div>
@@ -29,8 +21,9 @@ export default {
   data(){
     return {
       inputtedName: this.name,
-      introduction: "I am a software engineering on the lookout for experiences to learn new things make meaningful contributions.\n" +
-          "I do my best work collaborating with passionate people to solve interesting problems by building value-adding products and delightful user experience."
+      introduction: "I am a software engineer, product builder, and lifetime learner.\n" +
+          "I do my best work collaborating with like-minded people to solve interesting problems" +
+          " and make meaningful contributions by engineering products that delight and enable people."
     }
   },
   watch: {
@@ -47,9 +40,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 60px 0 0 15px;
-  width: 46vw;
-  font-size: 39px;
+  padding: 56px 0 0 0;
   font-family: "Bw Modelica Bold", serif;
   color: #1f1f1f;
   line-height: 1.7;
@@ -57,10 +48,13 @@ export default {
   .content-wrapper{
     display: flex;
     flex-direction: column;
-  }
+    font-size: 2.2vw;
 
-  .greeting{
-    margin-bottom: 10px;
+    .greeting{
+      margin-bottom: 10px;
+    }
+    .message{
+    }
   }
 }
 
