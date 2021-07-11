@@ -10,20 +10,20 @@
           Hello, I'm
           <span class="name"
                 data-aos="fade"
-                data-aos-duration="2100"
+                data-aos-duration="2500"
                 data-aos-easing="ease-in-out">
             {{ myName }}.
           </span>
         </span>
         <span class="message"
               data-aos="fade"
-              data-aos-duration="1500"
+              data-aos-duration="1800"
               data-aos-easing="ease-in-out">
           Nice to meet you,
         </span>
         <inline-text v-bind:nameData="name"
                      data-aos="fade"
-                     data-aos-duration="2100"
+                     data-aos-duration="2500"
                      data-aos-easing="ease-in-out"/>
       </div>
     </div>
@@ -60,10 +60,6 @@ export default {
   flex-direction: column;
   height: fit-content;
   overflow-x: hidden;
-}
-
-#background{
-
 }
 
 #welcome{

@@ -51,7 +51,7 @@ export default {
     z-index: 0;
     display: flex;
     position: absolute;
-    transform: translate(65vw, 0);
+    transform: translate(70vw, 0);
     background-color: #77bade;
     height: 500px;
     width: 500px;
@@ -74,7 +74,7 @@ export default {
     display: flex;
     position: absolute;
     transform: translate(15vw, 40vh);
-    background-color: #90d5f5;
+    background-color: #9ad9f6;
     height: 550px;
     width: 450px;
     border-radius: 50%;
@@ -85,7 +85,7 @@ export default {
     display: flex;
     position: absolute;
     transform: translate(-15vw, 65vh);
-    background-color: #fcb679;
+    background-color: #f5b986;
     height: 650px;
     width: 550px;
     border-radius: 50%;
