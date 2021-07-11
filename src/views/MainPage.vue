@@ -101,10 +101,9 @@ export default {
   width: 100%;
   min-width: 100vw;
   z-index: 2;
-  background: rgba( 255, 255, 255, 0.6 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 15.5px );
-  -webkit-backdrop-filter: blur( 15.5px );
+  background: rgba( 255, 255, 246, 0.10 );
+  backdrop-filter: blur(40.0px);
+  -webkit-backdrop-filter: blur(40.0px);
   overflow: hidden;
 
   .logo{
@@ -140,11 +139,12 @@ export default {
       }
     }
     .my-name{
-      font-family: "Bw Modelica Bold", serif;
+      font-family: "Bw Modelica Regular", serif;
       color: #1f1f1f;
       font-size: 25px;
       transition: all .3s ease-in-out;
       padding-left: 20px;
+      padding-top: 3px;
 
       .last-name {
         font-family: "Bw Modelica Bold", serif;

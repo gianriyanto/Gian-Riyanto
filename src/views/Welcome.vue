@@ -1,5 +1,6 @@
 <template>
   <div class="content-wrapper">
+    <background id="background"/>
     <div id="welcome">
       <div class="container">
         <span class="message"
@@ -33,11 +34,13 @@
 <script>
 import InlineText from "@/components/InlineText";
 import MainPage from "@/views/MainPage";
+import Background from "../components/Background";
 
 export default {
   title: 'Gian Riyanto',
   name: "Welcome",
   components: {
+    Background,
     MainPage,
     InlineText
   },
@@ -59,6 +62,10 @@ export default {
   overflow-x: hidden;
 }
 
+#background{
+
+}
+
 #welcome{
   display: flex;
   flex-direction: column;
@@ -67,7 +74,11 @@ export default {
   min-height: 100vh;
   width: 100%;
   min-width: 100vw;
-  background-color: #ffffff;
+  //background-color: #ffffff;
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
 
   .container {
     display: flex;

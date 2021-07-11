@@ -69,7 +69,7 @@ export default {
 #InLineText{
   .input-editing{
     font-family: "Bw Modelica Bold", serif;
-    color: #1f1f1f;
+    color: #a0a0a0;
     font-size: 56px;
     width: 390px;
     border: transparent;
@@ -86,9 +86,9 @@ export default {
     font-size: 15px;
     text-decoration: none;
     margin: auto 0 auto 30px;
-    padding: 10px 30px 10px 30px;
-    border: solid #1f1f1f;
-    color: #1f1f1f;
+    padding: 12px 30px;
+    border: solid #2f2f2f;
+    color: #2f2f2f;
     border-radius: 30px;
     outline: none;
     cursor: pointer;
@@ -102,13 +102,13 @@ export default {
   }
   .input-has-value-style{
     font-family: "Bw Modelica Bold", serif;
-    background: #1f1f1f;
+    background: #2f2f2f;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .input-no-value-style{
     font-family: "Bw Modelica Bold", serif;
-    color: #1f1f1f;
+    color: #a0a0a0;
     width: 390px;
   }
 }
