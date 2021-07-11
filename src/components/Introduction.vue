@@ -21,9 +21,9 @@ export default {
   data(){
     return {
       inputtedName: this.name,
-      introduction: "I am a software engineer, product builder, and lifetime learner.\n" +
-          "I do my best work collaborating with like-minded people to solve interesting problems" +
-          " and make meaningful contributions by engineering products that delight and enable people."
+      introduction: "I am a software engineer, product builder, tinkerer, and lifelong learner.\n" +
+          "I do my best work collaborating with like-minded people solving interesting problems" +
+          " and making meaningful contributions by engineering products that delight and enable people."
     }
   },
   watch: {
