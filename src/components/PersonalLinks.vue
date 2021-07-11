@@ -42,8 +42,8 @@ export default {
   width: 230px;
   position: fixed;
   bottom: 30px;
-  right: 30px;
-  color: #b1acac;
+  left: 15px;
+  color: #c4c4c4;
   opacity: 0.8;
   font-size: 30px;
 
@@ -79,10 +79,10 @@ export default {
 }
 
 a {
-  color:  #b1acac;
+  color:  #c4c4c4;
   a:visited {
     text-decoration: none;
-    color: #b1acac;
+    color: #c4c4c4;
   }
 }
 
@@ -92,9 +92,9 @@ a {
     display: flex;
     flex-direction: column;
     align-content: center;
-    margin: auto 0 5vh 0;
+    margin: auto auto 5vh auto;
     height: 30vh;
-    width: 80vw;
+    width: 90vw;
     color: #1f1f1f;
     font-size: 45px;
 
@@ -111,7 +111,7 @@ a {
       flex-direction: row;
       align-items: center;
       width: fit-content;
-      margin:auto;
+      margin: auto;
       padding: 0;
     }
     .github-container{
@@ -119,7 +119,7 @@ a {
       flex-direction: row;
       align-items: center;
       width: fit-content;
-      margin:auto;
+      margin: auto;
       padding: 0;
     }
 

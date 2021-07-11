@@ -130,7 +130,7 @@ export default {
       width: 80vw;
       height: fit-content;
       align-items: center;
-      margin-bottom: 6vh;
+      margin-bottom: 3vh;
 
       .circle-border{
         border: 2px solid #1f1f1f;;
@@ -146,12 +146,12 @@ export default {
         }
       }
       .my-name{
-        font-family: "Bw Modelica Light", serif;
+        font-family: "Bw Modelica Bold", serif;
         color: #1f1f1f;;
         font-size: 27px;
 
         .last-name {
-          font-family: "Bw Modelica Regular", serif;
+          font-family: "Bw Modelica Bold", serif;
         }
       }
     }
@@ -168,26 +168,26 @@ export default {
       .email-button{
         color: #1f1f1f;
         cursor: pointer;
-        padding: 14px 3vw;
-        border: thin solid #1f1f1f;
-        border-radius: 6px;
-        background-color: transparent;
+        padding: 12px 8vw;
+        border: solid #1f1f1f;
+        border-radius: 25px;
+        background-color: #1f1f1f;
         outline: none;
 
         .email-label {
           position: relative;
           letter-spacing: 0.5px;
-          font-family: "Bw Modelica Regular", serif;
-          font-size: 13px;
-          color: #1f1f1f;
+          font-family: "Bw Modelica Bold", serif;
+          font-size: 14px;
+          color: white;
           z-index: 2;
           margin: auto;
         }
       }
 
       .message {
-        font-family: "Bw Modelica Light", serif;
-        font-size: 13px;
+        font-family: "Bw Modelica Regular", serif;
+        font-size: 15px;
         color: #1f1f1f;
         width: 70vw;
         line-height: 1.9;

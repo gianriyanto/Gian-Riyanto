@@ -48,6 +48,9 @@
         <personal-links/>
       </div>
     </div>
+    <div class="email">
+      <font-awesome-icon class="email-icon" :icon="['fa', 'envelope']" v-on:click="goToSite('li.griyanto@gmail.com')"/>
+    </div>
   </div>
 </template>
 
@@ -236,6 +239,28 @@ export default {
     color: #d4d3cd;
   }
 
+  .email{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:auto;
+    padding: 0;
+    bottom: 29px;
+    right: 40px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: linear-gradient(#1d1d1d, #393939);
+    box-shadow: 0 12px 30px 0 rgba(100, 93, 150, 0.5);
+
+    .email-icon{
+      margin: auto;
+      color: white;
+      font-size: 30px;
+    }
+  }
+
   #desktop{
     margin: auto;
   }
@@ -262,6 +287,9 @@ export default {
       display: none;
     }
     .footer{
+      display: none;
+    }
+    .email{
       display: none;
     }
 
