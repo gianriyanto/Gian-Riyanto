@@ -268,11 +268,11 @@ export default {
     flex-direction: column;
 
     .header {
-      font-family: "Bw Modelica Regular", serif;
+      font-family: "Bw Modelica Bold", serif;
       font-size: 20px;
-      color: #1f1f1f;
+      color: #7e7e7e;
       opacity: 0.7;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
     .experience-items {
       display: flex;
@@ -284,7 +284,7 @@ export default {
         flex-direction: column;
         margin-bottom: 5vh;
         font-family: "Bw Modelica Bold", serif;
-        font-size: 35px;
+        font-size: 32px;
         width: 70vw;
 
         .selected-experience {

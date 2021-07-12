@@ -115,12 +115,11 @@ export default {
     color: #1f1f1f;
 
     .header{
+      font-family: "Bw Modelica Bold", serif;
       font-size: 20px;
-      margin-bottom: 30px;
-      padding: 0;
-      color: #1f1f1f;
+      color: #7e7e7e;
       opacity: 0.7;
-      font-family: "Bw Modelica Regular", serif;
+      margin-bottom: 50px;
     }
 
     .skills-wrapper{

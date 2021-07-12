@@ -21,7 +21,7 @@ export default {
   data(){
     return {
       inputtedName: this.name,
-      introduction: "I am a software engineer, product builder, tinkerer, and lifelong learner.\n" +
+      introduction: "I'm a software engineer, product builder, tinkerer, and lifelong learner.\n" +
           "I do my best work collaborating with like-minded people solving interesting problems" +
           " and making meaningful contributions by engineering products that delight and enable people."
     }
@@ -36,24 +36,28 @@ export default {
 
 <style lang="scss" scoped>
 
-.introduction{
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  padding: 56px 0 0 0;
-  font-family: "Bw Modelica Bold", serif;
-  color: #1f1f1f;
-  line-height: 1.7;
 
-  .content-wrapper{
+@media only screen and (min-width: 1836px) {
+  .introduction {
     display: flex;
     flex-direction: column;
-    font-size: 2.2vw;
+    margin: auto;
+    padding: 56px 0 0 0;
+    font-family: "Bw Modelica Bold", serif;
+    color: #1f1f1f;
+    line-height: 1.7;
 
-    .greeting{
-      margin-bottom: 10px;
-    }
-    .message{
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      font-size: 2.2vw;
+
+      .greeting {
+        margin-bottom: 10px;
+      }
+
+      .message {
+      }
     }
   }
 }
@@ -87,10 +91,10 @@ export default {
     height: fit-content;
     width: 70vw;
     padding: 5vh 0 0 0;
-    font-size: 21px;
+    font-size: 23px;
     font-family: "Bw Modelica Bold", serif;
-    color: #1f1f1f;
-    line-height: 1.9;
+    color: #343434;
+    line-height: 1.8;
 
     .content-wrapper{
       display: flex;

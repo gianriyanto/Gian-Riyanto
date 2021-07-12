@@ -349,9 +349,9 @@ a {
     padding: 0;
 
     .header {
-      font-family: "Bw Modelica Regular", serif;
+      font-family: "Bw Modelica Bold", serif;
       font-size: 20px;
-      color: #1f1f1f;
+      color: #7e7e7e;
       opacity: 0.7;
       margin-bottom: 50px;
     }
@@ -364,7 +364,7 @@ a {
         flex-direction: column;
         margin-bottom: 5vh;
         font-family: "Bw Modelica Bold", serif;
-        font-size: 35px;
+        font-size: 29px;
         width: 70vw;
 
         .selected-project{

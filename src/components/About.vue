@@ -91,11 +91,11 @@ Nothing is more rewarding than an opportunity to learn new things, build cool th
     flex-direction: column;
 
     .header{
-      font-family: "Bw Modelica Regular", serif;
+      font-family: "Bw Modelica Bold", serif;
       font-size: 20px;
-      margin-bottom: 40px;
-      color: #1f1f1f;
+      color: #7e7e7e;
       opacity: 0.7;
+      margin-bottom: 50px;
     }
     .content{
       color: #1f1f1f;
