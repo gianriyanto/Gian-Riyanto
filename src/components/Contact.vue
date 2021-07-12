@@ -1,25 +1,28 @@
 <template>
-<div id="Contact"
+  <div id="Contact"
      data-aos="fade"
      data-aos-duration="1400"
      data-aos-easing="ease-in-out">
-  <div class="logo-for-mobile"
-       @click="selectedTab = 'Introduction';">
+  <div class="logo-for-mobile" @click="selectedTab = 'Introduction';">
     <span class="circle-border"> <img class="my-portrait" src="@/assets/myPortrait.png" alt=""/></span>
     <span class="my-name"> Gian <span class="last-name"> Riyanto </span></span>
   </div>
   <div class="content">
-    <div class="header">
-      Say hey
-    </div>
+    <div class="header"> Hey, let's keep in </div>
+    <div class="header"> touch {{ inputtedName }}. </div>
     <div class="message">
-      Let's keep in touch {{ inputtedName }}! <br/>
-      Whether you have a question or you just want to say hi, I'm always up for a chat.
+      Whether you have a question or just want to say hi, I'm always up for a chat.
     </div>
-    <a class="email-button"
-       href="mailto:li.griyanto@gmail.com">
-      <span class="email-label"> {{ email }} </span>
-    </a>
+    <div class="button-container">
+      <button class="resume-button">
+        <a class="resume-label" :href="`${publicPath}gianriyanto.pdf`" target="_blank"> Take my resume </a>
+      </button>
+      <button class="email-button">
+        <a class="" href="mailto:li.griyanto@gmail.com">
+          <span class="email-label"> Email me </span>
+        </a>
+      </button>
+    </div>
   </div>
   <personal-links class="links-for-mobile"/>
 </div>
@@ -37,13 +40,18 @@ export default {
   props: ['name'],
   data() {
     return {
-      email: 'li.griyanto@gmail.com',
       inputtedName: this.name,
+      publicPath: process.env.BASE_URL
     }
   },
   watch: {
     name: function () {
       this.inputtedName= this.name
+    }
+  },
+  methods: {
+    goToSite(url) {
+      window.open(url, '_blank');
     }
   },
 }
@@ -57,49 +65,82 @@ export default {
   margin: auto;
   padding-top: 50px;
   text-align: center;
-  font-family: "Bw Modelica Bold", serif;
 
   .logo-for-mobile{
     display: none;
   }
 
   .header{
+    font-family: "Bw Modelica Bold", serif;
     color: #1f1f1f;;
-    font-size: 85px;
+    font-size: 55px;
+    letter-spacing: -1px;
   }
 
   .message{
-    font-family: "Bw Modelica Regular", serif;
+    font-family: "Bw Modelica Light", serif;
     font-size: 16px;
     color: #1f1f1f;;
     width: 400px;
-    line-height: 1.5;
-    margin: 15px auto 40px auto;
+    line-height: 1.7;
+    margin: 15px auto 30px auto;
   }
 
-  .email-button{
-    color: #1f1f1f;
-    cursor: pointer;
-    padding: 15px 2vw;
-    border: thin solid #1f1f1f;
-    border-radius: 6px;
-    background-color: transparent;
-    outline: none;
-    transition: all 0.35s ease-in-out;
+  .button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 32vw;
 
-    .email-label {
-      position: relative;
-      letter-spacing: 0.5px;
-      font-family: "Bw Modelica Regular", serif;
-      font-size: 15px;
-      color: #1f1f1f;
-      z-index: 2;
-      margin: auto;
+    .resume-button{
+      width: 45%;
+      background-color: #303030;
+      cursor: pointer;
+      padding: 16px 2vw;
+      border: solid #303030;
+      border-radius: 30px;
+      outline: none;
+      transition: all 0.25s ease-in-out;
+
+      .resume-label {
+        position: relative;
+        letter-spacing: 0.5px;
+        font-family: "Bw Modelica Bold", serif;
+        font-size: 14px;
+        color: white;
+        z-index: 2;
+        margin: auto;
+      }
+
+      &:hover {
+        color: #1f1f1f;;
+        opacity: 0.7;
+      }
     }
+    .email-button{
+      color: #1f1f1f;
+      width: 44%;
+      cursor: pointer;
+      padding: 16px 2vw;
+      border: thin solid #1f1f1f;
+      border-radius: 30px;
+      outline: none;
+      transition: all 0.25s ease-in-out;
+      background-color: transparent;
 
-    &:hover {
-      color: #1f1f1f;;
-      opacity: 0.7;
+      .email-label {
+        position: relative;
+        letter-spacing: 0.5px;
+        font-family: "Bw Modelica Bold", serif;
+        font-size: 16px;
+        color: #1f1f1f;
+        z-index: 2;
+        margin: auto;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
 
   }

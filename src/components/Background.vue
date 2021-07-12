@@ -10,6 +10,7 @@
     <span class="circle-6"/>
     <span class="circle-7"/>
     <span class="circle-8"/>
+    <span class="circle-9"/>
   </div>
 </template>
 
@@ -95,10 +96,10 @@ export default {
     z-index: -3;
     display: flex;
     position: absolute;
-    transform: translate(-5vw, 44vh);
+    transform: translate(-5vw, 38vh);
     background-color: #8de9ce;
     height: 600px;
-    width: 450px;
+    width: 550px;
     border-radius: 50%;
   }
 
@@ -118,7 +119,7 @@ export default {
     display: flex;
     position: absolute;
     transform: translate(75vw, 180vh);
-    background-color: #fcac75;
+    background-color: #f3bc7a;
     height: 400px;
     width: 400px;
     border-radius: 50%;
@@ -134,7 +135,16 @@ export default {
     width: 400px;
     border-radius: 50%;
   }
-
+  .circle-8 {
+    z-index: 0;
+    display: flex;
+    position: absolute;
+    transform: translate(30vw, 50vh);
+    background-color: #f1b8b8;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+  }
 }
 
 </style>

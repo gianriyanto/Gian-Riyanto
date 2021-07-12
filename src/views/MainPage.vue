@@ -105,7 +105,7 @@ export default {
   width: 100%;
   min-width: 100vw;
   z-index: 2;
-  background: rgba( 255, 255, 246, 0.10 );
+  background: rgba(221, 221, 206, 0);
   backdrop-filter: blur(40.0px);
   -webkit-backdrop-filter: blur(40.0px);
   overflow: hidden;
