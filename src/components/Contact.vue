@@ -91,6 +91,7 @@ export default {
     flex-direction: row;
     justify-content: space-evenly;
     width: 32vw;
+    margin: 0 auto;
 
     .resume-button{
       width: 45%;
@@ -162,7 +163,6 @@ export default {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 0;
 
     .logo-for-mobile{
       display: flex;
@@ -206,23 +206,54 @@ export default {
         font-size: 30px;
       }
 
-      .email-button{
-        color: #1f1f1f;
-        cursor: pointer;
-        padding: 12px 8vw;
-        border: solid #1f1f1f;
-        border-radius: 25px;
-        background-color: #1f1f1f;
-        outline: none;
+      .button-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        width: 90%;
 
-        .email-label {
-          position: relative;
-          letter-spacing: 0.5px;
-          font-family: "Bw Modelica Bold", serif;
-          font-size: 14px;
-          color: white;
-          z-index: 2;
-          margin: auto;
+        .resume-button{
+          margin-bottom: 14px;
+          width: 100%;
+          background-color: #303030;
+          cursor: pointer;
+          padding: 16px 2vw;
+          border: solid #303030;
+          border-radius: 30px;
+          outline: none;
+          transition: all 0.25s ease-in-out;
+
+          .resume-label {
+            position: relative;
+            letter-spacing: 0.5px;
+            font-family: "Bw Modelica Bold", serif;
+            font-size: 14px;
+            color: white;
+            z-index: 2;
+            margin: auto;
+          }
+        }
+        .email-button{
+          color: #1f1f1f;
+          width: 100%;
+          cursor: pointer;
+          padding: 16px 2vw;
+          border: thin solid #1f1f1f;
+          border-radius: 30px;
+          outline: none;
+          transition: all 0.25s ease-in-out;
+          background-color: transparent;
+
+          .email-label {
+            position: relative;
+            letter-spacing: 0.5px;
+            font-family: "Bw Modelica Bold", serif;
+            font-size: 16px;
+            color: #1f1f1f;
+            z-index: 2;
+            margin: auto;
+          }
         }
       }
 
@@ -233,6 +264,10 @@ export default {
         width: 70vw;
         line-height: 1.9;
       }
+    }
+
+    .links-for-mobile{
+      width: 100%;
     }
 
     a {

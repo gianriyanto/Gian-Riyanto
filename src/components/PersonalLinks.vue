@@ -33,102 +33,68 @@ export default {
 
 <style lang="scss" scoped>
 
-#links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 50px;
-  width: 230px;
-  position: fixed;
-  bottom: 30px;
-  left: 15px;
-  color: #c4c4c4;
-  opacity: 0.8;
-  font-size: 30px;
-
-  .resume-container {
+@media only screen and (min-width: 769px) {
+  #links {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 10px;
-  }
-  .linkedin-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 4px;
-  }
-  .github-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+    justify-content: space-evenly;
+    height: 50px;
+    width: 230px;
+    position: fixed;
+    bottom: 30px;
+    left: 15px;
+    color: #c4c4c4;
+    opacity: 0.8;
+    font-size: 30px;
 
-  .resume, .linkedin, .github {
-    cursor: pointer;
-    opacity: 1;
-    position: relative;
-    transition: all .2s ease-in-out;
+    .resume-container .linkedin-container, .github-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 10px;
+    }
 
-    &:hover{
-      opacity: 0.7;
-      transform: translateY(4px);
+    .resume, .linkedin, .github {
+      cursor: pointer;
+      opacity: 1;
+      position: relative;
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        opacity: 0.7;
+        transform: translateY(4px);
+      }
     }
   }
-}
 
-a {
-  color:  #c4c4c4;
-  a:visited {
-    text-decoration: none;
+  a {
     color: #c4c4c4;
+
+    a:visited {
+      text-decoration: none;
+      color: #c4c4c4;
+    }
   }
 }
 
 @media only screen and (max-width: 768px) {
   #links {
-    position: absolute;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin: auto auto 5vh auto;
-    height: 30vh;
-    width: 90vw;
-    color: #1f1f1f;
-    font-size: 45px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto 0 0 0;
+    width: 100%;
+    font-size: 30px;
 
-    .resume-container {
+    .resume-container .linkedin-container, .github-container{
+      padding-top: 3px;
       display: flex;
       flex-direction: row;
-      width: fit-content;
-      align-items: center;
-      margin: auto;
-      padding: 0;
-    }
-    .linkedin-container{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      width: fit-content;
-      margin: auto;
-      padding: 0;
-    }
-    .github-container{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      width: fit-content;
-      margin: auto;
-      padding: 0;
     }
 
     .show-label {
       display:none;
-    }
-
-    .resume, .linkedin, .github {
-      margin: auto;
     }
   }
 
