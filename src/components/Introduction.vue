@@ -19,7 +19,7 @@ export default {
       inputtedName: this.name,
       introduction: "I'm a software engineer, product builder, and a lifelong learner.\n" +
           "I do my best work collaborating to solve interesting problems with a team of like-minded people" +
-          " conspiring to design and engineer meaningful products that delight people."
+          " conspiring to design and engineer meaningful products that empower people."
     }
   },
   watch: {
