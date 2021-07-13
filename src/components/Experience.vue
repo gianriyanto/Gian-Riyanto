@@ -112,7 +112,9 @@ export default {
               "Implemented Direct Acyclic Graphs to schedule and monitor workflows - replacing previously manual and multi-step process.",
               "Implemented data infrastructure processes to monitor data quality, ensuring production data is accurate and available for key stakeholders and business processes.",
             ],
-          },
+          }
+        ],
+        [
           {
             position: "Technology Consultant",
             company: "HR Path",
@@ -123,8 +125,6 @@ export default {
               "Planned, designed, and executed system integration testing to ensure the the product satisfies client's expectation.",
             ],
           },
-        ],
-        [
           {
             position: "Product Analyst",
             company: "EuroSoil",
