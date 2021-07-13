@@ -42,6 +42,7 @@ export default {
     display: flex;
     flex-direction: column;
     margin: auto;
+    width: 56vw;
     padding: 56px 0 0 0;
     font-family: "Bw Modelica Bold", serif;
     color: #1f1f1f;
