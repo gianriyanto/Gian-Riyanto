@@ -21,9 +21,9 @@ export default {
   data(){
     return {
       inputtedName: this.name,
-      introduction: "I'm a software engineer, product builder, tinkerer, and lifelong learner.\n" +
-          "I do my best work collaborating with like-minded people solving interesting problems" +
-          " and making meaningful contributions by engineering products that delight and enable people."
+      introduction: "I'm a software engineer, product builder, and a lifelong learner.\n" +
+          "I do my best work collaborating to solve interesting problems with a team of like-minded people" +
+          " conspiring to design and engineer meaningful products that delight people."
     }
   },
   watch: {
@@ -68,8 +68,8 @@ export default {
     flex-direction: column;
     margin: auto;
     padding: 60px 0 0 15px;
-    width: 47vw;
-    font-size: 30px;
+    width: 50vw;
+    font-size: 33px;
     font-family: "Bw Modelica Bold", serif;
     color: #1f1f1f;
     line-height: 1.7;
