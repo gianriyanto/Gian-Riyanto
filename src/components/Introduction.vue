@@ -1,15 +1,11 @@
 <template>
   <div class="introduction"
-       data-aos="fade"
-       data-aos-duration="2100"
-       data-aos-easing="ease-in-out">
+      data-aos="fade"
+      data-aos-duration="2100"
+      data-aos-easing="ease-in-out">
     <div class="content-wrapper">
-      <span class="greeting">
-        Hey <span class="user">{{inputtedName}}, </span>
-      </span>
-      <span class="message">
-        {{ introduction }}
-      </span>
+      <span class="greeting"> Hey <span class="user">{{inputtedName}}, </span></span>
+      <span class="message"> {{ introduction }} </span>
     </div>
   </div>
 </template>

@@ -7,7 +7,6 @@
     <span class="circle-3"/>
     <span class="circle-4"/>
     <span class="circle-5"/>
-    <span class="circle-6"/>
     <span class="circle-7"/>
     <span class="circle-8"/>
     <span class="circle-9"/>
@@ -36,25 +35,29 @@ export default {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(90.0px);
     -webkit-backdrop-filter: blur(90.0px);
   }
 
   .circle-0{
-    width: 40vw;
-    height: 40vh;
-    border-radius: 50%;
-    background-color: #dae8ff;
-  }
-
-  .circle-1 {
     z-index: 0;
     display: flex;
     position: absolute;
-    transform: translate(70vw, 0);
-    background-color: #77bade;
-    height: 500px;
+    transform: translate(85vw, -5vh);
+    background-color: #7966e5;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+  }
+
+  .circle-1 {
+    z-index: -1;
+    display: flex;
+    position: absolute;
+    transform: translate(65vw, 0);
+    background-color: #e963a3;
+    height: 600px;
     width: 500px;
     border-radius: 50%;
   }
@@ -64,30 +67,31 @@ export default {
     display: flex;
     position: absolute;
     transform: translate(75vw, 30vh);
-    background-color: #7ce2ca;
-    height: 400px;
+    background-color: #f6b167;
+    height: 600px;
     width: 550px;
     border-radius: 50%;
   }
 
   .circle-3 {
+    display: none;
     z-index: -1;
-    display: flex;
+    //display: flex;
     position: absolute;
-    transform: translate(15vw, 40vh);
-    background-color: #9ad9f6;
+    transform: translate(10vw, 70vh);
+    background-color: #f1a56c;
     height: 550px;
     width: 450px;
     border-radius: 50%;
   }
 
   .circle-4 {
-    z-index: -1;
+    z-index: -2;
     display: flex;
     position: absolute;
-    transform: translate(-15vw, 65vh);
-    background-color: #f5b986;
-    height: 650px;
+    transform: translate(55vw, 15vh);
+    background-color: #fcca47;
+    height: 600px;
     width: 550px;
     border-radius: 50%;
   }
@@ -96,21 +100,10 @@ export default {
     z-index: -3;
     display: flex;
     position: absolute;
-    transform: translate(-5vw, 38vh);
-    background-color: #8de9ce;
-    height: 600px;
-    width: 550px;
-    border-radius: 50%;
-  }
-
-  .circle-6 {
-    z-index: 0;
-    display: flex;
-    position: absolute;
-    transform: translate(80vw, 215vh);
-    background-color: #77b9d9;
-    height: 500px;
-    width: 500px;
+    transform: translate(-4vw, 45vh);
+    background-color: #6466de;
+    height: 450px;
+    width: 700px;
     border-radius: 50%;
   }
 
@@ -118,31 +111,20 @@ export default {
     z-index: -1;
     display: flex;
     position: absolute;
-    transform: translate(75vw, 180vh);
-    background-color: #f3bc7a;
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
-  }
-
-  .circle-8 {
-    z-index: 0;
-    display: flex;
-    position: absolute;
-    transform: translate(-5vw, 210vh);
-    background-color: #acfcdc;
+    transform: translate(-4vw, 25vh);
+    background-color: #5feacb;
     height: 500px;
-    width: 400px;
+    width: 300px;
     border-radius: 50%;
   }
   .circle-8 {
-    z-index: 0;
+    z-index: -1;
     display: flex;
     position: absolute;
-    transform: translate(30vw, 50vh);
-    background-color: #f1b8b8;
-    height: 450px;
-    width: 450px;
+    transform: translate(-5vw, 60vh);
+    background-color: #6db7f6;
+    height: 550px;
+    width: 500px;
     border-radius: 50%;
   }
 }
