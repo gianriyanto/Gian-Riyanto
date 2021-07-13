@@ -66,7 +66,7 @@ export default {
     margin: auto;
     padding: 60px 0 0 15px;
     width: 50vw;
-    font-size: 33px;
+    font-size: 2.3vw;
     font-family: "Bw Modelica Bold", serif;
     color: #1f1f1f;
     line-height: 1.7;

@@ -172,12 +172,12 @@ export default {
       align-items: center;
       justify-content: space-evenly;
       width: 30vw;
-      min-width: 370px;
+      min-width: 400px;
       margin-right: 15px;
 
       .nav-tabs {
         font-family: "Bw Modelica Regular", serif;
-        font-size: 15px;
+        font-size: 1.1vw;
         color: #1f1f1f;
         cursor: pointer;
         padding: 15px 25px;
@@ -202,7 +202,7 @@ export default {
       .contact-label {
         position: relative;
         font-family: "Bw Modelica Regular", serif;
-        font-size: 13px;
+        font-size: 1vw;
         color: #1f1f1f;
         z-index: 2;
       }
