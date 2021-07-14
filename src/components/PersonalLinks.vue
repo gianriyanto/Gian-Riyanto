@@ -83,6 +83,7 @@ export default {
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
+    margin-top: 30vw;
     font-size: 35px;
     color: #1f1f1f;
 

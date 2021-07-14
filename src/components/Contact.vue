@@ -63,7 +63,6 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding-top: 50px;
   text-align: center;
 
   .logo-for-mobile{
@@ -73,7 +72,7 @@ export default {
   .header{
     font-family: "Bw Modelica Bold", serif;
     color: #1f1f1f;;
-    font-size: 55px;
+    font-size: 3vw;
     letter-spacing: -1px;
   }
 
@@ -91,6 +90,7 @@ export default {
     flex-direction: row;
     justify-content: space-evenly;
     width: 32vw;
+    max-width: 500px;
     margin: 0 auto;
 
     .resume-button{
@@ -158,7 +158,7 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #Contact{
-    height: 65vh;
+    height: 75vh;
     width: 80vw;
     display: flex;
     flex-direction: column;
