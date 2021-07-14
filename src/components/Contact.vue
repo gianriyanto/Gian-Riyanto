@@ -72,7 +72,7 @@ export default {
   .header{
     font-family: "Bw Modelica Bold", serif;
     color: #1f1f1f;;
-    font-size: 3vw;
+    font-size: 4vw;
     letter-spacing: -1px;
   }
 
