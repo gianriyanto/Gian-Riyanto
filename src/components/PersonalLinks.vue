@@ -82,9 +82,9 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: auto 0 0 0;
     width: 100%;
-    font-size: 30px;
+    font-size: 35px;
+    color: #1f1f1f;
 
     .resume-container .linkedin-container, .github-container{
       padding-top: 3px;

@@ -107,7 +107,10 @@ export default {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    background-color: var(--gradient);
+    background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    overflow-y: hidden;
     position: absolute;
 
     ::-webkit-scrollbar {
@@ -132,7 +135,7 @@ export default {
 
       .name{
         font-family: "Bw Modelica Bold", serif;
-        background: var(--gradient);
+        background: #1f1f1f;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }

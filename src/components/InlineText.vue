@@ -123,7 +123,7 @@ export default {
       font-size: 32px;
       border: transparent;
       outline: transparent;
-      background-color: var(--bone);
+      background-color: transparent;
       width: 75vw;
     }
     .input-container{
@@ -147,14 +147,14 @@ export default {
     }
     .input-has-value-style{
       font-family: "Bw Modelica Bold", serif;
-      background: linear-gradient(to bottom left, #860fee, #5488e5);
+      background: #1f1f1f;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       width: 75vw;
     }
     .input-no-value-style{
       font-family: "Bw Modelica Bold", serif;
-      color: darkgrey;
+      color: #a0a0a0;
       width: 75vw;
     }
   }

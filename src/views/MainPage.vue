@@ -33,8 +33,8 @@
     <div id="mobile">
       <div class="mobile-tab_wrapper"><Introduction v-bind:name="name"/></div>
       <div class="mobile-tab_wrapper"><About/> </div>
-      <div class="mobile-tab_wrapper"><Projects/> </div>
       <div class="mobile-tab_wrapper"><Experience/> </div>
+      <div class="mobile-tab_wrapper"><Projects/> </div>
       <div class="mobile-tab_wrapper"><Skills/> </div>
       <div class="mobile-tab_wrapper">
         <Contact v-bind:name="name"/>
@@ -124,10 +124,10 @@ export default {
     transition: 0.25s;
 
     .circle-border{
-      border: 2px solid white;
+      border: 2px solid #1f1f1f;
       border-radius: 50%;
-      width: 65px;
-      height: 65px;
+      width: 68px;
+      height: 68px;
       transition: all .25s ease-in-out;
 
       &:hover{
@@ -137,8 +137,8 @@ export default {
 
       .my-portrait{
         margin: auto;
-        width: 65px;
-        height: 65px;
+        width: 100%;
+        height: 100%;
         transition: all .3s ease-in-out;
       }
     }
@@ -274,14 +274,14 @@ export default {
 @media only screen and (max-width: 768px) {
 
   #MainPage{
-    margin-top: 150vh;
     position: absolute;
     display: flex;
     flex-direction: column;
     height: fit-content;
     width: 100vw;
-    background-image: var(--gradient);
-    box-shadow: 10px 0 20px 2px #d4d4d4;
+    background: rgba(221, 221, 206, 0);
+    backdrop-filter: blur(40.0px);
+    -webkit-backdrop-filter: blur(40.0px);
     overflow-y: scroll;
 
     .logo{

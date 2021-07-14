@@ -362,9 +362,9 @@ a {
       .project{
         display: flex;
         flex-direction: column;
-        margin-bottom: 5vh;
+        margin-bottom: 3vh;
         font-family: "Bw Modelica Bold", serif;
-        font-size: 29px;
+        font-size: 26px;
         width: 70vw;
 
         .selected-project{

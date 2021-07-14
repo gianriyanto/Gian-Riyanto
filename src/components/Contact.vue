@@ -158,7 +158,7 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #Contact{
-    height: 85vh;
+    height: 65vh;
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -171,19 +171,19 @@ export default {
       width: 80vw;
       height: fit-content;
       align-items: center;
-      margin-bottom: 3vh;
+      margin-bottom: 1vh;
 
       .circle-border{
         border: 2px solid #1f1f1f;;
         border-radius: 50%;
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 80px;
         margin: 2vh;
 
         .my-portrait{
           margin: auto;
-          width: 70px;
-          height: 70px;
+          width: 100%;
+          height: 100%;
         }
       }
       .my-name{
