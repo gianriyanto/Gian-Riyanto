@@ -2,28 +2,25 @@
   <div id="MainPage">
     <div class="logo"
          @click="selectedTab = 'Introduction';"
-         data-aos="fade-up"
-         data-aos-duration="1400"
+         data-aos="fade-down"
+         data-aos-duration="1500"
          data-aos-easing="ease-in-out">
       <span class="circle-border"> <img class="my-portrait" src="@/assets/myPortrait.png" alt=""/></span>
       <span class="my-name"> Gian <span class="last-name"> Riyanto </span></span>
     </div>
-    <div id="navigation">
+    <div id="navigation"
+         data-aos="fade-down"
+         data-aos-duration="1500"
+         data-aos-easing="ease-in-out">
       <div class="nav-container">
        <span v-for="tab in tabs"
              class="nav-tabs"
              :key=tab.title
-             @click="selectedTab = tab;"
-             data-aos="fade-down"
-             data-aos-duration=1500
-             data-aos-easing="ease-in-out"> {{ tab }}
+             @click="selectedTab = tab;">
+         {{ tab }}
        </span>
       </div>
-      <button class="contact"
-              data-aos="fade-left"
-              data-aos-duration="1500"
-              data-aos-easing="ease-in-out"
-              @click="selectedTab = 'Contact';">
+      <button class="contact" @click="selectedTab = 'Contact';">
         <span class="contact-label"> Get in Touch </span>
       </button>
     </div>
@@ -44,13 +41,11 @@
          data-aos="fade"
          data-aos-duration="2200"
          data-aos-easing="ease-in-out">
-      <div class="personal-links">
-        <personal-links/>
-      </div>
+      <div class="personal-links"> <personal-links/> </div>
     </div>
-    <div class="email" href="mailto:li.griyanto@gmail.com">
+    <a class="email" href="mailto:li.griyanto@gmail.com">
       <font-awesome-icon class="email-icon" :icon="['fa', 'envelope']"/>
-    </div>
+    </a>
   </div>
 </template>
 
@@ -254,6 +249,7 @@ export default {
     border-radius: 50%;
     background-image: linear-gradient(#1d1d1d, #393939);
     box-shadow: 0 12px 30px 0 rgba(100, 93, 150, 0.5);
+    cursor: pointer;
 
     .email-icon{
       margin: auto;
