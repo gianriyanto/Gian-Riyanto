@@ -111,7 +111,7 @@ export default {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    top: 30px;
+    top: 37px;
     left: 37px;
     width: 280px;
     cursor: pointer;
