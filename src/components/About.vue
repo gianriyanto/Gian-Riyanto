@@ -26,7 +26,7 @@ export default {
   data() {
     return {
       skills: ["React", "Vue", "HTML", "(S)CSS", "Javascript", "Python"],
-      aboutMe: `Hey there, I am a software engineer with a strong growth mindset, an obsession for detail, and a knack for value creation. My passion extends beyond code, I love what I do because I get to engineer solutions to interesting problems by building products that delight people.
+      aboutMe: `Hey there, I am a software engineer with a strong growth mindset, an eye for detail, and an . My passion extends beyond code, I love what I do because I get to constantly solve interesting problems and iterate existing solutions by building software products at scale.
 I enjoy the collaborative process of decomposing high-level problems into manageable bite-sized components and working through them methodically as a team.
 Nothing is more rewarding than an opportunity to transform new things I learn into meaningful contributions, especially when I get to meet passionate people and develop relationships along the way.`
     }
@@ -52,8 +52,8 @@ Nothing is more rewarding than an opportunity to transform new things I learn in
   }
   .content{
     font-family: "Bw Modelica Regular", serif;
-    font-size: 17px;
-    line-height: 1.7;
+    font-size: 16px;
+    line-height: 1.9;
     padding-bottom: 20px;
     white-space: pre-line;
   }

@@ -168,11 +168,11 @@ export default {
       justify-content: space-evenly;
       width: 30vw;
       min-width: 400px;
-      margin-right: 15px;
+      margin-right: 20px;
 
       .nav-tabs {
         font-family: "Bw Modelica Regular", serif;
-        font-size: 1.1vw;
+        font-size: 16px;
         color: #1f1f1f;
         cursor: pointer;
         padding: 15px 25px;
@@ -197,7 +197,7 @@ export default {
       .contact-label {
         position: relative;
         font-family: "Bw Modelica Regular", serif;
-        font-size: 1vw;
+        font-size: 16px;
         color: #1f1f1f;
         z-index: 2;
       }
