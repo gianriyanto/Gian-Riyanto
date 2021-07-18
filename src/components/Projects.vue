@@ -226,7 +226,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  transform: translate(40px, 30px);
+  transform: translate(40px, -10px);
 
   .header {
     font-family: "Bw Modelica Bold", serif;

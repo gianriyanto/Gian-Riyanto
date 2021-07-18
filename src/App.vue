@@ -19,11 +19,12 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 
 #app {
-
+  width: 100vw;
 }
 html, body {
   margin: 0 !important;
   padding: 0 !important;
+
 }
 @media only screen and (max-width: 769px) {
   *, html, body, div, span, {

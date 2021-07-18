@@ -39,7 +39,7 @@ Nothing is more rewarding than an opportunity to transform new things I learn in
 #About{
   display: flex;
   flex-direction: column;
-  padding: 60px 0 0 30px;
+  padding: 0 0 0 30px;
   margin: auto;
   color: #1f1f1f;
   width: 47vw;

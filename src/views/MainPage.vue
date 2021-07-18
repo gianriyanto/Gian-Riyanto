@@ -1,28 +1,24 @@
 <template>
   <div id="MainPage">
-    <div class="logo"
-         @click="selectedTab = 'Introduction';"
-         data-aos="fade-down"
-         data-aos-duration="1500"
-         data-aos-easing="ease-in-out">
-      <span class="circle-border"> <img class="my-portrait" src="@/assets/myPortrait.png" alt=""/></span>
-      <span class="my-name"> Gian <span class="last-name"> Riyanto </span></span>
-    </div>
-    <div id="navigation"
-         data-aos="fade-down"
-         data-aos-duration="1500"
-         data-aos-easing="ease-in-out">
-      <div class="nav-container">
+    <div class="header">
+      <div class="logo"
+           @click="selectedTab='Introduction'">
+        <span class="circle-border"> <img class="my-portrait" src="@/assets/myPortrait.png" alt=""/></span>
+        <span class="my-name"> Gian <span class="last-name"> Riyanto </span></span>
+      </div>
+      <div id="navigation">
+        <div class="nav-container">
        <span v-for="tab in tabs"
              class="nav-tabs"
              :key=tab.title
              @click="selectedTab = tab;">
          {{ tab }}
        </span>
+        </div>
+        <button class="contact" @click="selectedTab = 'Contact';">
+          <span class="contact-label"> Get in Touch </span>
+        </button>
       </div>
-      <button class="contact" @click="selectedTab = 'Contact';">
-        <span class="contact-label"> Get in Touch </span>
-      </button>
     </div>
     <div id="desktop">
       <component :is="selectedTab" v-bind:name="name"> </component>
@@ -97,127 +93,131 @@ export default {
   margin-top: 100vh;
   height: 100%;
   min-height: 100vh;
-  width: 100%;
   min-width: 100vw;
   z-index: 2;
   background: rgba(221, 221, 206, 0);
   backdrop-filter: blur(40.0px);
   -webkit-backdrop-filter: blur(40.0px);
-  overflow: hidden;
+  overflow-x: hidden;
 
-  .logo{
-    position: absolute;
+  .header{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    top: 37px;
-    left: 37px;
-    width: 280px;
-    cursor: pointer;
-    opacity: 1;
-    transition: 0.25s;
+    justify-content: space-between;
+    padding: 30px 0 0 0;
+    height: 100px;
 
-    .circle-border{
-      border: 2px solid #1f1f1f;
-      border-radius: 50%;
-      width: 68px;
-      height: 68px;
-      transition: all .25s ease-in-out;
-
-      &:hover{
-        opacity: 0.7;
-        transition: all 0.25s;
-      }
-
-      .my-portrait{
-        margin: auto;
-        width: 100%;
-        height: 100%;
-        transition: all .3s ease-in-out;
-      }
-    }
-    .my-name{
-      font-family: "Bw Modelica Regular", serif;
-      color: #1f1f1f;
-      font-size: 25px;
-      transition: all .3s ease-in-out;
-      padding-left: 20px;
-      padding-top: 3px;
-
-      .last-name {
-        font-family: "Bw Modelica Bold", serif;
-      }
-
-      &:hover{
-        opacity: 0.7;
-      }
-    }
-  }
-  #navigation {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    top: 45px;
-    right: 40px;
-
-    .nav-container {
+    .logo{
+      padding-left: 30px;
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-evenly;
-      width: 30vw;
-      min-width: 400px;
-      margin-right: 20px;
+      width: 280px;
+      cursor: pointer;
+      opacity: 1;
+      transition: 0.25s;
 
-      .nav-tabs {
-        font-family: "Bw Modelica Regular", serif;
-        font-size: 16px;
-        color: #1f1f1f;
-        cursor: pointer;
-        padding: 15px 25px;
-        border-radius: 8px;
-        transition: all 0.35s;
+      .circle-border{
+        border: 2px solid #1f1f1f;
+        border-radius: 50%;
+        width: 68px;
+        height: 68px;
+        transition: all .25s ease-in-out;
 
         &:hover{
-          opacity: 0.4;
-          background-color: #e0e0e0;
+          opacity: 0.7;
+          transition: all 0.25s;
+        }
+
+        .my-portrait{
+          margin: auto;
+          width: 100%;
+          height: 100%;
+          transition: all .3s ease-in-out;
+        }
+      }
+      .my-name{
+        font-family: "Bw Modelica Regular", serif;
+        color: #1f1f1f;
+        font-size: 25px;
+        transition: all .3s ease-in-out;
+        padding-left: 20px;
+
+        .last-name {
+          font-family: "Bw Modelica Bold", serif;
+        }
+
+        &:hover{
+          opacity: 0.7;
         }
       }
     }
-    .contact {
-      border: thin solid #565656;
-      border-radius: 8px;
-      background-color: transparent;
-      outline: none;
-      padding: 15px 25px;
-      cursor: pointer;
-      position: relative;
 
-      .contact-label {
-        position: relative;
-        font-family: "Bw Modelica Regular", serif;
-        font-size: 16px;
-        color: #1f1f1f;
-        z-index: 2;
+    #navigation {
+      padding-right: 30px;
+      display: flex;
+      flex-direction: row;
+      align-self: center;
+
+      .nav-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 28vw;
+        min-width: 400px;
+        margin-right: 30px;
+
+        .nav-tabs {
+          font-family: "Bw Modelica Regular", serif;
+          font-size: 15px;
+          color: #1f1f1f;
+          cursor: pointer;
+          padding: 15px 25px;
+          border-radius: 8px;
+          transition: all 0.35s;
+
+          &:hover{
+            opacity: 0.4;
+            background-color: #e0e0e0;
+          }
+        }
       }
-      &:after {
-        position: absolute;
-        content: '';
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background: linear-gradient(to bottom left, #d7d7d7, #e2e2e2);
+      .contact {
+        border: thin solid #565656;
         border-radius: 6px;
-        transition: all 0.35s;
-      }
-      &:hover {
-        color: #fff;
-        opacity: 1;
-      }
-      &:hover:after {
-        width: 100%;
+        background-color: transparent;
+        outline: none;
+        padding: 13px 20px;
+        cursor: pointer;
+        position: relative;
+        height: 50px;
+
+        .contact-label {
+          position: relative;
+          font-family: "Bw Modelica Regular", serif;
+          font-size: 14px;
+          color: #1f1f1f;
+          z-index: 2;
+        }
+        &:after {
+          position: absolute;
+          content: '';
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background: linear-gradient(to bottom left, #d7d7d7, #e2e2e2);
+          border-radius: 6px;
+          transition: all 0.35s;
+        }
+        &:hover {
+          color: #fff;
+          opacity: 1;
+        }
+        &:hover:after {
+          width: 100%;
+        }
       }
     }
   }
@@ -280,6 +280,9 @@ export default {
     -webkit-backdrop-filter: blur(40.0px);
     overflow-y: scroll;
 
+    .header{
+      display: none;
+    }
     .logo{
       display: none;
     }

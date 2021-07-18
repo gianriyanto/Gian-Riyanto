@@ -59,6 +59,7 @@ export default {
   display: flex;
   flex-direction: column;
   height: fit-content;
+  width: 100vw;
   overflow-x: hidden;
 }
 

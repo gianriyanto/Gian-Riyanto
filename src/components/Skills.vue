@@ -56,7 +56,7 @@ export default {
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 70px 0 0 40px;
+  transform: translate(40px, -20px);
   color: #1f1f1f;
 
   .header{
