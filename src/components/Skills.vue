@@ -39,11 +39,11 @@ export default {
         },
         {
           skillType: "Tools",
-          skillItems: ['Google Cloud Platform', 'Postman', 'AWS', 'Git', 'Github', 'Figma', 'Netlify', 'Confluence', 'Trello', 'JIRA', 'Confluence', 'Jupyter']
+          skillItems: ['Google Cloud Platform', 'AWS', 'Git', 'Github', 'Figma', 'Netlify', 'Confluence', 'Trello', 'JIRA', 'Confluence', 'Jupyter', 'Postman']
         },
         {
           skillType: "Knowledge",
-          skillItems: ['Domain Driven Design', 'Microservices', 'UI/UX Design', 'Agile/Scrum', 'Technology Consulting', 'Data Analytics', 'Machine Learning']
+          skillItems: ['Domain Driven Design', 'Microservices', 'UI/UX Design', 'Agile/Scrum', 'Testing and Debugging', 'Observability', 'Technical Documentation']
         }
       ]
     }
@@ -52,53 +52,56 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#Skills{
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  transform: translate(40px, -20px);
-  color: #1f1f1f;
 
-  .header{
-    font-family: "Bw Modelica Bold", serif;
-    font-size: 20px;
-    color: #b3b3b3;
-    margin-bottom: 30px;
-  }
-
-  .skills-wrapper{
+@media only screen and (min-width: 769px) {
+  #Skills {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    transform: translate(40px, -20px);
+    color: #1f1f1f;
 
-    .sub-header{
+    .header {
       font-family: "Bw Modelica Bold", serif;
-      color: #404040;
-      font-size: 13px;
-      padding-left: 0;
-      margin-bottom: 2vh;
-      opacity: 1;
+      font-size: 20px;
+      color: #b3b3b3;
+      margin-bottom: 30px;
     }
 
-    .skill-items{
+    .skills-wrapper {
       display: flex;
-      flex-direction: row;
-      margin-bottom: 3vh;
-      font-family: "Bw Modelica Regular", serif;
-      font-size: 12px;
+      flex-direction: column;
 
-      .item{
-        border: thin solid #1f1f1f;
+      .sub-header {
+        font-family: "Bw Modelica Bold", serif;
+        color: #404040;
+        font-size: 13px;
+        padding-left: 0;
+        margin-bottom: 2vh;
         opacity: 1;
-        border-radius: 20px;
-        width: fit-content;
-        padding: 7px 1vw;
-        margin-right: 12px;
+      }
 
-        &:hover{
-          color: #404040;
-          border: thin solid #404040;
-          opacity: 0.7;
-          transition: opacity 0.2s;
+      .skill-items {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3vh;
+        font-family: "Bw Modelica Regular", serif;
+        font-size: 12px;
+
+        .item {
+          border: thin solid #1f1f1f;
+          opacity: 1;
+          border-radius: 20px;
+          width: fit-content;
+          padding: 7px 1vw;
+          margin-right: 12px;
+
+          &:hover {
+            color: #404040;
+            border: thin solid #404040;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+          }
         }
       }
     }
@@ -107,11 +110,11 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #Skills{
+    margin: 0 auto;
     height: fit-content;
     width: 70vw;
     display: flex;
     flex-direction: column;
-    padding: 0;
     color: #1f1f1f;
 
     .header{

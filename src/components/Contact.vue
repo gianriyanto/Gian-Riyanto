@@ -59,107 +59,113 @@ export default {
 
 <style lang="scss" scoped>
 
-#Contact{
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  text-align: center;
-
-  .logo-for-mobile{
-    display: none;
-  }
-
-  .header{
-    font-family: "Bw Modelica Bold", serif;
-    color: #1f1f1f;;
-    font-size: 4vw;
-    letter-spacing: -1px;
-  }
-
-  .message{
-    font-family: "Bw Modelica Light", serif;
-    font-size: 16px;
-    color: #1f1f1f;;
-    width: 400px;
-    line-height: 1.7;
-    margin: 15px auto 30px auto;
-  }
-
-  .button-container{
+@media only screen and (min-width: 769px) {
+  #Contact {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 32vw;
-    max-width: 500px;
-    margin: 0 auto;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
 
-    .resume-button{
-      width: 45%;
-      background-color: #303030;
-      cursor: pointer;
-      padding: 16px 2vw;
-      border: solid #303030;
-      border-radius: 30px;
-      outline: none;
-      transition: all 0.25s ease-in-out;
-
-      .resume-label {
-        position: relative;
-        letter-spacing: 0.5px;
-        font-family: "Bw Modelica Bold", serif;
-        font-size: 14px;
-        color: white;
-        z-index: 2;
-        margin: auto;
-      }
-
-      &:hover {
-        color: #1f1f1f;;
-        opacity: 0.7;
-      }
+    .logo-for-mobile {
+      display: none;
     }
-    .email-button{
-      color: #1f1f1f;
-      width: 44%;
-      cursor: pointer;
-      padding: 16px 2vw;
-      border: thin solid #1f1f1f;
-      border-radius: 30px;
-      outline: none;
-      transition: all 0.25s ease-in-out;
-      background-color: transparent;
 
-      .email-label {
-        position: relative;
-        letter-spacing: 0.5px;
-        font-family: "Bw Modelica Bold", serif;
-        font-size: 16px;
+    .header {
+      font-family: "Bw Modelica Bold", serif;
+      color: #1f1f1f;;
+      font-size: 4vw;
+      letter-spacing: -1px;
+    }
+
+    .message {
+      font-family: "Bw Modelica Light", serif;
+      font-size: 16px;
+      color: #1f1f1f;;
+      width: 400px;
+      line-height: 1.7;
+      margin: 15px auto 30px auto;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 32vw;
+      max-width: 500px;
+      margin: 0 auto;
+
+      .resume-button {
+        width: 45%;
+        background-color: #303030;
+        cursor: pointer;
+        padding: 16px 2vw;
+        border: solid #303030;
+        border-radius: 30px;
+        outline: none;
+        transition: all 0.25s ease-in-out;
+
+        .resume-label {
+          position: relative;
+          letter-spacing: 0.5px;
+          font-family: "Bw Modelica Bold", serif;
+          font-size: 14px;
+          color: white;
+          z-index: 2;
+          margin: auto;
+        }
+
+        &:hover {
+          color: #1f1f1f;;
+          opacity: 0.7;
+        }
+      }
+
+      .email-button {
         color: #1f1f1f;
-        z-index: 2;
-        margin: auto;
+        width: 44%;
+        cursor: pointer;
+        padding: 16px 2vw;
+        border: thin solid #1f1f1f;
+        border-radius: 30px;
+        outline: none;
+        transition: all 0.25s ease-in-out;
+        background-color: transparent;
+
+        .email-label {
+          position: relative;
+          letter-spacing: 0.5px;
+          font-family: "Bw Modelica Bold", serif;
+          font-size: 16px;
+          color: #1f1f1f;
+          z-index: 2;
+          margin: auto;
+        }
+
+        &:hover {
+          opacity: 0.7;
+        }
       }
 
-      &:hover {
-        opacity: 0.7;
-      }
     }
 
-  }
-
-  a {
-    color: #1f1f1f;
-    text-decoration: none;
-    a:visited {
-      text-decoration: none;
+    a {
       color: #1f1f1f;
+      text-decoration: none;
+
+      a:visited {
+        text-decoration: none;
+        color: #1f1f1f;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 768px) {
   #Contact{
-    height: 75vh;
+    padding-top: 5vh;
+    height: 80vh;
     width: 80vw;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -261,12 +267,13 @@ export default {
         font-family: "Bw Modelica Regular", serif;
         font-size: 15px;
         color: #1f1f1f;
-        width: 70vw;
         line-height: 1.9;
+        margin: 10px auto 30px auto;
       }
     }
 
     .links-for-mobile{
+      margin-top: 10vh;
       width: 100%;
     }
 
