@@ -12,7 +12,7 @@
         {{line}}
     </span>
     <span class="skills-headers">
-      Here are some technologies I've been tinkering with recently
+      Here are some things I've been tinkering with lately
     </span>
     <span class="skills-wrapper">
       <span v-for="skill in skills" class="skill" :key="skill"> {{ skill }} </span>
@@ -25,10 +25,9 @@ export default {
   name: "About",
   data() {
     return {
-      skills: ["React", "Vue", "HTML", "(S)CSS", "Javascript", "Python"],
-      aboutMe: `Hey there, I am a software engineer with a strong growth mindset, an eye for detail, and an . My passion extends beyond code, I love what I do because I get to constantly solve interesting problems and iterate existing solutions by building software products at scale.
-I enjoy the collaborative process of decomposing high-level problems into manageable bite-sized components and working through them methodically as a team.
-Nothing is more rewarding than an opportunity to transform new things I learn into meaningful contributions, especially when I get to meet passionate people and develop relationships along the way.`
+      skills: ["React", "Vue", "Python", "Kubernetes", "Domain Driven Design"],
+      aboutMe: `I am a software engineer with a strong growth mindset, an appreciation for software craftsmanship, and an obsession for learning. I show up everyday so that I get to collaboratively solve interesting problems by building elegant software products at scale.
+I enjoy the collaborative process of decomposing high-level problems into manageable bite-sized components and working through them methodically as a team. To me, nothing is more rewarding than an opportunity to transform new learnings into meaningful contributions, especially when I get to meet people and develop relationships along the way.`
     }
   }
 }
@@ -42,7 +41,7 @@ Nothing is more rewarding than an opportunity to transform new things I learn in
   padding: 0 0 0 30px;
   margin: auto;
   color: #1f1f1f;
-  width: 47vw;
+  width: 42vw;
 
   .header{
     font-family: "Bw Modelica Bold", serif;
@@ -53,14 +52,14 @@ Nothing is more rewarding than an opportunity to transform new things I learn in
   .content{
     font-family: "Bw Modelica Regular", serif;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.8;
     padding-bottom: 20px;
     white-space: pre-line;
   }
   .skills-headers{
     font-family: "Bw Modelica Regular", serif;
     font-size: 17px;
-    line-height: 1.9;
+    line-height: 1.8;
     padding-bottom: 20px;
   }
   .skills-wrapper{
@@ -75,7 +74,7 @@ Nothing is more rewarding than an opportunity to transform new things I learn in
       border-radius: 20px;
       font-size: 12px;
       width: fit-content;
-      padding: 8px 1.2vw;
+      padding: 8px 1vw;
       margin-right: 0.9vw;
     }
   }
