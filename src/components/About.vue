@@ -94,12 +94,12 @@ I enjoy the collaborative process of decomposing high-level problems into manage
       font-size: 20px;
       color: #7e7e7e;
       opacity: 0.7;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
     .content{
       color: #1f1f1f;
       font-family: "Bw Modelica Regular", serif;
-      font-size: 13px;
+      font-size: 15px;
       line-height: 2.2;
     }
     .skills-headers{

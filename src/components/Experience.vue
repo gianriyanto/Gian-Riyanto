@@ -284,19 +284,17 @@ export default {
         flex-direction: column;
         margin-bottom: 5vh;
         font-family: "Bw Modelica Bold", serif;
-        font-size: 32px;
+        font-size: 26px;
         width: 70vw;
 
         .selected-experience {
           color: #404040;
-          margin-bottom: 20px;
           width: 70vw;
         }
 
         .not-selected-experience {
           width: 70vw;
           color: #404040;
-          margin-bottom: 10px;
 
           &:hover {
             transform: translateX(0);
@@ -313,11 +311,12 @@ export default {
           .experience-detail{
             width: 70vw;
             height: fit-content;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
 
             .experience-company{
+              margin-bottom: 15px;
               font-size: 16px;
               color: #404040;
               font-family: "Bw Modelica Bold", serif;
