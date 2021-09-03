@@ -106,7 +106,7 @@ export default {
   #welcome{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     background: rgba( 255, 255, 255, 0.1 );
     backdrop-filter: blur( 20px );
