@@ -120,8 +120,8 @@ export default {
       .circle-border{
         border: 2px solid #1f1f1f;
         border-radius: 50%;
-        width: 68px;
-        height: 68px;
+        width: 58px;
+        height: 58px;
         transition: all .25s ease-in-out;
 
         &:hover{
