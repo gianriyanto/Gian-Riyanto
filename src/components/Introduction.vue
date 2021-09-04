@@ -17,7 +17,7 @@ export default {
   data(){
     return {
       inputtedName: this.name,
-      introduction: "Thanks for swinging by! I engineer software, build products, and design solutions for humans. I do my best work collaborating with like-minded people, obsessively iterating to craft software that transforms into meaningful products that delight and empower people."
+      introduction: "Thanks for swinging by! I engineer software, build products, and design solutions for humans. I do my best work collaborating with like-minded people, obsessively iterating and craft software into meaningful products that delight people."
     }
   },
   watch: {
@@ -62,7 +62,7 @@ export default {
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 0 0 0 15px;
+    padding: 0 0 0 20px;
     width: 50vw;
     font-size: 2.3vw;
     font-family: "Bw Modelica Bold", serif;
@@ -75,7 +75,7 @@ export default {
     }
 
     .greeting{
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
   }
 }
