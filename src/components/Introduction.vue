@@ -17,7 +17,7 @@ export default {
   data(){
     return {
       inputtedName: this.name,
-      introduction: "Thanks for swinging by! I engineer software, build products, and design solutions for humans. I do my best work collaborating with like-minded people, obsessively iterating and craft software into meaningful products that delight people."
+      introduction: "Thanks for swinging by! I engineer software, build products, and design solutions for humans. I do my best work collaborating with like-minded people, obsessively iterating and crafting software into meaningful products that delight people."
     }
   },
   watch: {
