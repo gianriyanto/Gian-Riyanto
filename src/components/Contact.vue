@@ -162,7 +162,7 @@ export default {
 
 @media only screen and (max-width: 768px) {
   #Contact{
-    padding-top: 5vh;
+    padding-top: 10vh;
     height: 80vh;
     width: 80vw;
     margin: 0 auto;
@@ -273,8 +273,9 @@ export default {
     }
 
     .links-for-mobile{
-      margin-top: 10vh;
-      width: 100%;
+      width: 80%;
+      margin: 25vh auto 0 auto;
+      font-size: 30px;
     }
 
     a {

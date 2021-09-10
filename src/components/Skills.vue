@@ -3,19 +3,37 @@
        data-aos="fade"
        data-aos-duration="1000"
        data-aos-easing="ease-in-out">
-    <span class="header">
+    <div class="wrapper">
+      <span class="header">
       Skills.
     </span>
-    <span v-for="skill in skills" :key="skill" class="skills-wrapper">
-      <span class="sub-header">
-        {{ skill.skillType }}
+      <span class="skills-container">
+      <span class="row">
+        <span v-for="skill in skillsIndex1" :key="skill" class="skills-wrapper">
+          <span class="sub-header">
+            {{ skill.skillType }}
+          </span>
+          <span class="skill-items">
+          <span v-for="item in skill.skillItems" class="item" :key="item">
+            {{ item }}
+          </span>
+        </span>
+        </span>
       </span>
-      <span class="skill-items">
-        <span v-for="item in skill.skillItems" class="item" :key="item">
-          {{ item }}
+      <span class="row">
+        <span v-for="skill in skillsIndex2" :key="skill" class="skills-wrapper">
+          <span class="sub-header">
+            {{ skill.skillType }}
+          </span>
+          <span class="skill-items">
+            <span v-for="item in skill.skillItems" class="item" :key="item">
+              {{ item }}
+            </span>
+          </span>
         </span>
       </span>
     </span>
+    </div>
   </div>
 </template>
 
@@ -24,26 +42,24 @@ export default {
   name: "Skills",
   data() {
     return {
-      skills: [
+      skillsIndex1: [
         {
-          skillType: "Languages",
-          skillItems: ['JavaScript', 'Python', 'Java']
-        },
-        {
-          skillType: "Web",
-          skillItems: ['React', 'Vue', 'Vuex', 'Flask', 'Fast API', 'HTML', '(S)CSS', 'Express']
+          skillType: "Technologies",
+          skillItems: ['JavaScript', 'Python', 'Java', 'React', 'React Hooks', 'Vue', 'Vuex', 'HTML', '(S)CSS', 'Git', 'PyTest', 'Flask', 'FastAPI', 'PeeWee', 'NPM', 'REST']
         },
         {
           skillType: "Data",
-          skillItems: ['Postgres', 'MongoDB', 'SQL', 'NoSQL', 'Airflow', 'Pandas', 'NumPy', 'Scikit-learn']
+          skillItems: ['Postgres', 'MySQL', 'Database Design', 'ORM', 'SQL', 'NoSQL', 'MongoDB', 'Airflow', 'Pandas', 'NumPy', 'Scikit-learn', 'Machine Learning']
+        }
+      ],
+      skillsIndex2: [
+        {
+          skillType: "Knowledge",
+          skillItems: ['Domain Driven Design', 'Microservice', 'Object Oriented Design', 'SOLID', 'Test Driven Development', 'System Design', 'UI/UX Design', 'Agile Development', 'Observability', 'Technical Documentation', 'Testing', 'Debugging', 'Feature Flags']
         },
         {
           skillType: "Tools",
-          skillItems: ['Google Cloud Platform', 'AWS', 'Git', 'Github', 'Figma', 'Netlify', 'Confluence', 'Trello', 'JIRA', 'Confluence', 'Jupyter', 'Postman']
-        },
-        {
-          skillType: "Knowledge",
-          skillItems: ['Domain Driven Design', 'Microservices', 'UI/UX Design', 'Agile/Scrum', 'Testing and Debugging', 'Observability', 'Technical Documentation']
+          skillItems: ['Amazon Web Services', 'Kubernetes', 'LaunchDarkly', 'HoneyComb', 'Github', 'Figma', 'Netlify', 'JIRA', 'Google Cloud Platform', 'Confluence', 'Jupyter', 'Postman', 'CI Concourse']
         }
       ]
     }
@@ -61,49 +77,76 @@ export default {
     transform: translate(40px, -20px);
     color: #1f1f1f;
 
-    .header {
-      font-family: "Bw Modelica Bold", serif;
-      font-size: 20px;
-      color: #b3b3b3;
-      margin-bottom: 30px;
-    }
-
-    .skills-wrapper {
+    .wrapper{
       display: flex;
       flex-direction: column;
+      width: 78%;
+      margin: auto;
 
-      .sub-header {
+      .header {
         font-family: "Bw Modelica Bold", serif;
-        color: #404040;
-        font-size: 13px;
-        padding-left: 0;
-        margin-bottom: 2vh;
-        opacity: 1;
+        font-size: 20px;
+        color: #b3b3b3;
+        margin-bottom: 20px;
       }
 
-      .skill-items {
+      .skills-container{
         display: flex;
-        flex-direction: row;
-        margin-bottom: 3vh;
-        font-family: "Bw Modelica Regular", serif;
-        font-size: 12px;
+        flex-direction: column;
 
-        .item {
-          border: thin solid #1f1f1f;
-          opacity: 1;
-          border-radius: 20px;
-          width: fit-content;
-          padding: 7px 1vw;
-          margin-right: 12px;
+        .row{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 13px;
 
-          &:hover {
-            color: #404040;
-            border: thin solid #404040;
-            opacity: 0.7;
-            transition: opacity 0.2s;
+          .skills-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 49%;
+
+            .sub-header {
+              font-family: "Bw Modelica Bold", serif;
+              color: #1f1f1f;
+              letter-spacing: -1px;
+              font-size: 28px;
+              padding-left: 0;
+              margin-bottom: 2vh;
+              opacity: 1;
+            }
+
+            .skill-items {
+              display: flex;
+              //flex-direction: row;
+              margin-bottom: 3vh;
+              flex-wrap: wrap;
+              font-family: "Bw Modelica Bold", serif;
+              font-size: 12px;
+
+              .item {
+                border: thin solid #1f1f1f;
+                //background-color: #1f1f1f;
+                opacity: 1;
+                border-radius: 20px;
+                width: fit-content;
+                padding: 8px 1.1vw;
+                margin-right: 12px;
+                margin-bottom: 15px;
+                transition: ease-in-out 0.3s;
+
+                &:hover {
+                  color: white;
+                  background-color: #1f1f1f;
+                  border: thin solid #404040;
+                  opacity: 0.7;
+                  transition: ease-in-out 0.3s;
+                }
+              }
+            }
           }
         }
       }
+
     }
   }
 }
@@ -117,46 +160,63 @@ export default {
     flex-direction: column;
     color: #1f1f1f;
 
-    .header{
-      font-family: "Bw Modelica Bold", serif;
-      font-size: 20px;
-      color: #7e7e7e;
-      opacity: 0.7;
-      margin-bottom: 50px;
-    }
-
-    .skills-wrapper{
+    .wrapper{
       display: flex;
       flex-direction: column;
 
-      .sub-header{
+      .header{
         font-family: "Bw Modelica Bold", serif;
-        font-size: 19px;
-        margin-bottom: 8px;
+        font-size: 20px;
+        color: #7e7e7e;
         opacity: 0.7;
-        color: #404040;
-        padding: 0;
+        margin-bottom: 50px;
       }
 
-      .skill-items{
-        display: inline;
-        margin-bottom: 30px;
-        font-family: "Bw Modelica Regular", serif;
-        font-size: 11px;
-        line-height: 4.5;
-        width: 73vw;
+      .skills-container{
+        display: flex;
+        flex-direction: column;
 
-        .item{
-          border: thin solid #404040;
-          opacity: 1;
-          border-radius: 17px;
-          width: fit-content;
-          padding: 8px 17px;
-          margin-right: 12px;
+        .row{
+          display: flex;
+          flex-direction: column;
 
+          .skills-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            .sub-header {
+              font-family: "Bw Modelica Bold", serif;
+              color: #1f1f1f;
+              letter-spacing: -1px;
+              font-size: 28px;
+              padding-left: 0;
+              margin-bottom: 2vh;
+              opacity: 1;
+            }
+
+            .skill-items {
+              display: flex;
+              margin-bottom: 3vh;
+              flex-wrap: wrap;
+              font-family: "Bw Modelica Bold", serif;
+              font-size: 11px;
+              color: #1f1f1f;
+
+              .item {
+                border: thin solid #1f1f1f;
+                opacity: 1;
+                border-radius: 20px;
+                width: fit-content;
+                padding: 8px 3.6vw;
+                margin-right: 8px;
+                margin-bottom: 12px;
+              }
+            }
+          }
         }
       }
     }
+
   }
 }
 
