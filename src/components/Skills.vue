@@ -45,7 +45,7 @@ export default {
       skillsIndex1: [
         {
           skillType: "Technologies",
-          skillItems: ['JavaScript', 'Python', 'Java', 'React', 'React Hooks', 'Vue', 'Vuex', 'HTML', '(S)CSS', 'Git', 'PyTest', 'Flask', 'FastAPI', 'PeeWee', 'NPM', 'REST']
+          skillItems: ['JavaScript', 'Python', 'Java', 'React', 'React Hooks', 'Vue', 'Vuex', 'HTML', '(S)CSS', 'Git', 'PyTest', 'Flask', 'FastAPI', 'Peewee', 'NPM', 'REST']
         },
         {
           skillType: "Data",
