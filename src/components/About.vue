@@ -84,6 +84,7 @@ I enjoy the collaborative process of decomposing high-level problems into manage
 
   #About{
     height: fit-content;
+    margin-top: 10vh;
     width: 70vw;
     padding: 0;
     display: flex;

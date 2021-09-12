@@ -128,7 +128,6 @@ export default {
       padding: 0 0 0 0;
       line-height: 1.7;
       font-size: 32px;
-      margin: auto;
 
       .message {
         font-family: "Bw Modelica Bold", serif;

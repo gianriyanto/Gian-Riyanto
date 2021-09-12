@@ -83,6 +83,7 @@ export default {
 @media only screen and (max-width: 768px) {
 
   .introduction{
+    margin-top: 10vh;
     height: fit-content;
     width: 70vw;
     padding: 5vh 0 0 0;

@@ -192,9 +192,10 @@ export default {
       flex-direction: column;
       margin-bottom: 4vh;
       font-family: "Bw Modelica Bold", serif;
+      letter-spacing: -1px;
       color: #1f1f1f;
       font-size: 2.6vw;
-      width: 37vw;
+      width: 34vw;
 
       .selected-experience {
         color: #404040;
@@ -258,7 +259,7 @@ export default {
 @media only screen and (max-width: 768px) {
 
   #Experience{
-    min-height: 100vh;
+    min-height: fit-content;
     height: fit-content;
     transform: translate(0,0);
     width: 70vw;

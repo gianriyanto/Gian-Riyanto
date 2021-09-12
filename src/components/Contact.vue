@@ -13,6 +13,7 @@
     <div class="message">
       Whether you have a question or just want to say hi, I'm always up for a chat.
     </div>
+    <personal-links class="links-for-mobile"/>
     <div class="button-container">
       <button class="resume-button">
         <a class="resume-label" :href="`${publicPath}gianriyanto.pdf`" target="_blank"> Take my resume </a>
@@ -24,7 +25,6 @@
       </button>
     </div>
   </div>
-  <personal-links class="links-for-mobile"/>
 </div>
 </template>
 
@@ -171,13 +171,13 @@ export default {
     text-align: center;
 
     .logo-for-mobile{
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       justify-content: center;
       width: 80vw;
       height: fit-content;
       align-items: center;
-      margin-bottom: 1vh;
 
       .circle-border{
         border: 2px solid #1f1f1f;;
@@ -205,6 +205,7 @@ export default {
 
     .content {
       height: fit-content;
+      margin: 0 auto;
 
       .header {
         display: none;
@@ -220,7 +221,7 @@ export default {
         width: 90%;
 
         .resume-button{
-          margin-bottom: 14px;
+          margin-bottom: 20px;
           width: 100%;
           background-color: #303030;
           cursor: pointer;
@@ -273,8 +274,8 @@ export default {
     }
 
     .links-for-mobile{
-      width: 80%;
-      margin: 25vh auto 0 auto;
+      width: 100%;
+      margin: 30px auto 40px auto;
       font-size: 30px;
     }
 

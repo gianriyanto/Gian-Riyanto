@@ -222,111 +222,120 @@ export default {
 
 <style lang="scss" scoped>
 
-#Projects{
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  transform: translate(40px, -10px);
+@media only screen and (min-width: 769px) {
 
-  .header {
-    font-family: "Bw Modelica Bold", serif;
-    font-size: 20px;
-    margin-bottom: 40px;
-    color: #b3b3b3;
-  }
-  .project-items{
+  #Projects {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin: auto;
+    transform: translate(40px, -10px);
 
-    .project-column-0, .project-column-1{
-      display: flex;
-      flex-direction: column;
-      width: 40vw;
+    .header {
+      font-family: "Bw Modelica Bold", serif;
+      font-size: 20px;
+      margin-bottom: 40px;
+      color: #b3b3b3;
     }
 
-    .project{
+    .project-items {
       display: flex;
-      flex-direction: column;
-      margin-bottom: 4.3vh;
-      font-family: "Bw Modelica Bold", serif;
-      font-size: 2.4vw;
-      width: 43vw;
+      flex-direction: row;
 
-      .selected-project{
-        color: #404040;
-        cursor: pointer;
-        margin-bottom: 15px;
-        transition: all 0s, opacity 0.3s ease-in-out;
-      }
-      .not-selected-project{
-        color: #1f1f1f;
-        cursor: pointer;
-        transition: all .35s ease-in-out;
-
-        &:hover{
-          color: #404040;
-          transform: translateX(15px);
-          transition: ease-out 0.2s;
-        }
-      }
-      .project-image{
-        margin-left: 10px;
-        position: absolute;
-        font-size: 1em;
-        transition: all .35s ease-in-out;
-        color: #404040;
-
-        &:hover {
-          opacity: 0.5;
-        }
-      }
-      .project-content {
-        position: relative;
+      .project-column-0, .project-column-1 {
         display: flex;
         flex-direction: column;
+        width: 35vw;
+      }
 
-        .project-details {
-          font-family: "Bw Modelica Light", serif;
-          color: #1f1f1f;
-          font-size: 12px;
-          line-height: 1.9;
-          height: fit-content;
+      .project {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4.3vh;
+        letter-spacing: -1px;
+        font-family: "Bw Modelica Bold", serif;
+        font-size: 2.5vw;
+        width: 43vw;
+
+        .selected-project {
+          color: #404040;
+          cursor: pointer;
           margin-bottom: 15px;
+          transition: all 0s, opacity 0.3s ease-in-out;
         }
 
-        .tech-wrapper {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
+        .not-selected-project {
+          color: #1f1f1f;
+          cursor: pointer;
+          transition: all .35s ease-in-out;
 
-          .tech {
-            font-family: "Bw Modelica Regular", serif;
+          &:hover {
             color: #404040;
-            border: thin solid #404040;
-            opacity: 1;
-            border-radius: 20px;
-            font-size: 11px;
-            width: fit-content;
-            padding: 5px 13px;
-            margin-right: 12px;
+            transform: translateX(15px);
+            transition: ease-out 0.2s;
           }
-          .project-link{
-            color: #404040;
-            margin-left: 5px;
-            position: sticky;
-            font-size: 0.5em;
-            transition: all .35s ease-in-out;
+        }
 
-            &:hover {
-              opacity: 0.5;
+        .project-image {
+          margin-left: 10px;
+          position: absolute;
+          font-size: 1em;
+          transition: all .35s ease-in-out;
+          color: #404040;
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+
+        .project-content {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+
+          .project-details {
+            font-family: "Bw Modelica Light", serif;
+            color: #1f1f1f;
+            font-size: 12px;
+            line-height: 1.9;
+            height: fit-content;
+            margin-bottom: 15px;
+          }
+
+          .tech-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .tech {
+              font-family: "Bw Modelica Regular", serif;
+              color: #404040;
+              border: thin solid #404040;
+              opacity: 1;
+              border-radius: 20px;
+              font-size: 11px;
+              width: fit-content;
+              padding: 5px 13px;
+              margin-right: 12px;
+            }
+
+            .project-link {
+              color: #404040;
+              margin-left: 5px;
+              position: sticky;
+              font-size: 0.5em;
+              transition: all .35s ease-in-out;
+
+              &:hover {
+                opacity: 0.5;
+              }
             }
           }
         }
       }
     }
   }
-}
 
+}
 a {
   color: #1f1f1f;
   a:visited {
@@ -338,11 +347,9 @@ a {
 @media only screen and (max-width: 768px) {
 
   #Projects{
-    display: flex;
+    display: none;
     flex-direction: column;
     transform: translate(15vw, 0);
-    min-height: 100vh;
-    height: fit-content;
     margin: 0 auto 0 auto;
     width: 70vw;
     margin-left: 0 !important;
@@ -365,6 +372,7 @@ a {
         margin-bottom: 3vh;
         font-family: "Bw Modelica Bold", serif;
         font-size: 26px;
+        letter-spacing: -1px;
         width: 70vw;
 
         .selected-project{
